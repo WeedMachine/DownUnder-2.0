@@ -420,7 +420,7 @@ INV_AlleItemsArray = [
 
 //["UPMarijuana",["Item", "drug"],["Marijuana (not processed)", "Marijuana (not processed)"],[2500, 5000], [0.5, "drugs.sqf"], [true, true, true,true,"drugs.sqf"],"Unprocessed Marijuana",localize "STRS_inv_item_mariup_info", [["marijuana_Plant", 10]]],
 
-["handy",["Item", "misc"], ["handy", "Mobile Phone"], [1000, 500], [0.5, ""],[true,true,true, false, "handy.sqf"], localize "STRS_inv_item_handy",localize "STRS_inv_item_handy_info", [["plastik", 2],["ebauteile", 2]]],
+["handy",["Item", "misc"], ["handy", "Mobile Phone"], [500, 300], [0, ""],[false,false,false, false, "handy.sqf"], localize "STRS_inv_item_handy",localize "STRS_inv_item_handy_info", [["plastik", 2],["ebauteile", 2]]],
 
 ["roadblock",["Item", "misc"],["Land_CncBlock_Stripes", "Roadblock"],[3000, 1500], [15, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_roadblock",localize "STRS_inv_item_roadblock_info", [] ],
 

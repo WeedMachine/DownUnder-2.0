@@ -82,6 +82,7 @@ gangareas		 = [gangarea1,gangarea2,gangarea3];
 //=================================================================================	      							
 
 ['schluesselbund', 1] call INV_SetItemAmount;
+['handy', 1] call INV_SetItemAmount;
 
 playerWeapons            = [];														
 playerMagazines          = [];
