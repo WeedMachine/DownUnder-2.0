@@ -64,7 +64,7 @@ newvehicle setdir %5;
 newvehicle setVehicleInit "
 this setVehicleVarName ""vehicle_%1_%2""; 
 vehicle_%1_%2 = this; 
-
+newvehicle lock true;
 clearWeaponCargo this; 
 clearMagazineCargo this;
 "; 
