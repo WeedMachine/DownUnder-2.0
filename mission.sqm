@@ -67,7 +67,6 @@ class Mission
 		"CAWheeled2_VWGolf",
 		"map_eu",
 		"GLT_Objects",
-		"castructures_e_misc_misc_powerline",
 		"ibr_isladuala"
 	};
 	randomSeed=10839805;
@@ -18445,27 +18444,27 @@ class Mission
 		};
 		class Item1335
 		{
-			position[]={6807.79,15.023769,7098.0195};
+			position[]={4255.0332,14.897629,6883.186};
+			azimut=729.65735;
 			id=1599;
 			side="EMPTY";
-			vehicle="Land_PowLines_Transformer1_EP1";
+			vehicle="MAP_HouseB_Tenement";
 			skill=0.60000002;
 		};
 		class Item1336
 		{
-			position[]={6807.3418,15.023769,7109.5005};
+			position[]={6808.2129,15.023769,7109.4063};
 			id=1600;
 			side="EMPTY";
-			vehicle="Land_PowLines_Transformer1_EP1";
+			vehicle="MAP_trafostanica_velka";
 			skill=0.60000002;
 		};
 		class Item1337
 		{
-			position[]={4255.0332,14.897629,6883.186};
-			azimut=729.65735;
+			position[]={6808.3257,15.023769,7097.2109};
 			id=1601;
 			side="EMPTY";
-			vehicle="MAP_HouseB_Tenement";
+			vehicle="MAP_trafostanica_velka";
 			skill=0.60000002;
 		};
 	};
