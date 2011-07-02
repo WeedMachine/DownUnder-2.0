@@ -3,8 +3,9 @@ _art  = _this select 0;
 _vcl  = vehicle player;
 _playtime     = 120;
 _lichtstaerke = 0.3;
-_shortDur     = 0.72;
-_longDur      = 4.87;
+_shortDur     = 7.60;
+_longDur      = 16.0;
+
 
 if (_art == "activate") then 
 {
@@ -112,9 +113,12 @@ if (_art == "licht") then
 	_vcl    = _this select 1;
 	_light1 = ((_this select 2) select 0);
 	_light2 = ((_this select 2) select 1);
+
+
 	
 	while {true} do
 	{
+		_vcl animate ["Copcarlightsonly", 1]; //Holden Monaro Lights on when push F
 		if (player in _vcl) then 
 		{
 			_light1 setLightBrightness (_lichtstaerke / 2);
@@ -162,4 +166,5 @@ if (_art == "licht") then
 
 		sleep 0.5;
 	};
+	_vcl animate ["Copcarlightsonly", 0]; //Holden Monaro Lights on when push F
 };
