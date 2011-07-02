@@ -18,7 +18,7 @@ for [{_i=1}, {_i < 25}, {_i=_i+2}] do
         if (vehicle player == player) then {_searchRadius = 1} else {_searchRadius = 0};
 	_objs = nearestObjects [_posFind,["Man", "Misc_cargo_cont_tiny", "RUBasicAmmunitionBox"],_searchRadius];
 	_vcls = nearestobjects [_posFind,["LandVehicle", "Air", "ship", "LocalBasicWeaponsBox"], 2];
-	_atms = nearestObjects [_posFind,["Man", "Misc_cargo_cont_tiny"],2];
+	_atms = nearestObjects [_posFind,["Man", "Misc_cargo_cont_tiny", "du_atm"],2];
 	
 	if(count _vcls > 0 and INV_shortcuts)then
 

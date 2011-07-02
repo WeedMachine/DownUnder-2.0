@@ -97,7 +97,7 @@ switch _key do
        		_pos = player modelToWorld [0,0,0];
         	_posFind = [(_pos select 0)+(_dirV select 0)*_range,(_pos select 1)+(_dirV select 1)*_range,(_pos select 2)+(_dirV select 2)*_range];
        	 	_men    = nearestobjects [_posFind,["Man", "RUBasicAmmunitionBox"], 1] - [player];
-		_atms   = nearestObjects [_posFind,["Man", "Misc_cargo_cont_tiny"],2];
+		_atms   = nearestObjects [_posFind,["Man", "Misc_cargo_cont_tiny", "du_atm"],2];
 		_civ    = _men select 0;
 		_atm	= _atms select 0;
 		
