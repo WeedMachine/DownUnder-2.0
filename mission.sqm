@@ -6940,7 +6940,7 @@ class Mission
 		};
 		class Item101
 		{
-			position[]={4263.4316,14.897629,6887.5327};
+			position[]={4263.4355,14.897629,6888.3887};
 			azimut=461.603;
 			id=172;
 			side="EMPTY";
@@ -6948,7 +6948,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="atm1";
-			init="call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";""; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 1.7];";
+			init="call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";""; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 1.5];";
 		};
 		class Item102
 		{
@@ -18640,7 +18640,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={4263.3901,14.897629,6887.5981};
+			position[]={4263.4404,14.897629,6888.4639};
 			name="Bank";
 			type="mil_box";
 			colorName="ColorGreen";
