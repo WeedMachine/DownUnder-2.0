@@ -323,6 +323,16 @@ if(iscop)then{
 
 	lbAdd [1, _trennlinie];
 	
+	lbAdd [1, "D E M A N D (Apples):"];
+	
+	_stock = ["Apfel", (shop1 call INV_getshopnum)] call INV_getstock;
+	_stock = _stock + (["Apfel", (shop2 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Apfel", (shop3 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Apfel", (shop4 call INV_getshopnum)] call INV_getstock);
+	
+	lbAdd [1, format["Apple Demand: %1", 100 - (_stock/400)*100]];
+		
+	lbAdd [1, _trennlinie];
 			
 };
 
