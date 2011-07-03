@@ -54,7 +54,7 @@ drugstockinc		 = 900;
 druguserate		 = 120;
 
 //===== Gas station robbing
-maxstationmoney = 20000;
+maxstationmoney = 40000;
 
 if(debug)then{drugstockinc = 6;druguserate = 20};
 //==============================PETROL/OIL=========================================
@@ -360,7 +360,7 @@ gunlicensetargets	 		= [t11,t12,t21,t22,t31,t32,t41,t42,t51,t52,t61,t62,t71,t72,
 BuildingsOwnerArray 	 	= [];
 INV_Serverspeedcamarray 	= [];
 HideoutLocationArray 		= [];
-CityLocationArray       	= [[CityLogic1, 500], [CityLogic2, 400], [CityLogic4, 500], [CityLogic5, 200], [Militarybase, 200],[CityLogic6, 180],[CityLogic7, 120]];
+CityLocationArray       	= [[CityLogic1, 700], [CityLogic2, 500], [CityLogic3, 500], [CityLogic4, 500], [CityLogic5, 200], [Militarybase, 200],[CityLogic6, 200],[CityLogic7, 200]];
 
 SkinTerrB                = 250000; 
 SkinTerr                 = 60000;           

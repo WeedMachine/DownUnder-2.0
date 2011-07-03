@@ -283,6 +283,8 @@ _gsshop3 = fuelshop3 addaction ["Rob Gas Station 3","robthestations.sqf",["stati
 
 _gsshop4 = fuelshop4 addaction ["Rob Gas Station 4","robthestations.sqf",["station 4"],1,false,true,"","isciv and station4money >= 5000"];
 
+//====================================== RED LIGHT ======================================================
+_role addaction [format ["Hire escort ($%1)", escort_cost],"escort.sqf", ["escort"],1,false,true,"","player distance redlight1 <= 5 and isciv"];
 
 
 
