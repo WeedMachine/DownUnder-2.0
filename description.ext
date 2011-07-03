@@ -27,32 +27,32 @@ class CfgSounds
 
 sounds[] = {}; 
 
-#include "sounds.hpp"
+#include "dialogs\sounds.hpp"
 
 };
 
-#include "RscDefines.hpp"
+#include "dialogs\RscDefines.hpp"
 
-#include "gfx.hpp"
+#include "dialogs\gfx.hpp"
 
-#include "animDlg.hpp"
+#include "dialogs\animDlg.hpp"
 
-//#include "3778285.hpp"
+//#include "dialogs\3778285.hpp"
 
-#include "1614524.hpp"
+#include "dialogs\1614524.hpp"
 
-#include "INVdialogs.hpp"
+#include "dialogs\INVdialogs.hpp"
 
-#include "4782911.hpp"
+#include "dialogs\4782911.hpp"
 
-#include "bank.hpp"
+#include "dialogs\bank.hpp"
 
-#include "2085272.hpp"
+#include "dialogs\2085272.hpp"
 
-#include "4461230.hpp"
+#include "dialogs\4461230.hpp"
 
-#include "maindialogs.hpp"
+#include "dialogs\maindialogs.hpp"
 
-#include "civmenu.hpp"
+#include "dialogs\civmenu.hpp"
 
-#include "RscTitles.hpp"
+#include "dialogs\RscTitles.hpp"
