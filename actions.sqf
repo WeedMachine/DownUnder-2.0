@@ -100,7 +100,7 @@ _role addaction [format["Restore Power 2 ($%1)", powerrestorecost],"noscript.sqf
 //================================== COP CHIEF ELECTION ===============================================
 _role addaction ["Elect a Chief","maindialogs.sqf",["chief"],1,false,true,"","(player distance rathaus <= 3 or player distance mogilvekamayor <= 3) and iscop"];
 //==================================== MAYOR ELECTION =================================================
-_role addaction ["Elect a Mayor","maindialogs.sqf",["wahlen"],1,false,true,"","player distance rathaus <= 3 or player distance mogilvekamayor <= 3"];
+_role addaction ["Elect a Mayor","maindialogs.sqf",["wahlen"],1,false,true,"","(player distance rathaus <= 3 or player distance mogilvekamayor <= 3) and isciv"];
 //===================================== MAYOR ACTIONS =================================================
 _role addaction ["Change the Law","maindialogs.sqf",["gesetz"],1,false,true,"","player distance rathaus <= 3 and isMayor"];
 _role addaction ["Change taxes","maindialogs.sqf",["steuern"],1,false,true,"","player distance rathaus <= 3 and isMayor"];
@@ -204,7 +204,7 @@ _role addaction ["Process Heroin","itemprocess.sqf",["Unprocessed_Heroin", "hero
 _role addaction ["Process Heroin","itemprocess.sqf",["Unprocessed_Heroin", "heroin", 5, "heroin ga3"],1,false,true,"","_control = gangarea3 getvariable ""control"";!isnil ""_control"" and player distance gangarea3 <= 5 and (_control == (call INV_mygang))"];
 _role addaction ["Process Marijuana","itemprocess.sqf",["Unprocessed_Marijuana", "marijuana", 5, "marijuana ga3"],1,false,true,"","_control = gangarea3 getvariable ""control"";!isnil ""_control"" and player distance gangarea3 <= 5 and (_control == (call INV_mygang))"];
 //======================================== WORKERS =====================================================
-//_role addaction [format ["Buy a worker ($%1)", huren_cost],"worker.sqf", ["holen"],1,false,true,"","(player distance workplace_getjobflag_1 <= 5 or player distance workplace_getjobflag_2 <= 5 or player distance workplace_getjobflag_3 <= 5) and isciv"];		
+_role addaction [format ["Buy a worker ($%1)", huren_cost],"worker.sqf", ["holen"],1,false,true,"","(player distance workplace_getjobflag_1 <= 5 or player distance workplace_getjobflag_2 <= 5 or player distance workplace_getjobflag_3 <= 5) and isciv"];		
 //======================================= WORKPLACE ====================================================
 _role addaction ["Get courier job","delivery.sqf", ["getajob_delivery"],1,false,true,"","(player distance workplace_getjobflag_1 <= 5 or player distance workplace_getjobflag_2 <= 5 or player distance workplace_getjobflag_3 <= 5 or player distance workplace_getjobflag_4 <= 5) and isciv"];
 		

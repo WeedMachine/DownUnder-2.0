@@ -412,6 +412,12 @@ INV_AlleItemsArray = [
 
 ["lsd", ["Item", "drug"], ["lsd", "LSD"],[6000, 15000], [0.1, ""],[true,true,true, true, "drugs.sqf"], localize "STRS_inv_item_lsd",localize "STRS_inv_item_drogen_info", [["Unprocessed_LSD", 15]]],
 
+["HeroinSeed",["Item", "drug"],["Heroin Seed", "Poppy Seed"],[10000, 2000], [1, ""], [true, true, true,true,"drugplant.sqf"],"heroin seed","Used to Grow Poppy Plants", [["heroinseed", 1]]],
+
+["CocaineSeed",["Item", "drug"],["Cocaine Seed", "Coca Seed"],[7500, 1500], [1, ""], [true, true, true,true,"drugplant.sqf"],"Cocaine Seed","Used to Grow Coca Plants", [["cocaineseed", 1]]],
+
+["MarijuanaSeed",["Item", "drug"],["Marijuana Seed", "Marijuana Seed"],[5000, 1000], [0.5, ""], [true, true, true,true,"Drugplant.sqf"],localize "STRS_inv_item_mariseed",localize "STRS_inv_item_seed_info", [["Marijuana_Plant", 10]]],
+
 ["heroin", ["Item", "drug"], ["heroin", "Heroin"],[13000, 20000], [0.1, ""],[true,true,true, true, "drugs.sqf"], localize "STRS_inv_item_heroin",localize "STRS_inv_item_drogen_info", [["Unprocessed_Heroin", 20]]],
 
 //["MariSeed",["Item", "drug"],["Marijuana Seed", "Marijuana Seed"],[15000, 15000], [0.5, ""], [true, true, true,true,"UN4_DRUG\PlantSeed.sqf"],localize "STRS_inv_item_mariseed",localize "STRS_inv_item_seed_info", [["marijuana_Plant", 10]]],
