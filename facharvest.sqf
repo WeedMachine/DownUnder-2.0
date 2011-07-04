@@ -266,6 +266,14 @@ INV_FarmItemArray =
 
 ];
 
+fishingarray =
+[
+
+[["barramundiarea",20], "barramundi",4],
+[["troutarea",20], "trout",3]
+
+];
+
 Miningarray = 
 
 [

@@ -184,6 +184,10 @@ switch _item do
 	case "Bread":     { _hungerStillen = 20;  };
 
 	case "boar":     { _hungerStillen = 35;  };
+	
+	case "trout":     { _hungerStillen = 11; };
+	
+	case "barramundi":     { _hungerStillen = 15; };
 
 	case "rabbit":     { _hungerStillen = 15;  };
 

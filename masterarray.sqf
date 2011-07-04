@@ -344,6 +344,10 @@ INV_AlleItemsArray = [
 
 ["Bread",["Item", "food"],["Bread", "Bread"],[500, 500], [0.1, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [["getreide", 1]] ],
 
+["trout",["Item", "food"],["trout", "trout"],[1000, 900], [0.2, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_fisch",localize "STRS_inv_item_nahrung_info", [] ], 
+
+["barramundi",["Item", "food"],["barramundi", "barramundi"],[1250, 300], [0.3, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_fisch",localize "STRS_inv_item_nahrung_info", [] ],
+
 ["Donut",["Item", "food"],["Donut", "Donut"],[300, 150], [0.1, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [] ],
 
 ["beer",["Item", "drink"],["beer", "Larger"],[120, 150], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_beer",localize "STRS_inv_item_alkohol_info", [["quellwasser", 1], ["hopfen", 1]] ],
@@ -453,6 +457,8 @@ INV_AlleItemsArray = [
 ["stoersender",["Item", ",misc"],["stoersender", "Radio jammer"],[15000, 7500],[5, ""], [true, true, true,true,"radiojammer.sqf"],localize "STRS_item_stoersender",localize "STRS_item_stoersender_info", [["plastik", 4],["ebauteile", 4]] ],
 
 ["lockpick", ["Item", "carobjects"],["lockpick", "Lockpick"], [1000, 500], [0.5, "", "patrol_training"],[true,true,true, false, "lockpick.sqf"],localize "STRS_item_lockpick",localize "STRS_item_lockpick_info", [["stahl", 1]] ],
+
+["fishingpole", ["Item", "Shop"], ["fishingpole", "Fishing Pole"],[4000, 3750], [5, "", ""],[true,true,true,false, "fishing.sqf"], "Fishing Pole", "Use it in a fishing area.",[["steel", 1], ["plastic", 1],["ebauteile", 1]] ],
 
 ["gasmask", ["Item", "misc"], ["gasmask", "Gas mask"],[5000, 2500], [2, "", "response_training"],[true,true,true, false, "nouse.sqf"], localize "STRS_item_gasmask", localize "STRS_item_gasmask_info",[["plastik", 3]] ],
 
