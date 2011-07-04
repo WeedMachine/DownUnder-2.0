@@ -79,13 +79,14 @@ INV_itemstocks =
 [-1,-1,-1,-1,-1,-1],
 //sv1
 [-1,-1,-1],
-//ca
+//cb
 -1,
 -1,
 //cp
 -1,
 -1,
 //cr
+-1,
 -1,
 //cps
 -1,
@@ -102,7 +103,9 @@ INV_itemstocks =
 //kv
 -1,
 //ig
-[5,5,5]
+[5,5,5],
+//seedshop
+-1
 
 ];
 
@@ -187,13 +190,14 @@ INV_itemmaxstocks =
 [-1,-1,-1,-1,-1,-1],
 //sv1
 [-1,-1,-1],
-//ca
+//copbasic
 -1,
 -1,
-//cp
+//cop patrol
 -1,
 -1,
-//cr
+//criminal response
+-1,
 -1,
 //cps
 -1,
@@ -210,7 +214,10 @@ INV_itemmaxstocks =
 //kv
 -1,
 //ig
-[30,30,30]
+[30,30,30],
+//seedshop
+-1
+
 ];
 
 // Shop items
@@ -239,7 +246,7 @@ _rs = ["iron","copper","oil"];
 _gds = ["Diamondring","EDiamondring"];
 _os = ["OilBarrel"];
 _ws = ["Whale"];
-_db1 = ["MarijuanaSeed","CocaineSeed","HeroinSeed"];
+_db1 = ["marijuana","cocaine","heroin"];
 _db2 = ["cocaine","lsd"];
 _db3 = ["heroin","marijuana"];
 _dsc = ["cocaine"];
@@ -257,6 +264,7 @@ _ec = ["ebauteile"];
 _hs = ["house","house2","hideout","campeast","fireplace","Barricade","Tor","Jaegerstand","Blechzaun","Camonet","bunkersmall"];
 _kv = ["Kaviar"];
 _ig = ["OilBarrel","steel","ebauteile"];
+_seedshop = ["MarijuanaSeed","CocaineSeed","HeroinSeed"];
 
 _copshop = 
 
@@ -501,6 +509,7 @@ INV_ItemShops = [
 [hdrugsell,"Sell Heroin",dummyobj,dummyobj,_emptyshop,_dsh,true],
 
 [copair,"Police Air-Vehicle Shop",dummyobj, cairspawn,_ca1,_ca1,true],
+
 [swatair,"SOBR Air_Vehicles Shop",dummyobj, saairspawn,_sa1,_sa1,true],
 
 [copcar,"Police vehicle Shop",dummyobj, ccarspawn,_cv,_cv,true],
@@ -514,6 +523,7 @@ INV_ItemShops = [
 [coppatrol,"Patrol-Officer",coppatrol,dummyobj,_copshop_patrol,_copshop_patrol,true],
 [coppatrol2,"Patrol-Officer",coppatrol2,dummyobj,_copshop_patrol,_copshop_patrol,true],
 [copcriminal,"Criminal Response-Officer",copcriminal,dummyobj,_copshop_response,_copshop_response,true],
+[copcriminal2,"Criminal Response-Officer",copcriminal2,dummyobj,_copshop_response,_copshop_response,true],
 [copswat,"SOBR",copswat,dummyobj,_copshop_sobr,_copshop_sobr,true],
 [terrorshop,"Terrorist Shop",tgunbox,dummyobj,_terrorshop,_terrorshop,true],
 [drugseller,"Buy Drugs",dummyobj,dummyobj,_drs,_emptyshop,true],
@@ -521,7 +531,9 @@ INV_ItemShops = [
 [electronicseel,"Export Electronic Components",dummobj,dummyobj,_emptyshop,_ec,true],
 [markler,"House Shop",dummobj,dummyobj,_hs,_hs,true],
 [kaviarverkauf,"Sell Caviar",dummyobj,dummyobj,_emptyshop,_kv,true],
-[Industriegueter,"Industrial Goods",dummyobj,dummyobj,_ig,_ig,true]
+[Industriegueter,"Industrial Goods",dummyobj,dummyobj,_ig,_ig,true],
+
+[seedshop,"Seed Shop",dummyobj,dummyobj,_seedshop,_seedshop,true]
 
 ];
 

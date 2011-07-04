@@ -17,7 +17,7 @@ if (_art == "add") then
 	if (('geld' call INV_GetItemAmount) < _cost) exitWith {player groupChat localize "STRS_inv_buylicense_nomoney";};
 	if(_license == "car" or _license == "truck")then{demerits = 10};	//demerits = Punkte wie in Flensburg
 
-	if(_license == "bounty" and (CopsKilled >5)) exitWith {player groupChat "You killed to many Cops to become a bountyhunter."};
+	if(_license == "bounty" and (CopsKilled >3)) exitWith {player groupChat "You killed to many Cops to become a bountyhunter."};
 	//if(_license == "sobr_training" and !(_uid in sobrerlaubt)) exitWith { player groupChat "You are not able to become a SOBR. If you a are good cop make a post in the HGS Forum then you will be able to buy this license."};
 	if(_license == "gunprobationpistol" and (_uid in keineGun)) exitWith { player groupChat "Its not allowed to you to buy this license! You should think about changing your Gameplay!"};
 	if(_license == "response_training" and (_uid in keincriminal)) exitWith { player groupChat "Its not allowed to you to buy this license! You should think about changing your Gameplay!"};

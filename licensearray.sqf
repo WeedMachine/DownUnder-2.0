@@ -24,7 +24,9 @@ INV_Lizenzen =
 ["probator",copbank,localize "STRS_license_probator",10000],
 ["patrol_training",copbank,localize "STRS_license_coppatrol",25000],
 ["response_training",copbank,localize "STRS_license_copresponse",50000],
-["sobr_training",copbank,localize "STRS_license_copswat",150000],
+["response_training",copcar2,localize "STRS_license_copresponse",50000],
+["air_support_training",copcar2,localize "STRS_license_copairsupport",100000],
+["sobr_training",copsobr,localize "STRS_license_copswat",150000],
 ["air_support_training",copbank,localize "STRS_license_copairsupport",100000],
 //["medic",university,localize "STRS_license_medic",5000]
 ["terror",terrorshop,"Terrorist training",250000],
