@@ -3,10 +3,13 @@ INV_Lizenzen =
 [
 
 ["car",university,localize "STRS_license_car",10000],
+["car",university1,localize "STRS_license_car",10000],
 ["car",mogilvekamayor,localize "STRS_license_car",10000],
 //["pick-up",university,localize "STRS_licence_pick-up",25000],
 ["boat",university,localize "STRS_license_boat",5000],
 ["truck",university,localize "STRS_license_truck",15000],
+["boat",university1,localize "STRS_license_boat",5000],
+["truck",university1,localize "STRS_license_truck",15000],
 ["diamond",Diamond_1,"Diamond processor's license",25000],
 ["Baker",Bakery_1,"Baker's license",10000],
 ["oil",Oil_1,"Oil processor's license",75000],
@@ -21,6 +24,7 @@ INV_Lizenzen =
 ["gunprobationpistol",Licenseflag2,"Probation pistol license",25000],
 ["riflelicense",objnull,"Semi-Automatic Rifle license",50000],
 ["engineer",university,localize "STRS_license_engineer",25000],
+["engineer",university1,localize "STRS_license_engineer",25000],
 ["probator",copbank,localize "STRS_license_probator",10000],
 ["patrol_training",copbank,localize "STRS_license_coppatrol",25000],
 ["response_training",copbank,localize "STRS_license_copresponse",50000],
@@ -34,6 +38,7 @@ INV_Lizenzen =
 ["Notforcivs",Nicht_DA,"Notforcivs",1],						//Notwendige Lizens für alle Autos die Civs nicht fahren dürfen. Sichert das sie in diesen geblitz werden und sie nicht kaufen können
 ["Notforcops",Nicht_DA,"NotforCops",1],						//Notwendige Lizens für alle Gegenstände die Cops nicht kaufen dürfen
 ["bounty",university,"Bountyhunter License",50000],			//Kopfgeldjäger Lizens
+["bounty",university1,"Bountyhunter License",50000],
 ["probator",copcar2,localize "STRS_license_probator",10000],
 ["patrol_training",copcar2,localize "STRS_license_coppatrol",25000],
 ["kaviar",Kaviafabrik,"Caviar license",25000],

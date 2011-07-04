@@ -16,7 +16,7 @@ zinsen_dauer             = 300;
 robenable              	 = true;     
 Kontostand               = StartGeld; 
 shopflagarray            = [shop1,shop2,shop3,shop4,shop5];
-bankflagarray            = [mainbank, copbank, copsobr, atm1, atm2, atm3, atmpf, atmassa,bank5,bank6];
+bankflagarray            = [mainbank, copbank, copsobr, atm1, atm2, atm3, atmpf, atmassa, bank5, bank6];
 drugsellarray		 = [mdrugsell,cdrugsell,ldrugsell,hdrugsell];
 TankstellenArray         = 
 
