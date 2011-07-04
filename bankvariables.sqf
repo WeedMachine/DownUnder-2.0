@@ -1,4 +1,4 @@
-if(debug)then{['geld', 15000000] call INV_addinventoryitem};
+if(interndebug)then{['geld', 5000000] call INV_addinventoryitem};
 
 StartGeld                = 25000; 
 robb_timeSperre          = 600;   

@@ -3,7 +3,7 @@ WEST setFriend [EAST, 1];
 EAST setFriend [WEST, 1];
 version        	= "1.01";
 compatible     	= 102;
-internDebug    	= false;
+internDebug    	= true;
 debug          	= false;
 addonversion   	= false;
 dedicatedServer = false;
@@ -23,7 +23,7 @@ facworkercost2 = 5000;
 execVM "briefing.sqf";
 call compile preprocessfile "triggers.sqf";
 
-if(!debug)then{["kamera"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};
+if(!internDebug)then{["kamera"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};
 
 if(local server)then{execVM "targets.sqf";};
 

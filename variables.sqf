@@ -278,6 +278,7 @@ CivMarkerUngenau         = 20;
 copmarker_on             = 1; 
 despawnarray	 	 = [["EvMoney", 300], ["Suitcase", 300]];
 workplacearray           = [[workplace1, 80], [workplace2, 80], [workplace3, 60], [workplace4, 40]];
+escortarray              = [[redlightdistrict1, 80], [redlightdistrict2, 80], [redlightdistrict3, 80]];
 huntingarray             = [["boarhunting", 300]];
 nonlethalweapons	 = ["Binocular", "NVGoggles", "ItemMap", "ItemCompass", "ItemRadio", "ItemWatch", "ItemGPS"];
 slavearray               = workplacearray;
@@ -393,6 +394,7 @@ civclassarray		 =
 
 civslavearray		 = ["Citizen1","Citizen2","Citizen3","Citizen4"];
 civworkerarray		 = ["Worker1","Worker2","Worker3","Worker4"];
+civescortarray		 = ["Hooker1","Hooker2","Hooker3","Hooker4","Hooker5"];
 terroristarray   	 = ["GUE_Soldier_1", "GUE_Soldier_2", "GUE_Soldier_3", "Ins_Soldier_Sab", "Ins_Soldier_2", "GUE_Soldier_CO", "GUE_Soldier_AT", "Ins_Soldier_AR", "Ins_Soldier_CO"];
 Coplavearray		 = ["Policeman"];
 

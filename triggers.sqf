@@ -24,7 +24,7 @@ RadioTrigger_9 setTriggerActivation ["INDIA", "NOT PRESENT", true];
 RadioTrigger_9 setTriggerStatements ["this", "[RadioTextMsg_4, RadioTextArt_4] call SayDirectSpeach;", ""];
 9 setRadioMsg "Say Text 4";
 
-if(debug)then
+if(internDebug)then
 
 {
 

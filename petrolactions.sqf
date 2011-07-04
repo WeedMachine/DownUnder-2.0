@@ -2,7 +2,7 @@ _a1 = 0;
 _v1 = 0; 
 _f1 = 0;
 
-{_x setFuelCargo 0} foreach (nearestobjects [getpos copbase1, ["Land_A_Fuelstation_Feed"], 6000]);
+{_x setFuelCargo 0} foreach (nearestobjects [getpos copbase1, ["FuelStationDD"], 15000]);
 
 while {true} DO 
 
