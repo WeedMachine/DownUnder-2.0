@@ -23,8 +23,8 @@ if (_amount <= 0) exitWith {player groupChat localize "STRS_inv_buyitems_maxgewi
 
 };
 
-if(_exitvar == 1)exitwith{};
-
+//if(_exitvar == 1)exitwith{};
+if(_exitvar == 1)exitwith{pickingup=false}; //This is a fix for picking up bug.
 pickingup   = true;
 
 _object setvariable ["droparray", nil, true];

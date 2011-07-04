@@ -63,17 +63,20 @@ if (harvestscript == 1) exitwith {player groupchat "you are already harvesting"}
 	case "Heroin": {_plantType = "as_t_PrunusS2s_EP1";};
 	case "Cocaine": {_plantType = "as_t_JuniperusC2s_EP1";};
 	};
+	
+	_type2 = "Unprocessed_" + _type ;
 
 //D$, Make sure the player has enough carrying capacity to hold the seeds and drugs
-		if(( _playerweight) + ((_type call INV_GetItemTypeKg)* _plantyield) + ((_type + "Seed" call INV_GetItemTypeKg)* _seedyield ) > INV_Tragfaehigkeit) exitwith {harvestscript = 0; player groupchat localize "STRS_inv_buyitems_get_zuschwer";};
+		if(( _playerweight) + ((_type2 call INV_GetItemTypeKg)* _plantyield) + ((_type + "Seed" call INV_GetItemTypeKg)* _seedyield ) > INV_Tragfaehigkeit) exitwith {harvestscript = 0; player groupchat localize "STRS_inv_buyitems_get_zuschwer";};
 		player removeaction (_this select 2);
 		
 //D$, Put the seeds & dugs in the players inventory, get rid of the plant, and tell the player 
-	   [_type + "Seed", _seedyield] call INV_AddInventoryItem;
-       [_type, _plantyield] call INV_AddInventoryItem;
-	    _plant = nearestObject [player, _plantType];
+		_plant = nearestObject [player, _plantType];
 
-	    deletevehicle _plant;	
+	    deletevehicle _plant;
+	   [_type + "Seed", _seedyield] call INV_AddInventoryItem;
+       [_type2, _plantyield] call INV_AddInventoryItem;
+	    	
 		player groupchat format["You Harvested %1 Plants", _type];
 sleep 2;
 harvestscript = 0;

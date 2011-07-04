@@ -398,13 +398,13 @@ INV_AlleItemsArray = [
 
 ["Whale",["Item", "drug"],["Whale", "Whale"],[100000, 100000], [50, ""], [true, true, true,true,"food.sqf"],"whale",localize "STRS_inv_item_nahrung_info", [] ],
 
-["Unprocessed_Cocaine",["Item", "drug"],["Unprocessed Cocaine", "Unprocessed Cocaine"],[800, 800], [0.5, ""], [true, true, true,true,"useresource.sqf"],localize "STRS_inv_item_cocaine",localize "STRS_item_farmitem_info", [] ],
+["Unprocessed_Cocaine",["Item", "drug"],["Unprocessed Cocaine", "Unprocessed Cocaine"],[800, 800], [0.5, ""], [true, true, true,true,"useresource.sqf"],localize "STRS_inv_item_cocaine",localize "STRS_drug_item_farmitem_info", [] ],
 
-["Unprocessed_Marijuana",["Item", "drug"],["Unprocessed Marijuana", "Unprocessed Marijuana"],[800, 800], [0.5, ""], [true, true, true,true,"useresource.sqf"],localize "STRS_inv_item_marijuana",localize "STRS_item_farmitem_info", [] ],
+["Unprocessed_Marijuana",["Item", "drug"],["Unprocessed Marijuana", "Unprocessed Marijuana"],[800, 800], [0.5, ""], [true, true, true,true,"useresource.sqf"],localize "STRS_inv_item_marijuana",localize "STRS_drug_item_farmitem_info", [] ],
 
-["Unprocessed_LSD",["Item", "drug"],["Unprocessed LSD", "Unprocessed LSD"],[600, 600], [0.5, ""], [true, true, true,true,"useresource.sqf"],localize "STRS_inv_item_lsd",localize "STRS_item_farmitem_info", [] ],
+["Unprocessed_LSD",["Item", "drug"],["Unprocessed LSD", "Unprocessed LSD"],[600, 600], [0.5, ""], [true, true, true,true,"useresource.sqf"],localize "STRS_inv_item_lsd",localize "STRS_drug_item_farmitem_info", [] ],
 
-["Unprocessed_Heroin",["Item", "drug"],["Unprocessed Heroin", "Unprocessed Heroin"],[600, 600], [0.5, ""], [true, true, true,true,"useresource.sqf"],localize "STRS_inv_item_heroin",localize "STRS_item_farmitem_info", [] ],
+["Unprocessed_Heroin",["Item", "drug"],["Unprocessed Heroin", "Unprocessed Heroin"],[600, 600], [0.5, ""], [true, true, true,true,"useresource.sqf"],localize "STRS_inv_item_heroin",localize "STRS_drug_item_farmitem_info", [] ],
 
 ["marijuana",["Item", "drug"],["marijuana", "Marijuana"],[3500, 5000], [0.1, ""], [true, true, true,true,"drugs.sqf"],localize "STRS_inv_item_marijuana",localize "STRS_inv_item_drogen_info", [["Unprocessed_Marijuana", 8]]],
 
