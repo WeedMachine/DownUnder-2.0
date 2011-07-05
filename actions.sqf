@@ -95,8 +95,8 @@ _role addaction ["Remove Hideout","noscript.sqf",'if (((call INV_GetOwnWeight) +
 
 
 //==================================== REPAIR POWER ===================================================
-_role addaction [format["Restore Power 1 ($%1)", powerrestorecost],"noscript.sqf",'_geld = "geld" call INV_GetItemAmount; if(_geld < powerrestorecost)exitwith{player groupchat "you do not have enough money"};["geld", -(powerrestorecost)] call INV_addinventoryitem; "power1 setdamage 0" call broadcast',1,false,true,"","player distance power1rep <= 7 and !alive power1 and iscop"];
-_role addaction [format["Restore Power 2 ($%1)", powerrestorecost],"noscript.sqf",'_geld = "geld" call INV_GetItemAmount; if(_geld < powerrestorecost)exitwith{player groupchat "you do not have enough money"};["geld", -(powerrestorecost)] call INV_addinventoryitem; "power2 setdamage 0" call broadcast',1,false,true,"","player distance power2rep <= 7 and !alive power2 and iscop"];
+_role addaction [format["Restore Power 1 ($%1)", powerrestorecost],"noscript.sqf",'_geld = "geld" call INV_GetItemAmount; if(_geld < powerrestorecost)exitwith{player groupchat "you do not have enough money"};["geld", -(powerrestorecost)] call INV_addinventoryitem; "powerplant1 setdamage 0.92" call broadcast',1,false,true,"","player distance power1rep <= 11 and !alive powerplant1 and iscop"];
+_role addaction [format["Restore Power 2 ($%1)", powerrestorecost],"noscript.sqf",'_geld = "geld" call INV_GetItemAmount; if(_geld < powerrestorecost)exitwith{player groupchat "you do not have enough money"};["geld", -(powerrestorecost)] call INV_addinventoryitem; "powerplant2 setdamage 0.92" call broadcast',1,false,true,"","player distance power2rep <= 11 and !alive powerplant2 and iscop"];
 //================================== COP CHIEF ELECTION ===============================================
 _role addaction ["Elect a Chief","maindialogs.sqf",["chief"],1,false,true,"","(player distance copcar2 <= 3 or player distance copbank <= 3) and iscop"];
 //==================================== MAYOR ELECTION =================================================

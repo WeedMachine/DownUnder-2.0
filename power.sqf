@@ -4,9 +4,9 @@ while {true} do
 
 {
 
-waituntil{!alive power1 and !alive power2};
+waituntil{!alive powerplant1 and !alive powerplant2};
 
-hint "The reactors at the Chernarus Power Plant have been destroyed, it'll be a dark night!";
+hint "The reactors at the DownUnder Power Plant have been destroyed, it'll be a dark night!";
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
@@ -18,9 +18,9 @@ Sleep 1;
 
 };
 
-waituntil{alive power1 and alive power2};
+waituntil{alive powerplant1 and alive powerplant2};
 
-hint "The Chernarus power plant has been repaired and power has been restored!";
+hint "The DownUnder power plant has been repaired and power has been restored!";
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
