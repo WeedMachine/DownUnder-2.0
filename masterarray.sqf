@@ -6,21 +6,21 @@ INV_AlleWaffenObjekte = [
 
 ["GPS", ["Waffe", "Equipment"], ["ItemGPS", "GPS"],[3000, 1500], [2, "", ""],[], "GPS", "Keeping the GPS in your inventory will allow you to use the GPS (default key Ctrl + M).",[["plastik", 1],["ebauteile", 1]] ],
 
-["M1014",["Waffe", "rifle"], ["M1014", "M1014"], [15000, 7500], [2, "semiautomatic", "probator"], [], "Mossberg_M590" call ISSE_Cfg_Weapons_GetName, "Mossberg_M590" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 10],["plastik", 2],["kupfer", 2]]],
+["M1014",["Waffe", "rifle"], ["M1014", "M1014"], [15000, 7500], [2, "Rifle", "probator"], [], "Mossberg_M590" call ISSE_Cfg_Weapons_GetName, "Mossberg_M590" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 10],["plastik", 2],["kupfer", 2]]],
 
-["Makarov",["Waffe", "pistol"],["Makarov", "Makarov"],[3000, 1500], [1, "semiautomatic", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ],
+["Makarov",["Waffe", "pistol"],["Makarov", "Makarov"],[3000, 1500], [1, "Pistol", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ],
 
-["MakarovSD",["Waffe", "pistol"],["MakarovSD", "Stun pistol"],[10000, 5000], [1, "semiautomatic", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ],
+["MakarovSD",["Waffe", "pistol"],["MakarovSD", "Stun pistol"],[10000, 5000], [1, "Pistol", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ],
 
-["Saiga12K",["Waffe", "rifle"], ["Saiga12K", "Saiga 12K"], [15000, 7500], [2, "semiautomatic", "response_training"], [], "Mossberg_M590" call ISSE_Cfg_Weapons_GetName, "Mossberg_M590" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 10],["plastik", 2],["kupfer", 2]]],
+["Saiga12K",["Waffe", "rifle"], ["Saiga12K", "Saiga 12K"], [15000, 7500], [2, "Rifle", "response_training"], [], "Mossberg_M590" call ISSE_Cfg_Weapons_GetName, "Mossberg_M590" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 10],["plastik", 2],["kupfer", 2]]],
 
-["MP5A5", ["Waffe", "rifle"],["mp5a5", "MP5A5"], [20000, 10000], [2, "semiautomatic", "response_training"], [], "MP5A5" call ISSE_Cfg_Weapons_GetName, "MP5A5" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 10],["plastik", 5],["kupfer", 5]]],
+["MP5A5", ["Waffe", "rifle"],["mp5a5", "MP5A5"], [20000, 10000], [2, "Rifle", "response_training"], [], "MP5A5" call ISSE_Cfg_Weapons_GetName, "MP5A5" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 10],["plastik", 5],["kupfer", 5]]],
 
-["MP5SD", ["Waffe", "rifle"],["MP5SD", "MP5SD"], [23000, 11500], [2, "semiautomatic", "response_training"], [], "MP5SD" call ISSE_Cfg_Weapons_GetName, "MP5SD" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 10],["plastik", 5],["kupfer", 5]]],
+["MP5SD", ["Waffe", "rifle"],["MP5SD", "MP5SD"], [23000, 11500], [2, "Rifle", "response_training"], [], "MP5SD" call ISSE_Cfg_Weapons_GetName, "MP5SD" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 10],["plastik", 5],["kupfer", 5]]],
 
-["VSS_vintorez", ["Waffe", "sniper"],["VSS_vintorez", "VSS vintorez"], [65000, 32500], [2, "", "sobr_training"], [], "M24" call ISSE_Cfg_Weapons_GetName, "M24" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 45],["plastik", 12],["kupfer", 10],["glas", 2]] ],
+["VSS_vintorez", ["Waffe", "sniper"],["VSS_vintorez", "VSS vintorez"], [65000, 32500], [2, "Rifle", "sobr_training"], [], "M24" call ISSE_Cfg_Weapons_GetName, "M24" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 45],["plastik", 12],["kupfer", 10],["glas", 2]] ],
 
-["Huntingrifle", ["Waffe", "sniper"],["Huntingrifle", "CZ 550 Scoped"],[30000, 15000], [2, "terror", "probator"], [], "CZ 550 Scoped", "SVD" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 40],["holz", 10],["kupfer", 10],["glas", 2]]],
+["Huntingrifle", ["Waffe", "sniper"],["Huntingrifle", "CZ 550 Scoped"],[30000, 15000], [2, "Rifle", "probator"], [], "CZ 550 Scoped", "SVD" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 40],["holz", 10],["kupfer", 10],["glas", 2]]],
 
 ["M24", ["Waffe", "sniper"],["M24", "M24"],[65000, 32500], [2, "", "sobr_training"], [], "M24", "M24" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 40],["holz", 10],["kupfer", 10],["glas", 2]]],
 
@@ -62,17 +62,17 @@ INV_AlleWaffenObjekte = [
 
 ["RPG18", ["Waffe", "launcher"],["RPG18", "RPG18"], [50000, 25000], [3, "terror", "sobr_training"], [], "RPG7V" call ISSE_Cfg_Weapons_GetName, "RPG7V" call ISSE_Cfg_Weapons_GetDesc, [["stahl", 60],["plastik", 10],["kupfer", 15],["ebauteile", 2]] ],
 
-["M9",["Waffe", "pistol"],["M9", "M9"],[5000, 2500], [1, "semiautomatic", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ],
+["M9",["Waffe", "pistol"],["M9", "M9"],[5000, 2500], [1, "Pistol", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ],
 
 ["M9SD",["Waffe", "pistol"],["M9SD", "M9SD"],[10000, 5000], [1, "", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ],
 
-["Colt1911",["Waffe", "pistol"],["Colt1911", "M1911A1"],[6500, 3250], [1, "semiautomatic", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ]
+["Colt1911",["Waffe", "pistol"],["Colt1911", "M1911A1"],[6500, 3250], [1, "Pistol", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ]
 
 ];
 
 INV_AlleMagazinObjekte = [
 
-["8Rnd_B_Beneli_74Slug",["Magazin", "rifle"],["8Rnd_B_Beneli_74Slug", "8Rnds BeanBag non-lethal"],[800, 800], [1, "rifle", "probator"], [], "8Rnd_127x51_ball_TR" call ISSE_Cfg_MagazineInfo, "8Rnd_127x51_ball_TR" call ISSE_Cfg_MagazineInfo, [["kupfer", 1],["schwarzpulver", 1]] ],
+["8Rnd_B_Beneli_74Slug",["Magazin", "rifle"],["8Rnd_B_Beneli_74Slug", "8Rnds BeanBag non-lethal"],[800, 800], [1, "", "probator"], [], "8Rnd_127x51_ball_TR" call ISSE_Cfg_MagazineInfo, "8Rnd_127x51_ball_TR" call ISSE_Cfg_MagazineInfo, [["kupfer", 1],["schwarzpulver", 1]] ],
 
 ["Rnd_B_Saiga12_74Slug",["Magazin", "rifle"],["8Rnd_B_Saiga12_74Slug", "8Rnd Saiga 12 gauge"],[800, 800], [1, ""], [], "8Rnd_127x51_ball_TR" call ISSE_Cfg_MagazineInfo, "8Rnd_127x51_ball_TR" call ISSE_Cfg_MagazineInfo, [["kupfer", 1],["schwarzpulver", 1]] ],
 
