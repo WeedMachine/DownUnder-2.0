@@ -161,3 +161,25 @@ while {true} do {
 } foreach (nearestobjects [getpos player, [], 20000]);
 }; };
 };
+
+if (isClass(configFile >> "CfgPatches" >> "DUmusicFull")) then
+{
+_h = [] execVM "CLAY_CarRadio\initCarRadio.sqf";
+
+waitUntil{scriptDone  _h};
+}
+else
+{
+     hint "Full Car Radio NOT available";
+};
+
+if (isClass(configFile >> "CfgPatches" >> "DUmusicLite")) then
+{
+_h = [] execVM "CLAY_CarRadio\initCarRadio.sqf";
+
+waitUntil{scriptDone  _h};
+}
+else
+{
+     hint "Lite Car Radio NOT available";
+};   
