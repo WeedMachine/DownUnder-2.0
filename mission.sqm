@@ -16468,7 +16468,7 @@ class Mission
 			name="1_12_1_1";
 			text="Gun shop";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
 			angle=-9.99611;
@@ -16479,7 +16479,7 @@ class Mission
 			name="truckshop";
 			text="@STRM_mission_marker_shop_truck";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
 		};
@@ -16740,7 +16740,7 @@ class Mission
 			name="itemfactory";
 			text="@STRM_mission_marker_fac_item";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
 		};
@@ -16750,7 +16750,7 @@ class Mission
 			name="licensemarker2";
 			text="Gun License";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlack";
 			a=0.69999999;
 			b=0.69999999;
 			angle=-26.9167;
@@ -16920,7 +16920,7 @@ class Mission
 		class Item59
 		{
 			position[]={3802.8506,16.3407,2526.5388};
-			name="Shoprob_1_1";
+			name="Shoprob4";
 			type="mil_box";
 			colorName="ColorBlue";
 			a=0.69999999;
@@ -16928,13 +16928,13 @@ class Mission
 		};
 		class Item60
 		{
-			position[]={2965.2478,14.897629,7034.6377};
-			name="Shoprob_1_2";
+			position[]={2961.3501,14.897629,7036.4233};
+			name="Shoprob2";
 			type="mil_box";
 			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
-			angle=-284.23621;
+			angle=-284.23599;
 		};
 		class Item61
 		{
@@ -17036,7 +17036,7 @@ class Mission
 			name="pickupshop_1";
 			text="@STRM_mission_marker_shop_pickup";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
 			angle=-80.646202;
@@ -17076,7 +17076,7 @@ class Mission
 		};
 		class Item76
 		{
-			position[]={4259.6675,14.897629,6852.334};
+			position[]={4255.8418,14.897629,6868.5889};
 			name="hospitaltent";
 			type="Empty";
 			a=1.25;
@@ -17241,7 +17241,7 @@ class Mission
 			name="Equipshop";
 			text="Equipment Shop";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
 		};
@@ -17459,7 +17459,7 @@ class Mission
 			name="boatshop_2";
 			text="@STRM_mission_marker_shop_boat";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
 		};
@@ -17529,10 +17529,10 @@ class Mission
 			name="carshop_3";
 			text="@STRM_mission_marker_shop_car";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
-			angle=-134.73059;
+			angle=-134.731;
 		};
 		class Item124
 		{
@@ -17566,7 +17566,7 @@ class Mission
 		};
 		class Item127
 		{
-			position[]={6383.2446,14.943039,6845.1802};
+			position[]={6387.5215,14.943039,6870.832};
 			name="farmarea2";
 			text="Harvest Area";
 			type="mil_circle";
@@ -17935,7 +17935,7 @@ class Mission
 			name="pub_1";
 			text="Pub";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorWhite";
 			a=0.69999999;
 			b=0.69999999;
 			angle=-173.534;
@@ -17946,7 +17946,7 @@ class Mission
 			name="Alcohol_fac";
 			text="Alcohol Factory";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
 		};
@@ -18020,7 +18020,7 @@ class Mission
 			name="Diamond_Processing";
 			text="Diamond Processing";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
 		};
@@ -18127,7 +18127,7 @@ class Mission
 			name="boatshop_3";
 			text="@STRM_mission_marker_shop_boat";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
 		};
@@ -18235,7 +18235,7 @@ class Mission
 		};
 		class Item193
 		{
-			position[]={6146.4609,11.327632,1256.621};
+			position[]={6146.3652,11.013537,1252.7336};
 			name="Bank 6";
 			type="mil_box";
 			colorName="ColorGreen";
@@ -18245,7 +18245,7 @@ class Mission
 		};
 		class Item194
 		{
-			position[]={4383.4722,19.647619,6635.8608};
+			position[]={4379.0068,19.647619,6637.1084};
 			name="shop6";
 			type="mil_box";
 			colorName="ColorBlue";
@@ -18331,7 +18331,7 @@ class Mission
 			name="stationmarker1";
 			text="Station 1";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorYellow";
 		};
 		class Item203
 		{
@@ -18356,7 +18356,7 @@ class Mission
 			name="stationmarker4";
 			text="Station 4";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorYellow";
 			angle=-11.158;
 		};
 		class Item206
@@ -18470,10 +18470,10 @@ class Mission
 			name="markler";
 			text="House Shop";
 			type="mil_box";
-			colorName="ColorOrange";
+			colorName="ColorBlue";
 			a=0.69999999;
 			b=0.69999999;
-			angle=-166.92863;
+			angle=-166.929;
 		};
 		class Item217
 		{
