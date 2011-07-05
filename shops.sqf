@@ -34,7 +34,7 @@ INV_itemstocks =
 //ps
 [2,2,2,2,2,2,2],
 //ts
-[3,3,3,3,3,1,2,2,2,3],
+[3,3,3,3,3,1],
 //as
 [5,2,10],
 //bs1
@@ -145,7 +145,7 @@ INV_itemmaxstocks =
 //ps
 [5,5,5,5,5,5,5],
 //ts
-[5,5,5,5,5,5,5,5,5,5],
+[5,5,5,5,5,5],
 //as
 [5,2,10],
 //bs1
@@ -232,7 +232,7 @@ _cu = ["nitro", "supgrade1", "supgrade2", "supgrade3", "supgrade4", "supgrade5"]
 _cs = ["MMT_Civ","TT650_Civ","TT650_Ins","Tractor","Skoda","SkodaBlue","SkodaRed","SkodaGreen","Lada_base","Lada1","Lada2","Car_hatchback","Car_Sedan","VWGolf"]; 
 _ps = ["datsun1_civil_1_open", "datsun1_civil_2_covered", "hilux1_civil_1_open", "hilux1_civil_2_covered", "UAZ_RU","LandRover_CZ_EP1","LandRover_TK_CIV_EP1"];
 _av = ["Pickup_PK_INS", "HMMWV"];
-_ts = ["Ikarus", "UralCivil", "UralCivil2", "V3S_Civ", "KamazOpen","MTVR","V3S_Open_TK_CIV_EP1","Ural_UN_EP1","Ural_TK_CIV_EP1","Ikarus_TK_CIV_EP1"];
+_ts = ["Ikarus", "UralCivil", "UralCivil2", "V3S_Civ", "KamazOpen","MTVR"];
 _as = ["Mi17_Civilian","Mi17_medevac_CDF","MV22"];
 _bs1 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
 _bs2 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
