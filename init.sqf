@@ -3,7 +3,7 @@ WEST setFriend [EAST, 1];
 EAST setFriend [WEST, 1];
 version        	= "1.01";
 compatible     	= 102;
-internDebug    	= false;
+internDebug    	= true;
 debug          	= false;
 addonversion   	= false;
 dedicatedServer = false;
@@ -62,10 +62,6 @@ _h = [] execVM "animList.sqf";
 waitUntil{scriptDone  _h};
 
 _h = []	execVM "miscfunctions.sqf";
-
-waitUntil{scriptDone  _h};
-
-_h = [] execVM "DUInitCarRadio.sqf";
 
 waitUntil{scriptDone  _h};
 
@@ -165,4 +161,8 @@ while {true} do {
 } foreach (nearestobjects [getpos player, [], 20000]);
 }; };
 };
+
+_h = [] execVM "DUInitCarRadio.sqf";
+
+waitUntil{scriptDone  _h};
 
