@@ -65,6 +65,10 @@ _h = []	execVM "miscfunctions.sqf";
 
 waitUntil{scriptDone  _h};
 
+_h = [] execVM "DUInitCarRadio.sqf";
+
+waitUntil{scriptDone  _h};
+
 _h = [] execVM "variables.sqf";
 
 waitUntil{scriptDone  _h};
@@ -162,24 +166,3 @@ while {true} do {
 }; };
 };
 
-if (isClass(configFile >> "CfgPatches" >> "DUmusicFull")) then
-{
-_h = [] execVM "CLAY_CarRadio\initCarRadio.sqf";
-
-waitUntil{scriptDone  _h};
-}
-else
-{
-     hint "Full Car Radio NOT available";
-};
-
-if (isClass(configFile >> "CfgPatches" >> "DUmusicLite")) then
-{
-_h = [] execVM "CLAY_CarRadio\initCarRadio.sqf";
-
-waitUntil{scriptDone  _h};
-}
-else
-{
-     hint "Lite Car Radio NOT available";
-};   
