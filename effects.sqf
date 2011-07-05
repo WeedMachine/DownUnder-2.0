@@ -46,11 +46,11 @@ while{true}do
 	_light setLightAmbient    _farbe;
 	_light setLightColor      _farbe;
 
-	waituntil{!alive power1 and !alive power2};
+	waituntil{!alive powerplant1 and !alive powerplant2};
 
 	deletevehicle _light;
 
-	waituntil{alive power1 and alive power2};
+	waituntil{alive powerplant1 and alive powerplant2};
 
 	};
 

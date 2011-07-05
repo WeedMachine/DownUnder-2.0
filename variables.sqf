@@ -431,6 +431,6 @@ publicVariable 'GesetzArray';
 publicVariable 'INV_ItemTypenArray';
 publicvariable 'INV_itemstocks';
 currentTime = daytime; publicvariable 'currentTime';
-format['if(%1)then{power1 setdamage 0};if(%2)then{power2 setdamage 0};', alive power1, alive power2] call broadcast;
+format['if(%1)then{powerplant1 setdamage 0.92};if(%2)then{powerplant2 setdamage 0.92};', alive powerplant1, alive powerplant2] call broadcast;
 ";
 };

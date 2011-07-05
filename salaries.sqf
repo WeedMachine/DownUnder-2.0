@@ -8,7 +8,7 @@ sleep 60;
 player groupChat format[localize "STRS_geld_countdown", "1"];
 sleep 60;
 
-if(!alive power1 and !alive power2) then {kraftwerk = 2}else{kraftwerk = 1};
+if(!alive powerplant1 and !alive powerplant1) then {kraftwerk = 2}else{kraftwerk = 1};
 _income = add_copmoney;
 
 if ("patrol_training" call INV_HasLicense) then 
@@ -68,7 +68,7 @@ player groupChat format[localize "STRS_geld_countdown", "2"];
 sleep 60;
 player groupChat format[localize "STRS_geld_countdown", "1"];
 sleep 60;
-if(!alive power1 and !alive power2) then {kraftwerk = 2}else{kraftwerk = 1};	       
+if(!alive powerplant1 and !alive powerplant2) then {kraftwerk = 2}else{kraftwerk = 1};	       
 if ((alive player) and (deadcam == 0)) then 
 
 	{
