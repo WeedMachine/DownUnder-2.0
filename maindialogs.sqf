@@ -280,6 +280,8 @@ if(iscop)then{
 	_stock = _stock + (["blowfish", (shop2 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["blowfish", (shop3 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["blowfish", (shop4 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["blowfish", (shop5 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["blowfish", (shop6 call INV_getshopnum)] call INV_getstock);
 
 	lbAdd [1, format["Blowfish: %1", 800 - _stock]];
 
@@ -287,6 +289,8 @@ if(iscop)then{
 	_stock = _stock + (["Mackerel", (shop2 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Mackerel", (shop3 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Mackerel", (shop4 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Mackerel", (shop5 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Mackerel", (shop6 call INV_getshopnum)] call INV_getstock);
 
 	lbAdd [1, format["Mackerel: %1", 400 - _stock]];
 
@@ -294,6 +298,8 @@ if(iscop)then{
 	_stock = _stock + (["Herring", (shop2 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Herring", (shop3 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Herring", (shop4 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Herring", (shop5 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Herring", (shop6 call INV_getshopnum)] call INV_getstock);
 
 	lbAdd [1, format["Herring: %1", 400 - _stock]];
 
@@ -301,8 +307,28 @@ if(iscop)then{
 	_stock = _stock + (["Bass", (shop2 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Bass", (shop3 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Bass", (shop4 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Bass", (shop5 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Bass", (shop6 call INV_getshopnum)] call INV_getstock);
 
 	lbAdd [1, format["Deep Sea Bass: %1", 200 - _stock]];
+	
+	_stock = ["trout", (shop1 call INV_getshopnum)] call INV_getstock;
+	_stock = _stock + (["trout", (shop2 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["trout", (shop3 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["trout", (shop4 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["trout", (shop5 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["trout", (shop6 call INV_getshopnum)] call INV_getstock);
+	
+	lbAdd [1, format["Trout: %1", 200 - _stock]];
+	
+	_stock = ["barramundi", (shop1 call INV_getshopnum)] call INV_getstock;
+	_stock = _stock + (["barramundi", (shop2 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["barramundi", (shop3 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["barramundi", (shop4 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["barramundi", (shop5 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["barramundi", (shop6 call INV_getshopnum)] call INV_getstock);
+	
+	lbAdd [1, format["Barramundi: %1", 200 - _stock]];
 	
 	lbAdd [1, _trennlinie];
 
@@ -312,6 +338,8 @@ if(iscop)then{
 	_stock = _stock + (["Bread", (shop2 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Bread", (shop3 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Bread", (shop4 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Bread", (shop5 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Bread", (shop6 call INV_getshopnum)] call INV_getstock);
 	
 	lbAdd [1, format["Wheat: %1", 100 - (_stock/400)*100]];
 
@@ -329,6 +357,8 @@ if(iscop)then{
 	_stock = _stock + (["Apfel", (shop2 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Apfel", (shop3 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Apfel", (shop4 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Apfel", (shop5 call INV_getshopnum)] call INV_getstock);
+	_stock = _stock + (["Apfel", (shop6 call INV_getshopnum)] call INV_getstock);
 	
 	lbAdd [1, format["Apple Demand: %1", 100 - (_stock/400)*100]];
 		

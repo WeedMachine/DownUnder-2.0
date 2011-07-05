@@ -346,9 +346,9 @@ INV_AlleItemsArray = [
 
 ["Bread",["Item", "food"],["Bread", "Bread"],[500, 500], [0.1, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [["getreide", 1]] ],
 
-["trout",["Item", "food"],["trout", "trout"],[1000, 900], [0.2, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_fisch",localize "STRS_inv_item_nahrung_info", [] ], 
+["trout",["Item", "food"],["trout", "trout"],[500, 500], [0.5, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_fisch",localize "STRS_inv_item_nahrung_info", [] ], 
 
-["barramundi",["Item", "food"],["barramundi", "barramundi"],[1250, 300], [0.3, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_fisch",localize "STRS_inv_item_nahrung_info", [] ],
+["barramundi",["Item", "food"],["barramundi", "barramundi"],[1000, 1000], [0.5, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_fisch",localize "STRS_inv_item_nahrung_info", [] ],
 
 ["Donut",["Item", "food"],["Donut", "Donut"],[300, 150], [0.1, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [] ],
 
