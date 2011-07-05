@@ -11,18 +11,18 @@ INV_itemstocks =
 [25,10,10],
 [25,10,10],
 //is
-[0,0,0,0,0,0,0,0,0,5,5],
-[0,0,0,0,0,0,0,0,0,5,5],
-[0,0,0,0,0,0,0,0,0,5,5],
-[0,0,0,0,0,0,0,0,0,5,5],
-[0,0,0,0,0,0,0,0,0,5,5],
-[0,0,0,0,0,0,0,0,0,5,5],
+[1,1,1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1,1,1],
 //pub
 [3,1,1,3,1,3,3],
 //gs
 [40,-1,40,-1,40,-1,40,-1,40,-1],
 //es
-[20,20,20,20],
+[20,20,20,5,5,30],
 //cu
 [5,5,4,3,3,3],
 [5,5,4,3,3,3],
@@ -122,18 +122,18 @@ INV_itemmaxstocks =
 [50,20,20],
 [50,20,20],
 //Item Shop is
-[100,150,350,200,200,80,200,200,200,10,10],
-[100,150,350,200,200,80,200,200,200,10,10],
-[100,150,350,200,200,80,200,200,200,10,10],
-[100,150,350,200,200,80,200,200,200,10,10],
-[100,150,350,200,200,80,200,200,200,10,10],
-[100,150,350,200,200,80,200,200,200,10,10],
+[100,150,350,200,200,80,200,200,200,100],
+[100,150,350,200,200,80,200,200,200,100],
+[100,150,350,200,200,80,200,200,200,100],
+[100,150,350,200,200,80,200,200,200,100],
+[100,150,350,200,200,80,200,200,200,100],
+[100,150,350,200,200,80,200,200,200,100],
 //Beer Shop pub
 [15,5,5,15,5,15,15],
 //gs
 [40,-1,40,-1,40,-1,40,-1,40,-1],
 //es
-[35,35,35,35],
+[35,35,35,35,35,100],
 //cu
 [10,10,8,6,4,3],
 [10,10,8,6,4,3],
@@ -224,10 +224,10 @@ INV_itemmaxstocks =
 
 _emptyshop = [];
 _fs = ["kanister", "kleinesreparaturkit", "reparaturkit"];
-_is = ["Apfel","Apfelkuchen","blowfish", "mackerel", "herring", "bass", "Bread", "rabbit", "boar", "medikit", "handy"];
+_is = ["Apfel","Apfelkuchen","blowfish", "mackerel", "herring", "bass", "Bread", "barramundi", "boar", "trout"];
 _pub = ["beer","beer2","vodka","smirnoff","wiskey","wine","wine2"];
 _gs = ["Makarov", "8Rnd_9x18_Makarov", "M9", "Rnd_9x19_M9", "Colt1911", "Rnd_45ACP_1911", "Saiga12K", "Rnd_B_Saiga12_74Slug", "MP5A5","30Rnd_9x19_MP5"];
-_es = ["Binocular", "NVGoggles", "GPS", "fishingpole"];
+_es = ["Binocular", "NVGoggles", "GPS", "fishingpole", "medikit", "lockpick"];
 _cu = ["nitro", "supgrade1", "supgrade2", "supgrade3", "supgrade4", "supgrade5"];
 _cs = ["MMT_Civ","TT650_Civ","TT650_Ins","Tractor","Skoda","SkodaBlue","SkodaRed","SkodaGreen","Lada_base","Lada1","Lada2","Car_hatchback","Car_Sedan","VWGolf"]; 
 _ps = ["datsun1_civil_1_open", "datsun1_civil_2_covered", "hilux1_civil_1_open", "hilux1_civil_2_covered", "UAZ_RU","LandRover_CZ_EP1","LandRover_TK_CIV_EP1"];

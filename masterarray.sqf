@@ -290,6 +290,8 @@ INV_AlleItemsArray = [
 
 ["lighter",["Item", "service"],["lighter", "lighter"],[1000, 500], [0.5, "", ""],[true,true,true, false, "ignitefuel.sqf"],localize "STRS_inv_item_lighter", localize "STRS_inv_item_lighter_info",[["erdoel", 2]] ],
 
+["lockpick", ["Item", "carobjects"],["Dietrich", "Lockpick"], [270, 200], [0.5, "", ""],[true,true,true, false, "lockpick.sqf"],localize "STRS_item_lockpick",localize "STRS_item_lockpick_info", [["stahl", 1]] ],
+
 ["kleinesreparaturkit", ["Item", "service"],["kleinesreparaturkit", "Repair Kit"],[3000, 1500], [3, "", ""],[true,true,true, false, "repair.sqf"],localize "STRS_inv_item_repairkit",localize "STRS_inv_item_repairkit_info",[["plastik", 1]] ],
 
 ["kanister", ["Item", "service"],["kanister", "Refuel Can"], [1000, 500], [5, "", "patrol_training"],[true,true,true, false, "refuelveh.sqf"], localize "STRS_inv_item_kanister", localize "STRS_inv_item_kanister_info",[["plastik", 1],["erdoel", 1]] ],
