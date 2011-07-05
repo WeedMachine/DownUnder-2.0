@@ -71,6 +71,8 @@ class Mission
 	randomSeed=10839805;
 	class Intel
 	{
+		briefingName="@STRM_mission_name";
+		briefingDescription="@STRM_mission_description";
 		startWeather=0.10000002;
 		forecastWeather=0.10000002;
 		year=2011;

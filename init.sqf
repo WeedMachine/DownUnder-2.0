@@ -3,7 +3,7 @@ WEST setFriend [EAST, 1];
 EAST setFriend [WEST, 1];
 version        	= "1.01";
 compatible     	= 102;
-internDebug    	= true;
+internDebug    	= false;
 debug          	= false;
 addonversion   	= false;
 dedicatedServer = false;
