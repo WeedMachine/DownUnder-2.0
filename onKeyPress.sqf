@@ -36,7 +36,7 @@ switch _key do
 
 	{
 	
-	if(INV_shortcuts)then{INV_shortcuts=false; titletext["CLR keys off", "PLAIN DOWN"]}else{INV_shortcuts=true; titletext["CLR keys on", "PLAIN DOWN"]};
+	if(INV_shortcuts)then{INV_shortcuts=false; titletext["Down Under keys off", "PLAIN DOWN"]}else{INV_shortcuts=true; titletext["Down Under keys on", "PLAIN DOWN"]};
 	
 	};
 	
