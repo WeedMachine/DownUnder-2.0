@@ -13,6 +13,14 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
 
 _lamps = getmarkerpos "powercoverage" nearObjects [_types select _i, 4000];
+_lamps = getmarkerpos "powercoverage1" nearObjects [_types select _i, 4000];
+_lamps = getmarkerpos "powercoverage2" nearObjects [_types select _i, 4000];
+_lamps = getmarkerpos "powercoverage3" nearObjects [_types select _i, 4000];
+_lamps = getmarkerpos "powercoverage4" nearObjects [_types select _i, 4000];
+_lamps = getmarkerpos "powercoverage5" nearObjects [_types select _i, 4000];
+_lamps = getmarkerpos "powercoverage6" nearObjects [_types select _i, 4000];
+_lamps = getmarkerpos "powercoverage7" nearObjects [_types select _i, 4000];
+_lamps = getmarkerpos "powercoverage8" nearObjects [_types select _i, 4000];
 Sleep 1;
 {_x switchLight "OFF";} forEach _lamps;
 

@@ -71,12 +71,12 @@ class Mission
 	randomSeed=10839805;
 	class Intel
 	{
-		startWeather=0.1;
-		forecastWeather=0.1;
+		startWeather=0.10000002;
+		forecastWeather=0.10000002;
 		year=2011;
 		month=12;
 		day=6;
-		hour=9;
+		hour=23;
 		minute=0;
 	};
 	class Groups
@@ -16358,7 +16358,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=250;
+		items=258;
 		class Item0
 		{
 			position[]={4255.2178,14.897629,6873.8545};
@@ -18743,6 +18743,62 @@ class Mission
 			colorName="ColorWhite";
 			a=0.69999999;
 			b=0.69999999;
+		};
+		class Item250
+		{
+			position[]={3416.0222,17.21051,2585.7256};
+			name="powercoverage1";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item251
+		{
+			position[]={6150.7744,11.600787,1274.8594};
+			name="powercoverage2";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item252
+		{
+			position[]={5165.1113,8.2755346,4456.5381};
+			name="powercoverage3";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item253
+		{
+			position[]={5171.2124,14.462824,3482.9536};
+			name="powercoverage4";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item254
+		{
+			position[]={1133.7756,19.618073,7837.4312};
+			name="powercoverage5";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item255
+		{
+			position[]={4561.459,14.955147,8196.877};
+			name="powercoverage6";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item256
+		{
+			position[]={8245.8271,14.921844,5625.0342};
+			name="powercoverage7";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item257
+		{
+			position[]={5087.2461,13.337336,5168.5234};
+			name="powercoverage8";
+			type="Empty";
+			colorName="ColorYellow";
 		};
 	};
 	class Sensors

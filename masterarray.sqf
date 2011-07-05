@@ -142,7 +142,7 @@ INV_AlleMagazinObjekte = [
 
 ["HandGrenade_East", ["Magazin", "explosive"], ["HandGrenade_East", "RGO-1 Hand Grenade"], [500, 250],[4, ""],[], "HandGrenade" call ISSE_Cfg_MagazineInfo,"HandGrenade" call ISSE_Cfg_MagazineInfo,[["kupfer", 1],["schwarzpulver", 1]] ],
 
-["PipeBomb",["Magazin", "explosive"],["PipeBomb", "Plastid"],[50000, 25000], [4, "terror", "sobr_training"], [], "PipeBomb" call ISSE_Cfg_MagazineInfo, "PipeBomb" call ISSE_Cfg_MagazineInfo, [["kupfer", 20],["schwarzpulver", 22],["ebauteile", 3]] ],
+["PipeBomb",["Magazin", "explosive"],["PipeBomb", "PipeBomb"],[50000, 25000], [4, "terror", "sobr_training"], [], "PipeBomb" call ISSE_Cfg_MagazineInfo, "PipeBomb" call ISSE_Cfg_MagazineInfo, [["kupfer", 20],["schwarzpulver", 22],["ebauteile", 3]] ],
 
 ["FlareWhite_GP25",["Magazin", "equipment"], ["FlareWhite_GP25", "White GP25 Flare"], [250, 500],[0, ""],[], "FlareWhite_GP25" call ISSE_Cfg_MagazineInfo, "FlareWhite_GP25" call ISSE_Cfg_MagazineInfo, [["kupfer", 1],["schwarzpulver", 1]] ],
 
