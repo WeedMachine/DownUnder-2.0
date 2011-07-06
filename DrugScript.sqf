@@ -63,6 +63,10 @@ if (harvestscript == 1) exitwith {player groupchat "you are already harvesting"}
 	case "Heroin": {_plantType = "as_t_PrunusS2s_EP1";};
 	case "Cocaine": {_plantType = "as_t_JuniperusC2s_EP1";};
 	};
+	switch _type3 do
+	{
+	case "Apfel": {_plantType = "MAP_t_salix2s";};
+	};
 	
 	_type2 = "Unprocessed_" + _type ;
 
@@ -76,6 +80,7 @@ if (harvestscript == 1) exitwith {player groupchat "you are already harvesting"}
 	    deletevehicle _plant;
 	   [_type + "Seed", _seedyield] call INV_AddInventoryItem;
        [_type2, _plantyield] call INV_AddInventoryItem;
+	   [_type3, _plantyield] call INV_AddInventoryItem;
 	    	
 		player groupchat format["You Harvested %1 Plants", _type];
 sleep 2;

@@ -342,16 +342,6 @@ if(iscop)then{
 	_stock = _stock + (["Bread", (shop6 call INV_getshopnum)] call INV_getstock);
 	
 	lbAdd [1, format["Wheat: %1", 100 - (_stock/400)*100]];
-
-	lbAdd [1, _trennlinie];
-
-	lbAdd [1, "D E M A N D (Oil):"];
-	_demand = (((tankencost - 100)/200)*100);	
-	lbAdd [1, format["Oil Barrel Trader: %1", _demand ]];
-
-	lbAdd [1, _trennlinie];
-	
-	lbAdd [1, "D E M A N D (Apples):"];
 	
 	_stock = ["Apfel", (shop1 call INV_getshopnum)] call INV_getstock;
 	_stock = _stock + (["Apfel", (shop2 call INV_getshopnum)] call INV_getstock);
@@ -360,8 +350,14 @@ if(iscop)then{
 	_stock = _stock + (["Apfel", (shop5 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Apfel", (shop6 call INV_getshopnum)] call INV_getstock);
 	
-	lbAdd [1, format["Apple Demand: %1", 100 - (_stock/400)*100]];
-		
+	lbAdd [1, format["Apples: %1", 100 - (_stock/400)*100]];
+
+	lbAdd [1, _trennlinie];
+
+	lbAdd [1, "D E M A N D (Oil):"];
+	_demand = (((tankencost - 100)/200)*100);	
+	lbAdd [1, format["Oil Barrel Trader: %1", _demand ]];
+
 	lbAdd [1, _trennlinie];
 			
 };

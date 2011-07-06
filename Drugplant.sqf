@@ -76,6 +76,27 @@ if (_art == "Use") then
 			sleep 800;
 			if (alive _plant) then { deletevehicle _plant; };
 			};
+			
+		if (_Item == "ApfelSeed") then 
+			{	
+			[_item, -1] call INV_AddInventoryItem;
+			player groupchat "You Planted Some Apple Seeds";
+			_plant = "MAP_t_salix2s" createvehicle (getpos player);
+			_plant setVehicleInit "this addaction [""Burn Apples"", ""AppleScript.sqf"", [""Burn"", ""Apfel""]]";
+			_plant setPos [getPos _plant select 0, getPos _plant select 1, -3];
+			processInitCommands;
+			sleep 1;
+			plantingscript = 0;
+			sleep 10;
+			player groupChat "Apple Tree Nearly will be ready in 120 seconds"; 
+			sleep 10;		
+			_plant setVehicleInit "this addaction [""Harvest Apples"", ""AppleScript.sqf"", [""Harvest"", ""Apfel""]]";
+			processinitcommands;
+			//_plant setPos [getPos _plant select 0, getPos _plant select 1, 0];
+			player groupchat "Apple Tree Ready";
+			sleep 800;
+			if (alive _plant) then { deletevehicle _plant; };
+			};	
 	}
 	else
 	{

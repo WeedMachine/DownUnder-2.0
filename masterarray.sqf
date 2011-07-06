@@ -280,6 +280,19 @@ INV_AlleFahrzeugeArray = [
 
 
 // Item Arrays
+/* The following is an attempt to explain the fields used in the Item definition...
+ [
+  "object",
+  ["Item Category", "Item Type"],
+  ["Item name", "Item display name"],
+  [Buy Price, Sell Price],
+  [Weight?, Licence required?],
+  [Dropable?, Giveable?, Something, IsIllegal, "Script to run on 'use'"]
+  String name for item, String description for item, 
+  [ something or nothing ]
+ ]
+*/
+
 INV_AlleItemsArray = [
 
 ["geld",["Item", "geld"], ["Money", "Money"], [1, 1],[0, ""],[true,true,true, false, ""],localize "STRS_item_geld", localize "STRS_item_geld_info",[]],
@@ -418,9 +431,11 @@ INV_AlleItemsArray = [
 
 ["lsd", ["Item", "drug"], ["lsd", "LSD"],[6000, 15000], [0.1, ""],[true,true,true, true, "drugs.sqf"], localize "STRS_inv_item_lsd",localize "STRS_inv_item_drogen_info", [["Unprocessed_LSD", 15]]],
 
-["HeroinSeed",["Item", "drug"],["Heroin Seed", "Poppy Seed"],[10000, 2000], [1, ""], [true, true, true,true,"drugplant.sqf"],"heroin seed","Used to Grow Poppy Plants", [["heroinseed", 1]]],
+["HeroinSeed",["Item", "drug"],["Heroin Seed", "Poppy Seed"],[10000, 2000], [1, ""], [true, true, true,true,"drugplant.sqf"],localize "STRS_inv_item_heroinseed",localize "STRS_inv_item_heroinseed_info", [["heroinseed", 1]]],
 
-["CocaineSeed",["Item", "drug"],["Cocaine Seed", "Coca Seed"],[7500, 1500], [1, ""], [true, true, true,true,"drugplant.sqf"],"Cocaine Seed","Used to Grow Coca Plants", [["cocaineseed", 1]]],
+["CocaineSeed",["Item", "drug"],["Cocaine Seed", "Coca Seed"],[7500, 1500], [1, ""], [true, true, true,true,"drugplant.sqf"],localize "STRS_inv_item_cocaineseed",localize "STRS_inv_item_cocaineseed_info", [["cocaineseed", 1]]],
+
+["ApfelSeed",["Item", "food"],["ApfelSeed", "Apple Seed"],[3500, 1500], [1, ""], [true, true, true,false,"drugplant.sqf"],"STRS_ivn_item_appleseed","STRS_ivn_item_appleseed_info", [["ApfelSeed", 1]]],
 
 ["MarijuanaSeed",["Item", "drug"],["Marijuana Seed", "Marijuana Seed"],[5000, 1000], [0.5, ""], [true, true, true,true,"Drugplant.sqf"],localize "STRS_inv_item_mariseed",localize "STRS_inv_item_seed_info", [["Marijuana_Plant", 10]]],
 
@@ -448,9 +463,9 @@ INV_AlleItemsArray = [
 
 ["roadbarrierlight",["Item", "misc"],["RoadBarrier_light", "Road barrier (light)"],[1000, 500], [5, "", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_roadbarrierlight",localize "STRS_inv_item_roadbarrierlight_info", [] ],
 
-["Diamondring",["Item", "misc"],["Diamond Ring", "Diamond Ring"],[50000, 25000], [0.1, ""], [true, true, true, false,"nouse.sqf"],"Diamond Ring","Sell at the Jewelry store", [["Diamond rock", 6]]],
+["Diamondring",["Item", "misc"],["Diamond Ring", "Diamond Ring"],[50000, 25000], [0.1, ""], [true, true, true, false,"nouse.sqf"],localize "STRS_item_diamondring",localize "STRS_item_diamondring_info", [["Diamond rock", 6]]],
 
-["EDiamondring",["Item", "misc"],["Expensive Diamond Ring", "Expensive Diamond Ring"],[75000, 35000], [0.5, ""], [true, true, true, false,"nouse.sqf"],"Expensive Diamond Ring","Sell at the Jewelry store", [["Diamond rock", 5],["Gold", 5]]],
+["EDiamondring",["Item", "misc"],["Expensive Diamond Ring", "Expensive Diamond Ring"],[75000, 35000], [0.5, ""], [true, true, true, false,"nouse.sqf"],localize "STRS_item_expensive_diamondring",localize "STRS_item_expensive_diamondring_info", [["Diamond rock", 5],["Gold", 5]]],
 
 ["vclammo",["Item", "carobjects"],["vclammo", "Vehicle Ammo"],[50000, 25000], [50, "", "sobr_training"], [true, true, true,!(iscop),"vclammo.sqf"],localize "STRS_inv_item_vclammo",localize "STRS_inv_item_vclammo_info", [["kupfer", 5],["schwarzpulver", 5]] ],
 
@@ -460,15 +475,15 @@ INV_AlleItemsArray = [
 
 ["lockpick", ["Item", "carobjects"],["lockpick", "Lockpick"], [1000, 500], [0.5, "", "patrol_training"],[true,true,true, false, "lockpick.sqf"],localize "STRS_item_lockpick",localize "STRS_item_lockpick_info", [["stahl", 1]] ],
 
-["fishingpole", ["Item", "Shop"], ["fishingpole", "Fishing Pole"],[4000, 3750], [5, "", ""],[true,true,true,false, "fishing.sqf"], "Fishing Pole", "Use it in a fishing area.",[["steel", 1], ["plastic", 1],["ebauteile", 1]] ],
+["fishingpole", ["Item", "Shop"], ["fishingpole", "Fishing Pole"],[4000, 3750], [5, "", ""],[true,true,true,false, "fishing.sqf"],localize "STRS_item_fishingpole",localize "STRS_item_fishingpole_info",[["steel", 1], ["plastic", 1],["ebauteile", 1]] ],
 
-["gasmask", ["Item", "misc"], ["gasmask", "Gas mask"],[5000, 2500], [2, "", "response_training"],[true,true,true, false, "nouse.sqf"], localize "STRS_item_gasmask", localize "STRS_item_gasmask_info",[["plastik", 3]] ],
+["gasmask", ["Item", "misc"], ["gasmask", "Gas mask"],[5000, 2500], [2, "", "response_training"],[true,true,true, false, "nouse.sqf"],localize "STRS_item_gasmask", localize "STRS_item_gasmask_info",[["plastik", 3]] ],
 
-["Shovel", ["Item", "misc"], ["Shovel", "Shovel"],[500, 250], [5, "", "Notforcops"],[true,true,true, false, "mine.sqf"], "Shovel", "Use it in a mining area. Durability: 20 Mining speed: slow",[["holz", 2]] ],
+["Shovel", ["Item", "misc"], ["Shovel", "Shovel"],[500, 250], [5, "", "Notforcops"],[true,true,true, false, "mine.sqf"],localize "STRS_item_shovel",localize "STRS_item_shovel_info",[["holz", 2]] ],
 
-["Pickaxe", ["Item", "misc"], ["Pickaxe", "Pickaxe"],[1000, 500], [5, "", "Notforcops"],[true,true,true, false, "mine.sqf"], "Pickaxe", "Use it in a mining area. Durability: 50 Mining speed: average",[ ["holz", 2]] ],
+["Pickaxe", ["Item", "misc"], ["Pickaxe", "Pickaxe"],[1000, 500], [5, "", "Notforcops"],[true,true,true, false, "mine.sqf"],localize "STRS_item_pickaxe",localize "STRS_item_pickaxe_info",[ ["holz", 2]] ],
 
-["JackHammer", ["Item", "misc"], ["JackHammer", "Jack Hammer"],[5000, 2500], [20, "engineer", "Notforcops"],[true,true,true, false, "mine.sqf"], "Jack Hammer", "Use it in a mining area. Durability: 100 Mining speed: fast",[["stahl", 1], ["plastik", 1],["ebauteile", 1]] ],
+["JackHammer", ["Item", "misc"], ["JackHammer", "Jack Hammer"],[5000, 2500], [20, "engineer", "Notforcops"],[true,true,true, false, "mine.sqf"],localize "STRS_item_jackhammer",localize "STRS_item_jackhammer_info",[["stahl", 1], ["plastik", 1],["ebauteile", 1]] ],
 
 //["city_spikestrip", ["Item", "misc"], ["city_spikestrip", "Spikestrip"],[10000, 3750], [0, "", ""],[true,true,true, false, "spikestrip.sqf"], "city_spikestrip", localize "STRS_inv_item_roadblock_info",[["stahl", 1],["plastik", 1]] ],
 

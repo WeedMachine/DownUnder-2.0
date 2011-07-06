@@ -264,7 +264,7 @@ _ec = ["ebauteile"];
 _hs = ["house","house2","hideout","campeast","fireplace","Barricade","Tor","Jaegerstand","Blechzaun","Camonet","bunkersmall"];
 _kv = ["Kaviar"];
 _ig = ["OilBarrel","steel","ebauteile"];
-_seedshop = ["MarijuanaSeed","CocaineSeed","HeroinSeed"];
+_seedshop = ["MarijuanaSeed","CocaineSeed","HeroinSeed","ApfelSeed"];
 
 _copshop = 
 
