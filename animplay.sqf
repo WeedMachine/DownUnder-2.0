@@ -17,6 +17,8 @@ if (_callScript != "") exitWith {[_animnumber, _animScriptName] execVM _callScri
 */
 if (_animart == "anim") then 
 {					
+	if(isstunned)exitwith{};
+    if(vehicle player != player) exitWith {hint "You must be on foot"};
 	if (vehicle player == player) then 
 	{
 		(format ["%1 switchmove ""%2"";", player, _animname]) call broadcast;

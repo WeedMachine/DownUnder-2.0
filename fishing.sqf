@@ -11,6 +11,8 @@ if (_art == "use") then
 {
 
 if(working)exitwith{};
+if(isstunned)exitwith{};
+if(vehicle player != player) exitWith {hint "You must be on foot"};
 
 _item   = _this select 1;
 _anzahl = _this select 2;
