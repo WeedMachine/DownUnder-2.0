@@ -5,7 +5,8 @@ _stunbullets = [ "B_12Gauge_74Slug", "B_12Gauge_74Slug", "F_40mm_White", 1, "B_9
 if (_art == "fired") then 
 
 {
-			
+
+
 _ammo   = _this select 1;
 _wep	= _this select 2;  
 _bullet = nearestObject  [getpos player, _ammo];
@@ -109,6 +110,19 @@ _bullet setVelocity [(_vel select 0)/_teiler, (_vel select 1)/_teiler, (_vel sel
 if (_art == "hit") then 
 
 {
+_vcls = nearestobjects [getpos player, ["LandVehicle", "Air", "ship"], 7]; //Locks Car when stuuend to prevnt civs from getting in and driving off, D$
+_vcl = _vcls select 0;
+	if (player distance _vcl < 10) then 
+{
+	if (not(locked _vcl)) then 
+ {
+		format ["%1 lock true;
+		", _vcl] call broadcast;
+ };
+ 
+};
+
+
 
 _shooter   = _this select 1;
 _selection = _this select 2;
@@ -121,6 +135,8 @@ if(_selection == "Hands")exitwith{if(handshit player == 1)exitwith{};player setH
 if(isstunned) exitwith
 
 	{
+	
+	
 
 	StunActiveTime = StunActiveTime + StunTimePerHit;
 	(format["server globalchat ""%1 was stunned by %2"";", name player, name _shooter]) call broadcast;																																																								
