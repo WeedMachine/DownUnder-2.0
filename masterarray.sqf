@@ -488,15 +488,15 @@ INV_AlleItemsArray = [
 
 ["fortenvelopesmall",["Item", "misc"],["Fort_EnvelopeSmall", "Trench"],[3000, 1500], [10, "", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_fortenvelopesmall",localize "STRS_inv_item_Land_fortenvelopesmall", [] ],
 
-["supgrade1",["Item", "carobjects"],["nitro", "supgrade1"], [10000, 5000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 1",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade1",["Item", "carobjects"],["nitro", "Speed Upgrade 1"], [10000, 5000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 1",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade2",["Item", "carobjects"],["nitro", "supgrade2"], [15000, 7500], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 2",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade2",["Item", "carobjects"],["nitro", "Speed Upgrade 2"], [15000, 7500], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 2",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade3",["Item", "carobjects"],["nitro", "supgrade3"], [25000, 12500], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 3",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade3",["Item", "carobjects"],["nitro", "Speed Upgrade 3"], [25000, 12500], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 3",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade4",["Item", "carobjects"],["nitro", "supgrade4"], [30000, 15000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 4",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade4",["Item", "carobjects"],["nitro", "Speed Upgrade 4"], [30000, 15000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 4",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade5",["Item", "carobjects"],["nitro", "supgrade5"], [50000, 25000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 5",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade5",["Item", "carobjects"],["nitro", "Speed Upgrade 5"], [50000, 25000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 5",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
 ["House",["Item", "misc"],["House", "House"],[800000, 400000], [60, ""], [false, true, false,false,"house.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
 

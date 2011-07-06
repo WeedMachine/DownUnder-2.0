@@ -6,6 +6,8 @@ if (!(createDialog "animationsdialog")) exitWith
 	hint "Dialog Error!";
 };
 if(player distance CopPrison < 45) exitWith {};
+if(isstunned)exitwith{};
+if(vehicle player != player) exitWith {hint "You must be on foot"};
 {
 	_index = lbAdd [1, (_x select 3)];	
 	lbSetData [1, _index, (_x select 1)];

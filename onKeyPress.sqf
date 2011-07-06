@@ -25,8 +25,6 @@ switch _key do
 	if(dialog)exitwith{closeDialog 0;};		
 	if(!INV_shortcuts)exitwith{};
 	_handled=true;
-	sleep 1;
-	if(isstunned)exitwith{};
 	[] execVM "animdlgopen.sqf";
 		
 	};

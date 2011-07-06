@@ -1,4 +1,5 @@
 _art         = _this select 0;
+closeDialog 0;
 _stunbullets = [ "B_12Gauge_74Slug", "B_12Gauge_74Slug", "F_40mm_White", 1, "B_9x18_SD", "8Rnd_9x18_MakarovSD", "1Rnd_SMOKEGREEN_GP25", "FlareWhite_GP25"]; 
 
 if (_art == "fired") then 
