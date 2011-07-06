@@ -78,7 +78,7 @@ class Mission
 		year=2011;
 		month=12;
 		day=6;
-		hour=23;
+		hour=5;
 		minute=0;
 	};
 	class Groups
