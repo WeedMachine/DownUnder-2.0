@@ -519,7 +519,7 @@ INV_AlleItemsArray = [
 
 ["signtape",["Item", "misc"],["Sign_tape_redwhite", "Warning Tape"],[500, 250], [1, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_roadbarrierlong",localize "STRS_inv_item_Land_roadbarrierlong", [] ],
 
-["Apfel",["Item", "ressource"],["Apple", "Apple"],[250, 250], [0.1, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [] ],
+["Apfel",["Item", "ressource"],["Apple", "Apples"],[250, 250], [0.1, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [] ],
 
 ["Apfelkuchen",["Item", "food"],["Apple Pie", "Apple Pie"],[2000, 2000], [0.25, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [["getreide", 3],["Apfel", 2]] ],
 

@@ -4588,7 +4588,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4821.0693,14.897629,6419.9927};
+					position[]={4173.3755,17.585272,6623.8745};
 					azimut=451.5105;
 					id=549;
 					side="LOGIC";
@@ -18903,7 +18903,7 @@ class Mission
 		};
 		class Item195
 		{
-			position[]={8038.3315,15.693289,3178.146};
+			position[]={8069.793,15.060904,3187.2937};
 			name="CopperArea";
 			text="Copper";
 			type="mil_circle";
@@ -18913,7 +18913,7 @@ class Mission
 		};
 		class Item196
 		{
-			position[]={8037.4839,15.688776,3178.3628};
+			position[]={8068.9453,15.053152,3187.5105};
 			name="coppermarker";
 			text="copper";
 			markerType="ELLIPSE";
@@ -18945,7 +18945,7 @@ class Mission
 		};
 		class Item199
 		{
-			position[]={4822.4663,14.897629,6420.5903};
+			position[]={4174.772,17.573856,6624.4722};
 			name="Neubaugebiet";
 			text="Player Neighbourhood";
 			type="mil_dot";
