@@ -75,7 +75,7 @@ class Mission
 	randomSeed=10839805;
 	class Intel
 	{
-		briefingName="@STRM_mission_name";
+		briefingName="Down Under Mod 2.0";
 		briefingDescription="@STRM_mission_description";
 		startWeather=0.10000002;
 		forecastWeather=0.10000002;
@@ -5018,7 +5018,7 @@ class Mission
 		};
 		class Item219
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5027,20 +5027,20 @@ class Mission
 					position[]={4814.5762,53.421997,6435.8076};
 					azimut=871.73138;
 					id=1326;
-					side="CIV";
+					side="GUER";
 					vehicle="Rocker1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ12";
+					text="civ1";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Rocker Black)";
+					description="Civilian 1 (Rocker Black)";
 				};
 			};
 		};
 		class Item220
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5049,20 +5049,20 @@ class Mission
 					position[]={4813.5791,54.75563,6435.249};
 					azimut=871.73138;
 					id=1325;
-					side="CIV";
+					side="GUER";
 					vehicle="Assistant";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ11";
+					text="civ2";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Assistant)";
+					description="Civilian 2 (Assistant)";
 				};
 			};
 		};
 		class Item221
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5071,20 +5071,20 @@ class Mission
 					position[]={4813.2476,54.755627,6435.0322};
 					azimut=871.73138;
 					id=1327;
-					side="CIV";
+					side="GUER";
 					vehicle="Profiteer4";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ13";
+					text="civ3";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Profiteer Red)";
+					description="Civilian 3 (Profiteer Red)";
 				};
 			};
 		};
 		class Item222
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5093,20 +5093,20 @@ class Mission
 					position[]={4812.4673,54.755493,6434.1675};
 					azimut=871.73138;
 					id=1334;
-					side="CIV";
+					side="GUER";
 					vehicle="Citizen3";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ20";
+					text="civ4";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Gray)";
+					description="Civilian 4 (Gray)";
 				};
 			};
 		};
 		class Item223
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5115,20 +5115,20 @@ class Mission
 					position[]={4813.1294,54.755478,6434.5171};
 					azimut=871.73138;
 					id=1333;
-					side="CIV";
+					side="GUER";
 					vehicle="Functionary1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ19";
+					text="civ5";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Black Suit)";
+					description="Civilian 5 (Black Suit)";
 				};
 			};
 		};
 		class Item224
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5137,20 +5137,20 @@ class Mission
 					position[]={4813.4673,54.75547,6434.7041};
 					azimut=871.73138;
 					id=1332;
-					side="CIV";
+					side="GUER";
 					vehicle="Assistant";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ18";
+					text="civ6";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Assistant)";
+					description="Civilian 6 (Assistant)";
 				};
 			};
 		};
 		class Item225
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5159,20 +5159,20 @@ class Mission
 					position[]={4815.2261,53.474365,6436.1777};
 					azimut=871.73138;
 					id=1331;
-					side="CIV";
+					side="GUER";
 					vehicle="Functionary2";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ17";
+					text="civ7";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Brown Suit)";
+					description="Civilian 7 (Brown Suit)";
 				};
 			};
 		};
 		class Item226
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5181,20 +5181,20 @@ class Mission
 					position[]={4814.1504,54.75544,6435.0366};
 					azimut=871.73138;
 					id=1330;
-					side="CIV";
+					side="GUER";
 					vehicle="Worker4";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ16";
+					text="civ8";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Worker Brown)";
+					description="Civilian 8 (Worker Brown)";
 				};
 			};
 		};
 		class Item227
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5203,20 +5203,20 @@ class Mission
 					position[]={4812.2505,54.755646,6434.479};
 					azimut=871.73138;
 					id=1329;
-					side="CIV";
+					side="GUER";
 					vehicle="Woodlander3";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ15";
+					text="civ9";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Woodlander Camo)";
+					description="Civilian 9 (Woodlander Camo)";
 				};
 			};
 		};
 		class Item228
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5225,20 +5225,20 @@ class Mission
 					position[]={4812.8135,54.755455,6434.2705};
 					azimut=871.73138;
 					id=1328;
-					side="CIV";
+					side="GUER";
 					vehicle="Villager4";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ14";
+					text="civ10";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Villager)";
+					description="Civilian 10 (Villager)";
 				};
 			};
 		};
 		class Item229
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5247,20 +5247,20 @@ class Mission
 					position[]={4813.8232,54.755463,6434.9019};
 					azimut=871.73138;
 					id=1324;
-					side="CIV";
+					side="GUER";
 					vehicle="Worker2";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ10";
+					text="civ11";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Worker Green)";
+					description="Civilian 11 (Worker Green)";
 				};
 			};
 		};
 		class Item230
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5269,20 +5269,20 @@ class Mission
 					position[]={4814.4443,54.755455,6435.2603};
 					azimut=871.73138;
 					id=1323;
-					side="CIV";
+					side="GUER";
 					vehicle="Functionary1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ9";
+					text="civ12";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Black Suit)";
+					description="Civilian 12 (Black Suit)";
 				};
 			};
 		};
 		class Item231
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5291,20 +5291,20 @@ class Mission
 					position[]={4814.7466,53.422073,6435.5044};
 					azimut=871.73138;
 					id=1322;
-					side="CIV";
+					side="GUER";
 					vehicle="Rocker4";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ8";
+					text="civ13";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Rocker Green)";
+					description="Civilian 13 (Rocker Green)";
 				};
 			};
 		};
 		class Item232
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5313,20 +5313,20 @@ class Mission
 					position[]={4815.1318,53.41925,6435.6406};
 					azimut=871.73138;
 					id=1321;
-					side="CIV";
+					side="GUER";
 					vehicle="Citizen3";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ7";
+					text="civ14";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Gray)";
+					description="Civilian 14 (Gray)";
 				};
 			};
 		};
 		class Item233
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5335,20 +5335,20 @@ class Mission
 					position[]={4815.4639,53.492542,6435.8262};
 					azimut=883.50568;
 					id=1320;
-					side="CIV";
+					side="GUER";
 					vehicle="Woodlander1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ6";
+					text="civ15";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Woodlander Blue)";
+					description="Civilian 15 (Woodlander Blue)";
 				};
 			};
 		};
 		class Item234
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5357,20 +5357,20 @@ class Mission
 					position[]={4812.6187,54.755638,6434.6821};
 					azimut=871.73138;
 					id=1319;
-					side="CIV";
+					side="GUER";
 					vehicle="Rocker3";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ5";
+					text="civ16";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Rocker Blue)";
+					description="Civilian 16 (Rocker Blue)";
 				};
 			};
 		};
 		class Item235
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5379,20 +5379,20 @@ class Mission
 					position[]={4812.9243,54.75563,6434.8457};
 					azimut=871.73138;
 					id=1318;
-					side="CIV";
+					side="GUER";
 					vehicle="Villager1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ4";
+					text="civ17";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Villager Blue Check)";
+					description="Civilian 17 (Villager Blue Check)";
 				};
 			};
 		};
 		class Item236
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5401,20 +5401,20 @@ class Mission
 					position[]={4814.248,54.755608,6435.5835};
 					azimut=871.73138;
 					id=1317;
-					side="CIV";
+					side="GUER";
 					vehicle="Citizen1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ3";
+					text="civ18";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Brown)";
+					description="Civilian 18 (Brown)";
 				};
 			};
 		};
 		class Item237
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5423,20 +5423,20 @@ class Mission
 					position[]={4814.9048,53.419346,6435.9888};
 					azimut=871.73138;
 					id=1316;
-					side="CIV";
+					side="GUER";
 					vehicle="Priest";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ2";
+					text="civ19";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Priest)";
+					description="Civilian 19 (Priest)";
 				};
 			};
 		};
 		class Item238
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5445,20 +5445,20 @@ class Mission
 					position[]={4813.9282,54.755619,6435.4185};
 					azimut=871.73138;
 					id=1315;
-					side="CIV";
+					side="GUER";
 					vehicle="Functionary1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ1";
+					text="civ20";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="Civilian (Black Suit)";
+					description="Civilian 20 (Black Suit)";
 				};
 			};
 		};
 		class Item239
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5467,20 +5467,20 @@ class Mission
 					position[]={3761.1235,56.434975,2495.3196};
 					azimut=89.427933;
 					id=1348;
-					side="CIV";
+					side="GUER";
 					vehicle="Citizen1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ34";
+					text="civ21";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Brown)";
+					description="NZ Civilian 21 (Brown)";
 				};
 			};
 		};
 		class Item240
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5489,20 +5489,20 @@ class Mission
 					position[]={3761.2393,56.600609,2479.7791};
 					azimut=89.427933;
 					id=1336;
-					side="CIV";
+					side="GUER";
 					vehicle="Functionary1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="civ22";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Black Suit)";
+					description="NZ Civilian 22 (Black Suit)";
 				};
 			};
 		};
 		class Item241
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5511,20 +5511,20 @@ class Mission
 					position[]={3761.2422,56.602501,2480.886};
 					azimut=89.427933;
 					id=1335;
-					side="CIV";
+					side="GUER";
 					vehicle="Citizen1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ21";
+					text="civ23";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Brown)";
+					description="NZ Civilian 23 (Brown)";
 				};
 			};
 		};
 		class Item242
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5533,20 +5533,20 @@ class Mission
 					position[]={3761.2527,56.429665,2482.0469};
 					azimut=89.427933;
 					id=1337;
-					side="CIV";
+					side="GUER";
 					vehicle="Villager1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ23";
+					text="civ24";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Villager Blue Check)";
+					description="NZ Civilian 24 (Villager Blue Check)";
 				};
 			};
 		};
 		class Item243
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5555,20 +5555,20 @@ class Mission
 					position[]={3761.2483,56.430092,2483.1191};
 					azimut=89.427933;
 					id=1338;
-					side="CIV";
+					side="GUER";
 					vehicle="Worker4";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ24";
+					text="civ25";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Worker Brown)";
+					description="NZ Civilian 25 (Worker Brown)";
 				};
 			};
 		};
 		class Item244
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5577,20 +5577,20 @@ class Mission
 					position[]={3761.2681,56.430565,2484.3008};
 					azimut=89.427933;
 					id=1339;
-					side="CIV";
+					side="GUER";
 					vehicle="Profiteer2";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ25";
+					text="civ26";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Profiteer Blue)";
+					description="NZ Civilian 26 (Profiteer Blue)";
 				};
 			};
 		};
 		class Item245
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5599,20 +5599,20 @@ class Mission
 					position[]={3761.2302,56.430946,2485.2529};
 					azimut=89.427933;
 					id=1340;
-					side="CIV";
+					side="GUER";
 					vehicle="Woodlander4";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ26";
+					text="civ27";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Woodlander Green)";
+					description="NZ Civilian 27 (Woodlander Green)";
 				};
 			};
 		};
 		class Item246
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5621,20 +5621,20 @@ class Mission
 					position[]={3761.2542,56.431351,2486.2637};
 					azimut=89.427933;
 					id=1341;
-					side="CIV";
+					side="GUER";
 					vehicle="Functionary1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ27";
+					text="civ28";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Black Suit)";
+					description="NZ Civilian 28 (Black Suit)";
 				};
 			};
 		};
 		class Item247
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5643,20 +5643,20 @@ class Mission
 					position[]={3761.2563,56.43177,2487.3137};
 					azimut=89.427933;
 					id=1342;
-					side="CIV";
+					side="GUER";
 					vehicle="Citizen3";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ28";
+					text="civ29";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Gray)";
+					description="NZ Civilian 29 (Gray)";
 				};
 			};
 		};
 		class Item248
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5665,20 +5665,20 @@ class Mission
 					position[]={3761.2222,56.432266,2488.5559};
 					azimut=89.427933;
 					id=1343;
-					side="CIV";
+					side="GUER";
 					vehicle="Functionary2";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ29";
+					text="civ30";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Brown Suit)";
+					description="NZ Civilian 30 (Brown Suit)";
 				};
 			};
 		};
 		class Item249
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5687,20 +5687,20 @@ class Mission
 					position[]={3761.2263,56.432793,2489.866};
 					azimut=89.427933;
 					id=1344;
-					side="CIV";
+					side="GUER";
 					vehicle="Rocker1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ30";
+					text="civ31";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Rocker Black)";
+					description="NZ Civilian 31 (Rocker Black)";
 				};
 			};
 		};
 		class Item250
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5709,20 +5709,20 @@ class Mission
 					position[]={3761.1907,56.433281,2491.0959};
 					azimut=89.427933;
 					id=1345;
-					side="CIV";
+					side="GUER";
 					vehicle="Villager4";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ31";
+					text="civ32";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Villager Blue)";
+					description="NZ Civilian 32 (Villager Blue)";
 				};
 			};
 		};
 		class Item251
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5731,20 +5731,20 @@ class Mission
 					position[]={3761.155,56.433815,2492.4241};
 					azimut=89.427933;
 					id=1346;
-					side="CIV";
+					side="GUER";
 					vehicle="Rocker3";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ32";
+					text="civ33";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Rocker Blue)";
+					description="NZ Civilian 33 (Rocker Blue)";
 				};
 			};
 		};
 		class Item252
 		{
-			side="CIV";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
@@ -5753,14 +5753,14 @@ class Mission
 					position[]={3761.1592,56.434387,2493.8538};
 					azimut=89.427933;
 					id=1347;
-					side="CIV";
+					side="GUER";
 					vehicle="Profiteer4";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="civ33";
+					text="civ34";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.75];";
-					description="NZ Civilian (Profiteer Red)";
+					description="NZ Civilian 34 (Profiteer Red)";
 				};
 			};
 		};

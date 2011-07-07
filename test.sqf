@@ -9,6 +9,8 @@ superadminliste 	= [976769];
 mainvar 			= true;
 publicVariable "mainvar";
 publicVariable "respawnarray";
+publicVariable 'superadminliste';
+publicVariable 'adminliste';
 
 TankenCost = 100; publicvariable "TankenCost";
 bombactive = false; publicvariable "bombactive";
@@ -19,7 +21,7 @@ publicVariable 'respawnarray';
 publicVariable 'superadminliste';
 publicVariable 'adminliste';
 publicVariable 'sobrerlaubt';
-publicvariable 'TankenCost';
+TankenCost = 100; publicvariable 'TankenCost';
 publicVariable 'keinterror';
 publicVariable 'keincriminal';
 publicVariable 'keineGun';
@@ -36,7 +38,7 @@ ServerSchleifeTest =
 {
 while{true} do
 {
-player groupchat "Server Active";
+player groupchat "ServerLoop Active";
 sleep 4;
 };
 };
@@ -708,16 +710,8 @@ if(!isDedicated) then {[] spawn ServerSchleifeTest;};
 //[] execVM "weaponconvoy.sqf";
 //[1] execVM "markers.sqf";
 [0, 0, 0, "serverloop"] execVM "recruitai.sqf";
-[0, 0, 0, ["serverloop"]] execVM "mayor.sqf";
-[0, 0, 0, ["serverloop"]] execVM "chief.sqf";
-[0, 0, 0, ["serverloop"]] execVM "gangs.sqf";
 [] execVM "druguse.sqf";
-[] execVM "drugreplenish.sqf";
-["Mi17_medevac_CDF"] execVM "copchoprespawn.sqf";
-["MH60S"] execVM "copchoprespawn.sqf";
-[] execVM "HQbomb.sqf";
 [] execVM "robpool.sqf";
-[] execVM "hunting.sqf";
 [] execVM "setObjectPitches.sqf";
 
 //=======================rob gas station init and variables================

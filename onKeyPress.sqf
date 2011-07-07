@@ -324,12 +324,10 @@ switch _key do
 	};
 	//6key
 	case 7: 
-
 	{
 	if(!INV_shortcuts)exitwith{};
 	if(dialog)exitwith{closeDialog 0;_handled=true;};
-	
-	_uid = getPlayerUID vehicle  player;
+	_uid = getPlayerUID vehicle player;
 	if(_uid in adminliste) then
 	{
 		isadmin = true;
@@ -343,8 +341,7 @@ switch _key do
 		};
 		
 	};
-	};
-	
+	};	
 
 	//W key
 	case 17: 
