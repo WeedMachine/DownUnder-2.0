@@ -435,7 +435,7 @@ INV_AlleItemsArray = [
 
 ["CocaineSeed",["Item", "drug"],["Cocaine Seed", "Coca Seed"],[7500, 1500], [1, ""], [true, true, true,true,"drugplant.sqf"],localize "STRS_inv_item_cocaineseed",localize "STRS_inv_item_cocaineseed_info", [["cocaineseed", 1]]],
 
-["ApfelSeed",["Item", "food"],["ApfelSeed", "Apple Seed"],[3500, 1500], [1, ""], [true, true, true,false,"drugplant.sqf"],"STRS_ivn_item_appleseed","STRS_ivn_item_appleseed_info", [["ApfelSeed", 1]]],
+["ApfelSeed",["Item", "food"],["ApfelSeed", "Apple Seed"],[7500, 1500], [1, ""], [true, true, true,false,"drugplant.sqf"],"STRS_ivn_item_appleseed","STRS_ivn_item_appleseed_info", [["ApfelSeed", 1]]],
 
 ["MarijuanaSeed",["Item", "drug"],["Marijuana Seed", "Marijuana Seed"],[5000, 1000], [0.5, ""], [true, true, true,true,"Drugplant.sqf"],localize "STRS_inv_item_mariseed",localize "STRS_inv_item_seed_info", [["Marijuana_Plant", 10]]],
 

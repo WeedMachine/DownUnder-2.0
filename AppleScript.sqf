@@ -5,7 +5,7 @@ _playerweight = call INV_GetOwnWeight;
 _planttype = null;
 
 
-_plantyield = 5;
+_plantyield = 20;
 _seedyield = 1;
 
 
@@ -56,5 +56,4 @@ harvestscript = 0;
 
 };
 
-//Edited by Weed
-//Written by Dustoff and Edwood
+
