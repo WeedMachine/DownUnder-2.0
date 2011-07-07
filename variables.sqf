@@ -397,3 +397,12 @@ civworkerarray		 = ["Worker1","Worker2","Worker3","Worker4"];
 civescortarray		 = ["Hooker1","Hooker2","Hooker3","Hooker4","Hooker5"];
 terroristarray   	 = ["GUE_Soldier_1", "GUE_Soldier_2", "GUE_Soldier_3", "Ins_Soldier_Sab", "Ins_Soldier_2", "GUE_Soldier_CO", "GUE_Soldier_AT", "Ins_Soldier_AR", "Ins_Soldier_CO"];
 Coplavearray		 = ["Policeman"];
+
+if(isServer)then
+
+{
+
+TankenCost = 100; publicvariable "TankenCost";
+bombactive = false; publicvariable "bombactive";
+
+};
