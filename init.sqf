@@ -3,7 +3,7 @@ WEST setFriend [EAST, 1];
 EAST setFriend [WEST, 1];
 version        	= "1.01";
 compatible     	= 102;
-internDebug    	= true;
+internDebug    	= false;
 debug          	= false;
 addonversion   	= false;
 dedicatedServer = false;
@@ -94,6 +94,7 @@ if(!dedicatedserver) then
 //[] execVM "teargas.sqf";
 [] execVM "power.sqf";
 [] execVM "HQbomb.sqf";
+[] execVM "supporters.sqf";
 [2] execVM "markers.sqf";
 [3] execVM "markers.sqf";
 [] execVM "salaries.sqf";

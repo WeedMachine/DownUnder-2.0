@@ -457,7 +457,7 @@ INV_AlleItemsArray = [
 
 ["Sign_Checkpoint",["Item", "misc"],["Sign_Checkpoint", "Sign Checkpoint"],[500, 250], [2, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["bunkersmall",["Item", "misc"],["Land_fortified_nest_small", "Bunker (Small)"],[10000, 5000], [20, "", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_bunkersmall",localize "STRS_inv_item_bunkersmall_info", [] ],
+["bunkersmall",["Item", "misc"],["Land_fortified_nest_small", "Bunker (Small)"],[10000, 5000], [20, "realestate", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_bunkersmall",localize "STRS_inv_item_bunkersmall_info", [] ],
 
 ["landconelight",["Item", "misc"],["Land_coneLight", "Road cone (light)"],[500, 250], [3, "", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_landconelight",localize "STRS_inv_item_landconelight_info", [] ],
 
@@ -469,7 +469,7 @@ INV_AlleItemsArray = [
 
 ["vclammo",["Item", "carobjects"],["vclammo", "Vehicle Ammo"],[50000, 25000], [50, "", "sobr_training"], [true, true, true,!(iscop),"vclammo.sqf"],localize "STRS_inv_item_vclammo",localize "STRS_inv_item_vclammo_info", [["kupfer", 5],["schwarzpulver", 5]] ],
 
-["hideout",["Item", "misc"],["hideout", "Hideout"],[20000, 10000], [15, ""], [false, true, false,false,"hideout.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
+["hideout",["Item", "misc"],["hideout", "Hideout"],[20000, 10000], [15, "realestate","Notforcops"], [false, true, false,false,"hideout.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
 
 ["stoersender",["Item", ",misc"],["stoersender", "Radio jammer"],[15000, 7500],[5, ""], [true, true, true,true,"radiojammer.sqf"],localize "STRS_item_stoersender",localize "STRS_item_stoersender_info", [["plastik", 4],["ebauteile", 4]] ],
 
@@ -489,15 +489,15 @@ INV_AlleItemsArray = [
 
 ["LocalBasicWeaponsBox", ["Item", "misc"], ["LocalBasicWeaponsBox", "Storage box"],[10000, 3750], [0, "", "", 200],[true,true,true, false, "nouse.sqf"], "Storage box", "Storage box",[] ],
 
-["Camonet",["Item", "misc"],["Land_CamoNetB_NATO", "Camo Net"],[7500, 3750], [15, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_Camo_net",localize "STRS_inv_item_Camo_net_info", [] ],
+["Camonet",["Item", "misc"],["Land_CamoNetB_NATO", "Camo Net"],[7500, 3750], [15, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_Camo_net",localize "STRS_inv_item_Camo_net_info", [] ],
 
 ["FortRazorWireCop",["Item", "misc"],["Fort_RazorWire", "RazorWire"],[3000, 1500], [5, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["Barricade",["Item", "misc"],["Land_fort_rampart", "Barricade"],[40000, 20000], [50, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["Barricade",["Item", "misc"],["Land_fort_rampart", "Barricade"],[40000, 20000], [50, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["fireplace",["Item", "misc"],["Land_Fire", "Fireplace"],[2500, 1250], [5, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_fireplace",localize "STRS_inv_item_Land_fireplace", [] ],
+["fireplace",["Item", "misc"],["Land_Fire", "Fireplace"],[2500, 1250], [5, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_fireplace",localize "STRS_inv_item_Land_fireplace", [] ],
 
-["campeast",["Item", "misc"],["CampEast", "Tent"],[15000, 7500], [25, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["campeast",["Item", "misc"],["CampEast", "Tent"],[15000, 7500], [25, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
 ["roadbarrierlong",["Item", "misc"],["RoadBarrier_long", "Road Barrier"],[1000, 500], [5, "", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_roadbarrierlong",localize "STRS_inv_item_Land_roadbarrierlong", [] ],
 
@@ -513,9 +513,9 @@ INV_AlleItemsArray = [
 
 ["supgrade5",["Item", "carobjects"],["nitro", "Speed Upgrade 5"], [50000, 25000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 5",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["House",["Item", "misc"],["House", "House"],[800000, 400000], [60, ""], [false, true, false,false,"house.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
+["House",["Item", "misc"],["House", "House"],[800000, 400000], [60, "realestate", "Notforcops"], [false, true, false,false,"house.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
 
-["House2",["Item", "misc"],["House2", "Small House"],[400000, 200000], [60, ""], [false, true, false,false,"house2.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
+["House2",["Item", "misc"],["House2", "Small House"],[400000, 200000], [60, "realestate", "Notforcops"], [false, true, false,false,"house2.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
 
 ["signtape",["Item", "misc"],["Sign_tape_redwhite", "Warning Tape"],[500, 250], [1, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_roadbarrierlong",localize "STRS_inv_item_Land_roadbarrierlong", [] ],
 
@@ -523,15 +523,15 @@ INV_AlleItemsArray = [
 
 ["Apfelkuchen",["Item", "food"],["Apple Pie", "Apple Pie"],[2000, 2000], [0.25, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [["getreide", 3],["Apfel", 2]] ],
 
-["Tor",["Item", "misc"],["Land_BarGate2", "Gate"],[6000, 3000], [15, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["Tor",["Item", "misc"],["Land_BarGate2", "Gate"],[6000, 3000], [15, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
 ["Sandsacke",["Item", "misc"],["Land_fort_bagfence_long", "Sandbag Wall"],[3000, 1500], [10, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
 ["Baracke",["Item", "misc"],["Land_Barrack2", "Barracks"],[20000, 10000], [30, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["Jaegerstand",["Item", "misc"],["Land_Misc_deerstand", "Small Tower"],[15000, 7500], [20, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["Jaegerstand",["Item", "misc"],["Land_Misc_deerstand", "Small Tower"],[15000, 7500], [20, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["Blechzaun",["Item", "misc"],["Fence_corrugated_plate", "Fence"],[3000, 1500], [5, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["Blechzaun",["Item", "misc"],["Fence_corrugated_plate", "Fence"],[3000, 1500], [5, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
 ["Stoer",["Item", "drug"],["Stoer", "Sturgeon"],[500, 500], [10, ""], [true, true, true,true,"food.sqf"],"Stoer",localize "STRS_inv_item_nahrung_info", [] ],
 

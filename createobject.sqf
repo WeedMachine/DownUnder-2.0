@@ -4,12 +4,15 @@ if (_art == "use") then
 
 {
 
+_this 	 = _this select 3;
 _item    = _this select 1;
 _class	 = _item call INV_getitemClassName;
 _exitvar = 0;
+_license = _this select 3;
 
 
 if (player != vehicle player) exitWith {player groupChat localize "STRS_inv_item_sperre_invcl";};
+if(!(_license call INV_HasLicense))exitwith{player groupchat "you do not have the permit to do this"};
 
 	{
 
