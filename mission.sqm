@@ -1654,7 +1654,7 @@ class Mission
 					side="GUER";
 					vehicle="RU_Soldier_SniperH";
 					leader=1;
-					rank="SERGEANT";
+					rank="VETERAN";
 					skill=0.60000002;
 					text="assassin";
 					init="this disableAI ""move""; this allowdamage false;  removeAllWeapons this; this setPos ((nearestobject [this, ""house""]) buildingPos 1); this setpos [(getpos this select 0)-3.2, (getpos this select 1)+3, (getpos this select 2) - 0.01]; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 12];";
