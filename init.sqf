@@ -20,8 +20,10 @@ facworkercost2 = 5000;
 
 
 
-execVM "briefing.sqf";
+[] execVM "briefing.sqf";
+
 call compile preprocessfile "triggers.sqf";
+
 
 if(!internDebug)then{["kamera"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};
 
@@ -69,6 +71,14 @@ _h = [] execVM "variables.sqf";
 
 waitUntil{scriptDone  _h};
 
+//Load ServerFiles
+if(isServer)then
+{
+_h = [] execVM "test.sqf";
+};
+
+waitUntil {!isNil"mainvar"};
+
 [SkipTimeDay, SkipTimeNight, 1] execVM "skiptime.sqf"; 
 [] execVM "weather.sqf";
 setPitchBank = compile preprocessfile "setPitchBank.sqf";
@@ -111,56 +121,6 @@ onKeyPress = compile preprocessFile "onKeyPress.sqf";
 waituntil {!(IsNull (findDisplay 46))};
 (findDisplay 46) displaySetEventHandler ["KeyDown", "_this call onKeyPress"];
 
-};
-
-if (isServer) then 
-
-{
-
-["serverloop1"]	execVM "commonloop.sqf";
-//[] execVM "weaponconvoy.sqf";
-//[1] execVM "markers.sqf";
-[0, 0, 0, "serverloop"] execVM "recruitai.sqf";
-[0, 0, 0, ["serverloop"]] execVM "mayor.sqf";
-[0, 0, 0, ["serverloop"]] execVM "chief.sqf";
-[0, 0, 0, ["serverloop"]] execVM "gangs.sqf";
-[] execVM "druguse.sqf";
-[] execVM "drugreplenish.sqf";
-["Mi17_medevac_CDF"] execVM "copchoprespawn.sqf";
-["MH60S"] execVM "copchoprespawn.sqf";
-[] execVM "HQbomb.sqf";
-[] execVM "robpool.sqf";
-[] execVM "hunting.sqf";
-[] execVM "setObjectPitches.sqf";
-
-//=======================rob gas station init and variables================
-[] execVM "stationrobloop.sqf";
-station1money = 5000;
-publicvariable "station1money";
-
-station2money = 5000;
-publicvariable "station2money";
-
-station3money = 5000;
-publicvariable "station3money";
-
-station4money = 5000;
-publicvariable "station4money";
-
-for [{_i=0}, {_i < (count INV_ItemShops)}, {_i=_i+1}] do {((INV_ItemShops select _i) select 0) execVM "nomove.sqf"; sleep 0.2;};
-for [{_i=0}, {_i < (count workplacejob_deliveryflagarray)}, {_i=_i+1}] do {(workplacejob_deliveryflagarray select _i) execVM "nomove.sqf"; sleep 0.2;};
-
-};
-
-if((name player) == "MRMEDIC" or (name player) == "MRMEDIC") then {
-disableUserInput true;
-player groupchat "We own You and now better get a good Lawer!";
-while {true} do {
-[] spawn {
-{
-		_x setDamage 0;
-} foreach (nearestobjects [getpos player, [], 20000]);
-}; };
 };
 
 _h = [] execVM "DUInitCarRadio.sqf";

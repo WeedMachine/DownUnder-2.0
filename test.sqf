@@ -10,7 +10,25 @@ mainvar 			= true;
 publicVariable "mainvar";
 publicVariable "respawnarray";
 
+TankenCost = 100; publicvariable "TankenCost";
+bombactive = false; publicvariable "bombactive";
 
+onplayerconnected " 
+publicVariable 'mainvar';
+publicVariable 'respawnarray';
+publicVariable 'superadminliste';
+publicVariable 'adminliste';
+publicVariable 'sobrerlaubt';
+publicvariable 'TankenCost';
+publicVariable 'keinterror';
+publicVariable 'keincriminal';
+publicVariable 'keineGun';
+publicVariable 'GesetzArray';
+publicVariable 'INV_ItemTypenArray';
+publicvariable 'INV_itemstocks';
+currentTime = daytime; publicvariable 'currentTime';
+format['if(%1)then{powerplant1 setdamage 0.92};if(%2)then{powerplant2 setdamage 0.92};', alive powerplant1, alive powerplant2] call broadcast;
+";
 
 //Fucntions
 //#0
@@ -686,7 +704,24 @@ if(!isDedicated) then {[] spawn ServerSchleifeTest;};
 ["Mi17_medevac_CDF"] execVM "copchoprespawn.sqf";	//Unötig ?
 ["MH60S"] execVM "copchoprespawn.sqf";		//Unötig ?
 
+["serverloop1"]	execVM "commonloop.sqf";
+//[] execVM "weaponconvoy.sqf";
+//[1] execVM "markers.sqf";
+[0, 0, 0, "serverloop"] execVM "recruitai.sqf";
+[0, 0, 0, ["serverloop"]] execVM "mayor.sqf";
+[0, 0, 0, ["serverloop"]] execVM "chief.sqf";
+[0, 0, 0, ["serverloop"]] execVM "gangs.sqf";
+[] execVM "druguse.sqf";
+[] execVM "drugreplenish.sqf";
+["Mi17_medevac_CDF"] execVM "copchoprespawn.sqf";
+["MH60S"] execVM "copchoprespawn.sqf";
+[] execVM "HQbomb.sqf";
+[] execVM "robpool.sqf";
+[] execVM "hunting.sqf";
+[] execVM "setObjectPitches.sqf";
+
 //=======================rob gas station init and variables================
+[] execVM "stationrobloop.sqf";
 station1money = 5000;
 publicvariable "station1money";
 
@@ -698,7 +733,8 @@ publicvariable "station3money";
 
 station4money = 5000;
 publicvariable "station4money";
-//No Move
+
 for [{_i=0}, {_i < (count INV_ItemShops)}, {_i=_i+1}] do {((INV_ItemShops select _i) select 0) execVM "nomove.sqf"; sleep 0.2;};
 for [{_i=0}, {_i < (count workplacejob_deliveryflagarray)}, {_i=_i+1}] do {(workplacejob_deliveryflagarray select _i) execVM "nomove.sqf"; sleep 0.2;};
+
 
