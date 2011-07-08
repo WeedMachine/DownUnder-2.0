@@ -53,6 +53,7 @@ planting		 = false;
 payingbail			= false;
 drugstockinc		 = 900;
 druguserate		 = 120;
+milking			= false;
 
 //===== Gas station robbing
 maxstationmoney = 40000;

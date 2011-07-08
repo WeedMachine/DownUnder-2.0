@@ -380,6 +380,8 @@ INV_AlleItemsArray = [
 
 ["Donut",["Item", "food"],["Donut", "Donut"],[300, 150], [0.1, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [] ],
 
+["Milk",["Item", "drink"],["Milk", "Milk"],[800, 800], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_milk",localize "STRS_inv_item_milk_info", [["quellwasser", 1], ["hopfen", 1]] ],
+
 ["beer",["Item", "drink"],["beer", "Larger"],[120, 150], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_beer",localize "STRS_inv_item_alkohol_info", [["quellwasser", 1], ["hopfen", 1]] ],
 
 ["beer2",["Item", "drink"],["beer2", "Bitter"],[150, 150], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_beer",localize "STRS_inv_item_alkohol_info", [["quellwasser", 1], ["hopfen", 1]] ],
