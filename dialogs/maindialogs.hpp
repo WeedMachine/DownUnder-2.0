@@ -104,7 +104,7 @@ class civcamdialog
 		h = 0.04;	
 		
 		text = $STRD_description_civcam_submit;	
-		action = "[0,1,2,[""civcam"", call compile lbData [1, lbCurSel 1], sliderPosition 2]] execVM ""copcams.sqf""; closeDialog 0";
+		action = "closeDialog 0";
 	};
 	
 	class dummybutton : RscDummy 

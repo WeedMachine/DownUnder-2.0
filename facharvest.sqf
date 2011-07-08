@@ -172,8 +172,7 @@ _itemfactory=
 "supgrade1",
 "supgrade2",
 "supgrade3",
-"supgrade4",
-"supgrade5"
+"supgrade4"
 
 ];
 
@@ -191,8 +190,7 @@ _tairfactory =
 "Offroad_DSHKM_INS",
 "reparaturkit",
 "kanister",
-"nitro",
-"supgrade5"
+"nitro"
 
 ];
 
