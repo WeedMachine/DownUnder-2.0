@@ -1,4 +1,7 @@
 _bail    = _this select 0;
+if (payingbail) exitwith {player groupchat "you have already paid bail in the last 60 seconds, you must wait 60 seconds "};
+execVM "bailtimer.sqf";
+payingbail = true;
 
 if (!(_bail call ISSE_str_isInteger)) exitWith {player groupChat localize "STRS_inv_no_valid_number"};
 
@@ -16,6 +19,7 @@ if (_geld > _bail) exitwith
 
 {
 
+
 ['geld', -(_bail)] call INV_AddInventoryItem;
 player groupChat format [localize "STRS_bail_self", (_bail call ISSE_str_IntToStr)];
 format ["if (iscop) then {[""geld"", %2] call INV_AddInventoryItem; player groupChat format [localize ""STRS_bail_addbail"", %2, ""%3""];}; titletext [format[localize ""STRS_bail_payed"",%3, %1], ""plain""]; kopfgeld_%4 = kopfgeld_%4 - %1; if(kopfgeld_%4 < 0)then{kopfgeld_%4 = 0};", (_bail call ISSE_str_IntToStr), (_copbail call ISSE_str_IntToStr), rolenumber, player] call broadcast;
@@ -30,6 +34,7 @@ if (kontostand > _bail) exitWith
 kontostand = kontostand - _bail;
 player groupChat format [localize "STRS_bail_self", (_bail call ISSE_str_IntToStr)];
 format ["if (iscop) then {[""geld"", %2] call INV_AddInventoryItem; player groupChat format [localize ""STRS_bail_addbail"", %2, ""%3""];}; titletext [format[localize ""STRS_bail_payed"",%3, %1], ""plain""]; kopfgeld_%4 = kopfgeld_%4 - %1; if(kopfgeld_%4 < 0)then{kopfgeld_%4 = 0};", (_bail call ISSE_str_IntToStr), (_copbail call ISSE_str_IntToStr), rolenumber, player] call broadcast;
+
 
 }; 
 

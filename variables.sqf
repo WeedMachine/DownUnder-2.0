@@ -50,6 +50,7 @@ firingcaptive		 = false;
 pickingup   		 = false;
 lockpickchance		 = 40;
 planting		 = false;
+payingbail			= false;
 drugstockinc		 = 900;
 druguserate		 = 120;
 
