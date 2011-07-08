@@ -20,7 +20,7 @@ if(player == _vehicle and (_ammo == "B_12Gauge_74Slug" or _ammo == "B_9x18_SD") 
 	
 	player SetHit [_selection, _damage];
 
-	if(_selection == "" and _damage >= 1 and !isnull _shooter)then{player setdamage 0};
+	if(_selection == "" and _damage >= 1 and !isnull _shooter)then{player setdamage 1};
 
 	if(alive player)exitwith{};
 	
