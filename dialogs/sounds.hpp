@@ -27,3 +27,10 @@ sound[]  = {"\sounds\bankalarm.ogg", 1, 1};
 titles[] = {};
 
 };
+
+class sms_incoming
+{
+	name     = "";
+	sound[]  = {"\snd\sms_tone.ogg", 0.3, 1};
+	titles[] = {};
+};

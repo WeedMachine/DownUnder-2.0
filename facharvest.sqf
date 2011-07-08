@@ -158,7 +158,6 @@ _itemfactory=
 "medikit",
 "kleinesreparaturkit",
 "reparaturkit",
-"kanister",
 "waffentasche",
 "Itembag",
 "defuser",
@@ -189,7 +188,6 @@ _tairfactory =
 "Pickup_PK_INS",
 "Offroad_DSHKM_INS",
 "reparaturkit",
-"kanister",
 "nitro"
 
 ];
