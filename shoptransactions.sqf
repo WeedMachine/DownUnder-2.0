@@ -206,6 +206,23 @@ if (_stock != -1 and _exitvar == 0) then
 
 //======================================================SELL===========================================================
 
+//============================================== OIL TRADING SUPPLY/DEMAND ============================================
+
+if (((INV_ItemShops select INV_ActiveShopNumber) select 0) == OilSell1) then 
+
+	{
+
+	tankencost = tankencost - oilsellpricedec*_menge;
+	sleep 0.1;
+	if(tankencost < 100)then{tankencost = 100};
+
+	publicvariable "tankencost";
+
+	};
+
+//=======================================================================================================================
+
+
 if (_art == "itemverkauf") then 
 
 {
@@ -327,21 +344,7 @@ if (_stock != -1 and _exitvar == 0) then
 	
 	};
 
-//============================================== OIL TRADING SUPPLY/DEMAND ============================================
 
-if (((INV_ItemShops select INV_ActiveShopNumber) select 0) == OilSell1) then 
-
-	{
-
-	tankencost = tankencost - oilsellpricedec*_menge;
-	sleep 0.1;
-	if(tankencost < 100)then{tankencost = 100};
-
-	publicvariable "tankencost";
-
-	};
-
-//=======================================================================================================================
 
 if(maxstock)then{player groupchat "the shop has reached its maximum stock for this item/vehicle"};
 

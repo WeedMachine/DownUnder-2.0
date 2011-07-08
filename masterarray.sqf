@@ -196,7 +196,7 @@ INV_AlleFahrzeugeArray = [
 
 ["MV22",["Fahrzeug", "air"],["MV22", "MV22"],[650000, 325000], [5, "air", "air_support_training", 1500], [1000, [1,2,0,13] ], "MV22", "MV22", [["stahl", 15],["ebauteile", 5],["geld",80000]]],
 
-["MMT_Civ",["Fahrzeug", "car"],["smurfcbike", "smurfcbike"],[500, 250],[1, "", "", 49], [150, [1,0,0,3]], "smurfcbike" call ISSE_Cfg_Vehicle_GetName, "smurfcbike" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 1]] ],
+["MMT_Civ",["Fahrzeug", "car"],["smurfcbike", "Bicycle"],[500, 250],[1, "", "", 49], [150, [1,0,0,3]], "smurfcbike" call ISSE_Cfg_Vehicle_GetName, "smurfcbike" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 1]] ],
 
 ["Skoda",["Fahrzeug", "car"],["Skoda", "Skoda"],[11000, 5500], [1, "car", "probator", 300], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
 
