@@ -12,8 +12,6 @@ if(_vcl iskindof "" or _type call INV_getitemTypeKg > 2)exitwith{player groupcha
 
 if(_vcl iskindof "ship" and ( _item == "supgrade3" or _item == "supgrade4" or _item == "supgrade5"))exitwith{player groupchat "you can only tune boats with speed upgrades 1 or 2!"};
 
-if(_vcl iskindof "LandVehicle" and (!isCop and (_item == "supgrade5")))exitwith{player groupchat "cops can only use speed upgrade 5"} 
-
 if(_vcl iskindof "armored" and ( _item == "supgrade3" or _item == "supgrade4" or _item == "supgrade5"))exitwith{player groupchat "you can only tune boats with speed upgrades 1 or 2!"};
 
 [_item, -1] call INV_AddInventoryItem; 
