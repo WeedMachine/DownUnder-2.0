@@ -41,7 +41,8 @@ class Mission
 		"castructures_e_housea_a_office01",
 		"castructures_e_housea_a_minaret_porto",
 		"castructures_e_housea_a_stationhouse",
-		"HALO_Test"
+		"HALO_Test",
+		"ca_animals2_cow"
 	};
 	addOnsAuto[]=
 	{
@@ -75,6 +76,7 @@ class Mission
 		"caweapons_warfare_weapons",
 		"CAWheeled2_Kamaz",
 		"monaro",
+		"ca_animals2_cow",
 		"ibr_isladuala"
 	};
 	randomSeed=10839805;
@@ -92,7 +94,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=261;
+		items=262;
 		class Item0
 		{
 			side="LOGIC";
@@ -5618,7 +5620,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1739.9136,2.8548737,532.66174};
+					position[]={5758.8506,16.922913,6099.1812};
 					azimut=300;
 					id=1257;
 					side="CIV";
@@ -5930,10 +5932,30 @@ class Mission
 				};
 			};
 		};
+		class Item261
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5758.8506,16.922913,6099.1812};
+					azimut=300;
+					id=1486;
+					side="CIV";
+					vehicle="RU_Priest";
+					leader=1;
+					skill=0.60000002;
+					text="seedshop_1";
+					init="call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";""; this disableAI ""move""; this disableAI ""anim""; this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01]; nul = this execVM ""nomove.sqf"";";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=1193;
+		items=1224;
 		class Item0
 		{
 			position[]={3847.5354,14.888542,7339.6558};
@@ -17161,10 +17183,258 @@ class Mission
 			lock="LOCKED";
 			skill=0.60000002;
 		};
+		class Item1193
+		{
+			position[]={5834.9844,27.22555,5285.7856};
+			id=1455;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1194
+		{
+			position[]={5856.7622,26.817543,5277.3979};
+			id=1456;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1195
+		{
+			position[]={5860.6245,23.512821,5251.8867};
+			id=1457;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1196
+		{
+			position[]={5846.0762,22.201159,5252.5132};
+			id=1458;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1197
+		{
+			position[]={5807.8496,21.217348,5255.6465};
+			id=1459;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1198
+		{
+			position[]={5855.9893,21.009481,5233.792};
+			id=1460;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1199
+		{
+			position[]={5841.6118,24.79652,5270.2295};
+			id=1461;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1200
+		{
+			position[]={5806.9766,27.934006,5290.4683};
+			id=1462;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1201
+		{
+			position[]={5787.5054,22.360613,5267.3892};
+			id=1463;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1202
+		{
+			position[]={5775.0605,19.262678,5241.0112};
+			id=1464;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1203
+		{
+			position[]={5754.0942,25.931244,5294.1719};
+			id=1465;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1204
+		{
+			position[]={5774.7905,29.606077,5305.2632};
+			id=1466;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1205
+		{
+			position[]={5812.0757,33.691391,5317.6006};
+			id=1467;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1206
+		{
+			position[]={5852.7046,30.687969,5295.6597};
+			id=1468;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1207
+		{
+			position[]={5860.5493,25.559616,5266.7124};
+			id=1469;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1208
+		{
+			position[]={5832.8198,18.869093,5226.2681};
+			id=1470;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1209
+		{
+			position[]={5814.2881,18.589485,5227.4849};
+			id=1471;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1210
+		{
+			position[]={5760.1816,17.117735,5221.6689};
+			id=1472;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1211
+		{
+			position[]={5765.3218,19.023352,5241.147};
+			id=1473;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1212
+		{
+			position[]={5825.7861,21.739305,5257.1089};
+			id=1474;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1213
+		{
+			position[]={5762.2539,22.708101,5272.6729};
+			id=1475;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1214
+		{
+			position[]={5747.5273,20.322851,5256.6934};
+			id=1476;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1215
+		{
+			position[]={5784.1865,16.758234,5218.4673};
+			id=1477;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1216
+		{
+			position[]={5809.1782,29.874306,5299.4517};
+			id=1478;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1217
+		{
+			position[]={5794.2319,32.212002,5315.1602};
+			id=1479;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1218
+		{
+			position[]={5781.1152,34.25552,5323.7012};
+			id=1480;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1219
+		{
+			position[]={5817.7183,37.683865,5329.6494};
+			id=1481;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1220
+		{
+			position[]={5831.292,30.672859,5301.5869};
+			id=1482;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1221
+		{
+			position[]={5836.9355,34.686916,5316.6855};
+			id=1483;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1222
+		{
+			position[]={5805.8228,17.069675,5211.6035};
+			id=1484;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
+		class Item1223
+		{
+			position[]={5824.8862,20.657444,5246.2241};
+			id=1485;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=259;
+		items=262;
 		class Item0
 		{
 			position[]={4814.5728,54.924606,6431.5801};
@@ -19471,7 +19741,7 @@ class Mission
 		};
 		class Item242
 		{
-			position[]={1740.5338,2.8548737,533.60791};
+			position[]={5759.4702,16.922913,6100.1274};
 			name="seedshop";
 			text="Seed Shop";
 			type="mil_flag";
@@ -19616,6 +19886,36 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			angle=-2.8422301;
+		};
+		class Item259
+		{
+			position[]={5803.5151,21.404251,5259.5713};
+			name="Cow Farm";
+			text="Cow Farm";
+			markerType="ELLIPSE";
+			type="mil_circle";
+			colorName="ColorWhite";
+			a=80;
+			b=80;
+		};
+		class Item260
+		{
+			position[]={5805.3032,21.230732,5256.8252};
+			name="Cow Farm1";
+			text="Cow Farm";
+			type="mil_circle";
+			colorName="ColorWhite";
+		};
+		class Item261
+		{
+			position[]={5759.4707,16.922913,6100.1274};
+			name="seedshop_1";
+			text="Seed Shop";
+			type="mil_flag";
+			colorName="ColorBlue";
+			a=0.69999999;
+			b=0.69999999;
+			angle=-0.355795;
 		};
 	};
 	class Sensors
