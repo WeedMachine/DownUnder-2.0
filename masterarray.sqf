@@ -266,6 +266,19 @@ INV_AlleFahrzeugeArray = [
 ["Copcaraus",["Fahrzeug", "car"],["Copcaraus", "Holden Monaro Australia (Blue)"],[15000, 13000], [2, "car", "", 180], [350, [1,0,0,3] ], "Copcaraus" call ISSE_Cfg_Vehicle_GetName,"Copcaraus" call ISSE_Cfg_Vehicle_GetDesc,[["stahl", 10],["ebauteile", 1],["glas", 2],["plastik", 2],["erdoel", 5]] ], 
 ["CopcarAusgreen",["Fahrzeug", "car"],["CopcarAusgreen", "Holden Monaro Australia (Green)"],[15000, 13000], [2, "car", "", 180], [350, [1,0,0,3] ], "CopcarAusgreen" call ISSE_Cfg_Vehicle_GetName,"CopcarAusgreen" call ISSE_Cfg_Vehicle_GetDesc,[["stahl", 10],["ebauteile", 1],["glas", 2],["plastik", 2],["erdoel", 5]] ], 
 ["SUV_TK_CIV_EP1",["Fahrzeug", "car"],["SUV_TK_CIV_EP1", "Suburban"],[54000, 48500], [2, "car", "patrol_training", 200], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["steel", 4],["glass", 1],["plastic", 1],["plastic", 4]] ],
+["qin_evoix_black",["Fahrzeug", "car"],["qin_evoix_black", "Mitsubishi Lancer Evolution Black"],[34095, 32888], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["qin_evoix_blue",["Fahrzeug", "car"],["qin_evoix_blue", "Mitsubishi Lancer Evolution Blue"],[34095, 32888], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["qin_evoix_gray",["Fahrzeug", "car"],["qin_evoix_gray", "Mitsubishi Lancer Evolution Gray"],[34095, 32888], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["qin_evoix_green",["Fahrzeug", "car"],["qin_evoix_green", "Mitsubishi Lancer Evolution Green"],[34095, 32888], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["qin_evoix_orange",["Fahrzeug", "car"],["qin_evoix_orange", "Mitsubishi Lancer Evolution Orange"],[34095, 32888], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["qin_evoix_red",["Fahrzeug", "car"],["qin_evoix_red", "Mitsubishi Lancer Evolution Red"],[34095, 32888], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CL_bmw323_black",["Fahrzeug", "car"],["CL_bmw323_black", "BMW Black 323i"],[17520, 10000], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CL_bmw323_blue",["Fahrzeug", "car"],["CL_bmw323_blue", "BMW Blue 323i"],[17520, 10000], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CL_bmw323_red",["Fahrzeug", "car"],["CL_bmw323_red", "BMW Red 323i"],[17520, 10000], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CL_bmw323_silver",["Fahrzeug", "car"],["CL_bmw323_silver", "BMW Silver 323i"],[17520, 10000], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CL_bmw323_yellow",["Fahrzeug", "car"],["CL_bmw323_yellow", "BMW Yellow 323i"],[17520, 10000], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CL_bmw323_white",["Fahrzeug", "car"],["CL_bmw323_white", "BMW White 323i"],[17520, 10000], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+
 
 ["Kamaz", ["Fahrzeug", "truck"],["Kamaz", "Kamaz"],[45000, 22500],[2, "truck", "patrol_training", 1500], [500, [1,0,0,14] ], "Kamaz" call ISSE_Cfg_Vehicle_GetName,"Kamaz" call ISSE_Cfg_Vehicle_GetDesc,[["stahl", 17],["ebauteile", 2],["glas", 2],["plastik", 3],["erdoel", 6]] ],
 
@@ -520,15 +533,15 @@ INV_AlleItemsArray = [
 
 ["fortenvelopesmall",["Item", "misc"],["Fort_EnvelopeSmall", "Trench"],[3000, 1500], [10, "", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_fortenvelopesmall",localize "STRS_inv_item_Land_fortenvelopesmall", [] ],
 
-["supgrade1",["Item", "carobjects"],["nitro", "Speed Upgrade 1"], [10000, 5000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 1",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade1",["Item", "carobjects"],["nitro", "Speed Upgrade 1"], [15000, 5000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 1",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade2",["Item", "carobjects"],["nitro", "Speed Upgrade 2"], [15000, 7500], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 2",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade2",["Item", "carobjects"],["nitro", "Speed Upgrade 2"], [20000, 7500], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 2",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade3",["Item", "carobjects"],["nitro", "Speed Upgrade 3"], [25000, 12500], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 3",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade3",["Item", "carobjects"],["nitro", "Speed Upgrade 3"], [30000, 23000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 3",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade4",["Item", "carobjects"],["nitro", "Speed Upgrade 4"], [30000, 15000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 4",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade4",["Item", "carobjects"],["nitro", "Speed Upgrade 4"], [40000, 30000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 4",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade5",["Item", "carobjects"],["nitro", "Speed Upgrade 5"], [50000, 25000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 5",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade5",["Item", "carobjects"],["nitro", "Speed Upgrade 5"], [60000, 35000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 5",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
 ["House",["Item", "misc"],["House", "House"],[800000, 400000], [60, "realestate", "Notforcops"], [false, true, false,false,"house.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
 

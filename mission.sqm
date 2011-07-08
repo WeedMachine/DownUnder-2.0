@@ -32,6 +32,8 @@ class Mission
 		"du_characters",
 		"map_eu",
 		"monaro",
+		"CL_bmw_E30",
+		"qin_evoix",
 		"as_eu_oa_misc",
 		"GLT_Objects",
 		"castructures_e_misc_misc_powerline",
@@ -77,6 +79,8 @@ class Mission
 		"CAWheeled2_Kamaz",
 		"monaro",
 		"ca_animals2_cow",
+		"CL_bmw_E30",
+		"qin_evoix",
 		"ibr_isladuala"
 	};
 	randomSeed=10839805;
@@ -94,7 +98,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=262;
+		items=266;
 		class Item0
 		{
 			side="LOGIC";
@@ -5900,14 +5904,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4911.3896,14.897629,6442.0859};
+					position[]={4914.252,14.897629,6439.1865};
 					azimut=-122.132;
 					id=1450;
 					side="CIV";
 					vehicle="Functionary1";
 					leader=1;
 					skill=0.60000002;
-					text="holdenshop";
+					text="bmwshop";
 					init="call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";"";  this disableAI ""move""; this disableAI ""anim""; this allowdamage false; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];  ";
 				};
 			};
@@ -5920,8 +5924,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4867.9702,14.89763,6439.7197};
-					azimut=59.4893;
+					position[]={4867.5337,14.89763,6439.502};
+					azimut=-26.804296;
 					id=1451;
 					side="LOGIC";
 					vehicle="Logic";
@@ -5952,10 +5956,90 @@ class Mission
 				};
 			};
 		};
+		class Item262
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4911.9038,14.897629,6442.5107};
+					azimut=-122.132;
+					id=1487;
+					side="CIV";
+					vehicle="Functionary1";
+					leader=1;
+					skill=0.60000002;
+					text="holdenshop";
+					init="call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";"";  this disableAI ""move""; this disableAI ""anim""; this allowdamage false; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];  ";
+				};
+			};
+		};
+		class Item263
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4912.9976,14.897629,6440.8359};
+					azimut=-122.132;
+					id=1488;
+					side="CIV";
+					vehicle="Functionary2";
+					leader=1;
+					skill=0.60000002;
+					text="evoshop";
+					init="call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";"";  this disableAI ""move""; this disableAI ""anim""; this allowdamage false; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];  ";
+				};
+			};
+		};
+		class Item264
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4875.5557,14.897629,6443.813};
+					azimut=-26.8043;
+					id=1489;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="evospawn";
+					init="(nearestObject [getpos this, ""Land_a_stationhouse""]) allowdamage false; carshopcherno = nearestObject [getpos this, ""Land_a_stationhouse""]; carshopcherno allowdamage false;";
+				};
+			};
+		};
+		class Item265
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4883.8037,14.897629,6448.3525};
+					azimut=-26.8043;
+					id=1490;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="bmwspawn";
+					init="(nearestObject [getpos this, ""Land_a_stationhouse""]) allowdamage false; carshopcherno = nearestObject [getpos this, ""Land_a_stationhouse""]; carshopcherno allowdamage false;";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=1224;
+		items=1228;
 		class Item0
 		{
 			position[]={3847.5354,14.888542,7339.6558};
@@ -17156,7 +17240,7 @@ class Mission
 		};
 		class Item1190
 		{
-			position[]={4905.6162,14.897629,6450.4404};
+			position[]={4907.4199,14.897629,6448.8452};
 			azimut=-118.24499;
 			id=1452;
 			side="EMPTY";
@@ -17431,10 +17515,50 @@ class Mission
 			vehicle="Cow04";
 			skill=0.60000002;
 		};
+		class Item1224
+		{
+			position[]={4904.5068,14.897629,6453.4116};
+			azimut=-120.17327;
+			id=1491;
+			side="EMPTY";
+			vehicle="CL_bmw323_red";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item1225
+		{
+			position[]={4920.813,14.897629,6427.6245};
+			azimut=-120.17327;
+			id=1492;
+			side="EMPTY";
+			vehicle="CL_bmw323_red";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item1226
+		{
+			position[]={4924.4204,14.897629,6423.7715};
+			azimut=-122.42046;
+			id=1493;
+			side="EMPTY";
+			vehicle="qin_evoix_red";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item1227
+		{
+			position[]={4903.041,14.897629,6458.125};
+			azimut=-118.16437;
+			id=1494;
+			side="EMPTY";
+			vehicle="qin_evoix_red";
+			leader=1;
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=262;
+		items=264;
 		class Item0
 		{
 			position[]={4814.5728,54.924606,6431.5801};
@@ -19878,9 +20002,9 @@ class Mission
 		};
 		class Item258
 		{
-			position[]={4911.4683,14.897629,6442.1865};
-			name="holdendealership";
-			text="@STRM_mission_marker_holden_dealership";
+			position[]={4909.1118,14.897629,6441.96};
+			name="evodealership";
+			text="@STRM_mission_marker_evo_dealership";
 			type="mil_box";
 			colorName="ColorBlue";
 			a=0.69999999;
@@ -19916,6 +20040,28 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			angle=-0.355795;
+		};
+		class Item262
+		{
+			position[]={4909.1592,14.897629,6446.8823};
+			name="holdendealership_1";
+			text="@STRM_mission_marker_holden_dealership";
+			type="mil_box";
+			colorName="ColorBlue";
+			a=0.69999999;
+			b=0.69999999;
+			angle=-2.8422301;
+		};
+		class Item263
+		{
+			position[]={4909.2417,14.897629,6436.4185};
+			name="bmwdealership";
+			text="@STRM_mission_marker_bmw_dealership";
+			type="mil_box";
+			colorName="ColorBlue";
+			a=0.69999999;
+			b=0.69999999;
+			angle=-2.8422301;
 		};
 	};
 	class Sensors

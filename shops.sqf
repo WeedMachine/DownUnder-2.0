@@ -37,6 +37,10 @@ INV_itemstocks =
 [3,3,3,3,3,1],
 //Holden Dealership
 [1,1,1,1,1,1,1],
+//Evo Dealership
+[1,1,1,1,1,1],
+//Bmw Dealership
+[1,1,1,1,1,1],
 //as
 [5,2,10],
 //bs1
@@ -150,6 +154,10 @@ INV_itemmaxstocks =
 [5,5,5,5,5,5],
 //Holden Dealership
 [20,20,20,20,20,20,20],
+//Evo Dealership
+[20,20,20,20,20,20],
+//Bmw Dealership
+[20,20,20,20,20,20],
 //as
 [5,2,10],
 //bs1
@@ -238,6 +246,8 @@ _ps = ["datsun1_civil_1_open", "datsun1_civil_2_covered", "hilux1_civil_1_open",
 _av = ["Pickup_PK_INS", "HMMWV"];
 _ts = ["Ikarus", "UralCivil", "UralCivil2", "V3S_Civ", "KamazOpen","MTVR"];
 _hd = ["Civcar","Civcarbl","Civcarbu","Civcargr","Civcarre","Civcarsl","Civcarwh"];
+_md = ["qin_evoix_black","qin_evoix_blue","qin_evoix_gray","qin_evoix_green","qin_evoix_orange","qin_evoix_red"];
+_bd = ["CL_bmw323_black","CL_bmw323_blue","CL_bmw323_red","CL_bmw323_silver","CL_bmw323_yellow","CL_bmw323_white"];
 _as = ["Mi17_Civilian","Mi17_medevac_CDF","MV22"];
 _bs1 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
 _bs2 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
@@ -479,6 +489,8 @@ INV_ItemShops = [
 [truckshop,"Truck Shop",dummyobj,truckspawn,_ts,_ts,true],
 
 [holdenshop,"Holden Dealership",dummyobj,holdenspawn,_hd,_hd,true],
+[evoshop,"Mitsubishi Dealership",dummyobj,evospawn,_md,_md,true],
+[bmwshop,"BMW Dealership",dummyobj,bmwspawn,_bd,_bd,true],
 
 [airshop,"Air Shop",dummyobj,asairspawn,_as,_as,true],
 
