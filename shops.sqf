@@ -32,9 +32,11 @@ INV_itemstocks =
 [-1,5,5,5,2,2,2,2,2,2,2,3,3],
 [-1,5,5,5,2,2,2,2,2,2,2,3,3],
 //ps
-[2,2,2,2,2,2],
+[2,2,2,2,2,2,2],
 //ts
 [3,3,3,3,3,1],
+//Holden Dealership
+[1,1,1,1,1,1,1],
 //as
 [5,2,10],
 //bs1
@@ -75,8 +77,8 @@ INV_itemstocks =
 //sa1
 [5,-1],
 //cv
-[-1,-1,-1,-1,-1,-1],
-[-1,-1,-1,-1,-1,-1],
+-1,
+-1,
 //sv1
 [-1,-1,-1],
 //cb
@@ -143,9 +145,11 @@ INV_itemmaxstocks =
 [-1,50,50,50,20,20,20,20,20,20,20,30,30,30],
 [-1,50,50,50,20,20,20,20,20,20,20,30,30,30],
 //ps
-[5,5,5,5,5,5],
+[5,5,5,5,5,5,5],
 //ts
 [5,5,5,5,5,5],
+//Holden Dealership
+[20,20,20,20,20,20,20],
 //as
 [5,2,10],
 //bs1
@@ -186,8 +190,8 @@ INV_itemmaxstocks =
 //sa1
 [5,-1],
 //cv
-[-1,-1,-1,-1,-1,-1],
-[-1,-1,-1,-1,-1,-1],
+-1,
+-1,
 //sv1
 [-1,-1,-1],
 //copbasic
@@ -230,9 +234,10 @@ _gs = ["Makarov", "8Rnd_9x18_Makarov", "M9", "Rnd_9x19_M9", "Colt1911", "Rnd_45A
 _es = ["Binocular", "NVGoggles", "GPS", "fishingpole", "medikit", "lockpick"];
 _cu = ["nitro", "supgrade1", "supgrade2", "supgrade3", "supgrade4"];
 _cs = ["MMT_Civ","TT650_Civ","TT650_Ins","Tractor","Skoda","SkodaBlue","SkodaRed","SkodaGreen","Lada_base","Lada1","Lada2","Car_hatchback","Car_Sedan","VWGolf"]; 
-_ps = ["datsun1_civil_1_open", "datsun1_civil_2_covered", "hilux1_civil_1_open", "hilux1_civil_2_covered", "UAZ_RU","LandRover_CZ_EP1","LandRover_TK_CIV_EP1"];
+_ps = ["datsun1_civil_1_open", "datsun1_civil_2_covered", "hilux1_civil_1_open", "hilux1_civil_2_covered", "SUV_TK_CIV_EP1", "UAZ_RU","LandRover_CZ_EP1","LandRover_TK_CIV_EP1"];
 _av = ["Pickup_PK_INS", "HMMWV"];
 _ts = ["Ikarus", "UralCivil", "UralCivil2", "V3S_Civ", "KamazOpen","MTVR"];
+_hd = ["Civcar","Civcarbl","Civcarbu","Civcargr","Civcarre","Civcarsl","Civcarwh"];
 _as = ["Mi17_Civilian","Mi17_medevac_CDF","MV22"];
 _bs1 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
 _bs2 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
@@ -255,7 +260,7 @@ _dsl = ["lsd"];
 _dsh = ["heroin"];
 _ca1 = ["Mi17_medevac_CDF","MV22"];
 _sa1 = ["MH60S","Pchela1T"];
-_cv = ["MMT_USMC", "M1030", "LadaLM", "hilux1_civil_3_open", "UAZ_CDF", "Kamaz"];
+_cv = ["MMT_USMC", "M1030", "LadaLM", "hilux1_civil_3_open", "Copcar", "Copcarhw", "Copcarhw2", "Copcaraus", "Copcarausgreen", "CopcarNZ", "UAZ_CDF", "Kamaz"];
 _sv1 = ["HMMWV", "HMMWV_Armored","M113_TK_EP1"];
 _sv = ["HMMWV", "HMMWV_Armored", "GAZ_Vodnik_MedEvac"];
 _drs = ["heroin","lsd","marijuana","cocaine"];
@@ -472,6 +477,8 @@ INV_ItemShops = [
 [pickupshop1,"Pickup + Jeep Shop",dummyobj,pickupspawn1,_ps,_ps,true],
 					
 [truckshop,"Truck Shop",dummyobj,truckspawn,_ts,_ts,true],
+
+[holdenshop,"Holden Dealership",dummyobj,holdenspawn,_hd,_hd,true],
 
 [airshop,"Air Shop",dummyobj,asairspawn,_as,_as,true],
 
