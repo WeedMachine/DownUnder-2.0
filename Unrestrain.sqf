@@ -4,7 +4,7 @@ isstunned=true;
 
 player groupchat "You have been restrained!"; 
 
-waituntil {count (nearestobjects[getpos player,["policeman","MVD_soldier","RUS_COMMANDER"],100]) == 0 or (animationstate player != "civillying01")};
+waituntil {count (nearestobjects[getpos player,["policeman","DU_Charactersman","DU_Characters","MVD_soldier","RUS_COMMANDER"],100]) == 0 or (animationstate player != "civillying01")};
 	
 if(animationstate player == "civillying01")then
 
