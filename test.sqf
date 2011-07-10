@@ -10,6 +10,17 @@ mainvar 			= true;
 publicVariable "mainvar";
 publicVariable "respawnarray";
 
+onplayerconnected '
+
+publicVariable "GesetzArray";
+publicVariable "INV_ItemTypenArray";
+publicvariable "INV_itemstocks";
+currentTime = daytime; publicvariable "currentTime";
+
+format["if(%1)then{power1 setdamage 0};if(%2)then{power2 setdamage 0};", alive power1, alive power2] call broadcast;
+
+';
+
 //Fucntions
 //#0
 ServerSchleifeTest =
@@ -706,7 +717,6 @@ publicvariable "station3money";
 station4money = 5000;
 publicvariable "station4money";
 
-for [{_i=0}, {_i < (count INV_ItemShops)}, {_i=_i+1}] do {((INV_ItemShops select _i) select 0) execVM "nomove.sqf"; sleep 0.2;};
-for [{_i=0}, {_i < (count workplacejob_deliveryflagarray)}, {_i=_i+1}] do {(workplacejob_deliveryflagarray select _i) execVM "nomove.sqf"; sleep 0.2;};
+
 
 
