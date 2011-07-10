@@ -24,10 +24,22 @@ if (station4money < maxstationmoney) then
 	station4money = station4money + _randomamount;
 	if (station4money > maxstationmoney) then {station4money = maxstationmoney;};
 	};
+if (station5money < maxstationmoney) then
+	{
+	station5money = station5money + _randomamount;
+	if (station5money > maxstationmoney) then {station5money = maxstationmoney;};
+    };
+if (station6money < maxstationmoney) then
+	{
+	station6money = station6money + _randomamount;
+	if (station6money > maxstationmoney) then {station6money = maxstationmoney;};
+    };	
 publicvariable "station1money";
 publicvariable "station2money";
 publicvariable "station3money";
 publicvariable "station4money";
+publicvariable "station5money";
+publicvariable "station6money";
 
 sleep 30;
 };

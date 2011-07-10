@@ -201,6 +201,8 @@ switch _item do
 	
 	case "Kaviar":     { _hungerStillen = 25;  };
 	
+	case "Milk":     { _hungerStillen = 13;  };
+	
 	};
 
 
