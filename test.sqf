@@ -4,13 +4,12 @@ sobrerlaubt 		= [];
 keineGun 			= [];
 keincriminal 		= [];
 keinterror 			= [];
-adminliste 			= [976769];
-superadminliste 	= [976769];
+adminliste 			= ["976769", "4464646"]; publicVariable "adminliste";
+superadminliste 	= ["976769", "4464646"]; publicVariable "superadminliste";
 mainvar 			= true;
 publicVariable "mainvar";
 publicVariable "respawnarray";
-publicVariable 'superadminliste';
-publicVariable 'adminliste';
+
 
 TankenCost = 100; publicvariable "TankenCost";
 bombactive = false; publicvariable "bombactive";

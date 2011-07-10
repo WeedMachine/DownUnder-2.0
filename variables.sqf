@@ -404,6 +404,7 @@ if(isServer)then
 
 {
 
+
 TankenCost = 100; publicvariable "TankenCost";
 bombactive = false; publicvariable "bombactive";
 

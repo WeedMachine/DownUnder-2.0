@@ -16,23 +16,23 @@ buttonSetAction [3, "[""handy2"", ctrlText 1, call compile lbData [2, lbCurSel 2
 };
  
 if (_art == "handy2") then 
+
 {
-	_smstext = _this select 1;
-	_smsplayernumber = _this select 2;
-	_smsplayer       = playerarray select _smsplayernumber;
-	if (_smstext == "")	exitWith {player groupChat localize "STRS_inv_item_handy_leermsg";};
-	if (not((format["%1", (_smsplayer)]) call ISSE_UnitExists)) exitWith {player groupChat localize "STRS_inv_item_handy_noplayer";};
-	if (_money < INV_smscost) exitWith {player groupChat localize "STRS_inv_item_handy_keinmoney";};
-	if ((_smstext call ISSE_str_Length) > 500) exitWith {player groupChat localize "STRS_inv_item_handy_text_zu_lang";};
-	['money', -(INV_smscost)] call INV_AddInventoryItem;
-	player groupChat format [localize "STRS_inv_item_handy_gesendet", _smsplayer];
-	
-	format ["if ((%2 == player) and ((""handy"" call INV_GetItemAmount) >  0)) then {player groupchat format [localize ""STRS_inv_item_handy_nachricht"", ""%1"", %3]; player say [""sms_incoming"",1];};
-	if ((%2 == player) and ((""handy"" call INV_GetItemAmount) == 0)) then { 
-		""if (%3 == player) then {
-			player groupChat format [localize """"STRS_inv_item_handy_nichterreicht"""", %2];
-			};
-		"" call ISSE_pub_execPstr;
-		};				
-	", _smstext, _smsplayer, player	] call ISSE_pub_execPstr;
+												
+_smstext         = _this select 1;													
+_smsplayernumber = _this select 2;												
+_smsplayer       = INV_PLAYERLIST select _smsplayernumber;																										
+
+if (_smstext == "") exitWith {player groupChat localize "STRS_inv_item_handy_leermsg";};									
+if (not((format["%1", (_smsplayer)]) call ISSE_UnitExists)) exitWith {player groupChat localize "STRS_inv_item_handy_noplayer";};	
+if (_geld < INV_smscost)  exitWith {player groupChat localize "STRS_inv_item_handy_keingeld";};														
+if ((_smstext call ISSE_str_Length) > 60)     exitWith {player groupChat localize "STRS_inv_item_handy_text_zu_lang";};	
+['geld', -(INV_smscost)] call INV_AddInventoryItem;		
+player groupChat format [localize "STRS_inv_item_handy_gesendet", _smsplayer];																					
+
+format ['_mobile = ("handy" call INV_GetItemAmount);
+if ((%2 == player) and (_mobile > 0)) then {titletext [format [localize "STRS_inv_item_handy_nachricht", "%1", %3], "plain"];};	
+if ((%2 == player) and (_mobile == 0)) then {"if(player == %3)then{player groupChat format [localize ""STRS_inv_item_handy_nichterreicht"", %2]}" call broadcast; player say ["sms_incoming",1];};
+', _smstext, _smsplayer, player] call broadcast;
+
 };

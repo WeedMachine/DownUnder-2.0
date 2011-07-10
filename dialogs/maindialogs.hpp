@@ -113,6 +113,121 @@ class civcamdialog
 	};
 };
 
+class admincamdialog
+{
+	idd = -1;
+	movingEnable = true;
+	controlsBackground[] = {DLG_BACK1, Background};
+	objects[] = { };
+	controls[] = {dauer_slider, text1, camlist, text2, seconds, text3, cost, submit, dummybutton};
+	class DLG_BACK1: RscBackground
+	{
+		x = 0.32;
+		y = 0.23;
+		w = 0.38;
+		h = 0.24;
+	};
+	
+	class background : RscBgRahmen
+	{
+		x = 0.32;
+		y = 0.23;
+		w = 0.38;
+		h = 0.24;
+		
+		text = $STRD_description_civcam_title;
+	};
+	
+	class dauer_slider : RscSliderH	
+	{
+		idc = 2;
+		x = 0.33;
+		y = 0.31;
+		w = 0.35;
+		h = 0.04;
+	};
+	
+	class text1 : RscText
+	{
+		x = 0.28;
+		y = 0.26;
+		w = 0.22;
+		h = 0.04;
+		
+		style = ST_RIGHT;
+		text = $STRD_description_civcam_chooseciv;
+	};
+	
+	class camlist : RscCombo
+	{
+		x = 0.50;
+		y = 0.26;
+		w = 0.17;
+		h = 0.04;
+		idc = 1;											
+	};
+	
+	class text2 : RscText					
+	{
+		x = 0.33;
+		y = 0.37;
+		w = 0.07;
+		h = 0.04;	
+		
+		style = ST_RIGHT;
+		text = $STRD_description_civcam_dauer;	
+	};
+	
+	class seconds : RscText		
+	{
+		idc = 5;
+		x = 0.40;
+		y = 0.37;
+		w = 0.04;
+		h = 0.04;
+		
+		text = "s";	
+	};
+	
+	class text3 : RscText		
+	{
+		x = 0.45;
+		y = 0.37;
+		w = 0.12;
+		h = 0.04;
+		
+		style = ST_RIGHT;
+		text = $STRD_description_civcam_cost;
+	};
+	
+	class cost : RscText
+	{
+		idc = 3;
+		x = 0.56;
+		y = 0.37;
+		w = 0.10;
+		h = 0.04;
+		
+		text = "$";
+	};
+	
+	class submit : RscButton
+	{
+		x = 0.41;
+		y = 0.42;
+		w = 0.17;
+		h = 0.04;	
+		
+		text = $STRD_description_civcam_submit;	
+		action = "[0,1,2,[""civcam"", call compile lbData [1, lbCurSel 1], sliderPosition 2]] execVM ""copcams.sqf""; closeDialog 0";
+	};
+	
+	class dummybutton : RscDummy 
+	{
+		idc = 1002;
+	};
+};
+
 class wantedrelease
 {
 	idd = -1;

@@ -38,7 +38,7 @@ if (_art == "civcam") then
 
 if (_art == "admincam") then 
 {
-	if (!(createDialog "civcamdialog")) exitWith {hint "Dialog Error!";};
+	if (!(createDialog "admincamdialog")) exitWith {hint "Dialog Error!";};
 	[0, 1, true, false] call DialogSpielerListe;
 	lbSetCurSel    [1, 0];		
 	sliderSetRange [2, 5, 30];
