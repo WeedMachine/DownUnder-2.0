@@ -18,6 +18,9 @@ canuseshopagain = 1;
 maxfacworkers2 = 90;
 facworkercost2 = 5000;
 
+publicVariable "INV_ItemTypenArray";
+publicvariable "INV_itemstocks";
+
 
 
 [] execVM "briefing.sqf";
@@ -71,14 +74,6 @@ _h = [] execVM "variables.sqf";
 
 waitUntil{scriptDone  _h};
 
-//Load ServerFiles
-if(isServer)then
-{
-_h = [] execVM "test.sqf";
-};
-
-waitUntil {!isNil"mainvar"};
-
 [SkipTimeDay, SkipTimeNight, 1] execVM "skiptime.sqf"; 
 [] execVM "weather.sqf";
 setPitchBank = compile preprocessfile "setPitchBank.sqf";
@@ -123,7 +118,20 @@ waituntil {!(IsNull (findDisplay 46))};
 
 };
 
+if (isServer) then 
+
+{
+
+_h = [] execVM "test.sqf";
+
+waitUntil{scriptDone _h};
+
+for [{_i=0}, {_i < (count INV_ItemShops)}, {_i=_i+1}] do {((INV_ItemShops select _i) select 0) execVM "nomove.sqf"; sleep 0.2;};
+for [{_i=0}, {_i < (count workplacejob_deliveryflagarray)}, {_i=_i+1}] do {(workplacejob_deliveryflagarray select _i) execVM "nomove.sqf"; sleep 0.2;};
+
+};
+
+
 _h = [] execVM "DUInitCarRadio.sqf";
 
 waitUntil{scriptDone  _h};
-

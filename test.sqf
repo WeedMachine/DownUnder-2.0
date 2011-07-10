@@ -10,26 +10,16 @@ mainvar 			= true;
 publicVariable "mainvar";
 publicVariable "respawnarray";
 
+onplayerconnected '
 
-TankenCost = 100; publicvariable "TankenCost";
-bombactive = false; publicvariable "bombactive";
+publicVariable "GesetzArray";
+publicVariable "INV_ItemTypenArray";
+publicvariable "INV_itemstocks";
+currentTime = daytime; publicvariable "currentTime";
 
-onplayerconnected " 
-publicVariable 'mainvar';
-publicVariable 'respawnarray';
-publicVariable 'superadminliste';
-publicVariable 'adminliste';
-publicVariable 'sobrerlaubt';
-TankenCost = 100; publicvariable 'TankenCost';
-publicVariable 'keinterror';
-publicVariable 'keincriminal';
-publicVariable 'keineGun';
-publicVariable 'GesetzArray';
-publicVariable 'INV_ItemTypenArray';
-publicvariable 'INV_itemstocks';
-currentTime = daytime; publicvariable 'currentTime';
-format['if(%1)then{powerplant1 setdamage 0.92};if(%2)then{powerplant2 setdamage 0.92};', alive powerplant1, alive powerplant2] call broadcast;
-";
+format["if(%1)then{power1 setdamage 0};if(%2)then{power2 setdamage 0};", alive power1, alive power2] call broadcast;
+
+';
 
 //Fucntions
 //#0
@@ -727,7 +717,6 @@ publicvariable "station3money";
 station4money = 5000;
 publicvariable "station4money";
 
-for [{_i=0}, {_i < (count INV_ItemShops)}, {_i=_i+1}] do {((INV_ItemShops select _i) select 0) execVM "nomove.sqf"; sleep 0.2;};
-for [{_i=0}, {_i < (count workplacejob_deliveryflagarray)}, {_i=_i+1}] do {(workplacejob_deliveryflagarray select _i) execVM "nomove.sqf"; sleep 0.2;};
+
 
 

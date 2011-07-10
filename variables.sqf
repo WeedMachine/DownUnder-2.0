@@ -1,3 +1,37 @@
+if(isServer)then
+
+{
+
+for [{_i=0}, {_i < count gangareas}, {_i=_i+1}] do {(gangareas select _i) setvariable["control", "cops", true]};
+
+TankenCost = 100; publicvariable "TankenCost";
+bombactive = false; publicvariable "bombactive";
+
+respawnarray 		= [respawn1,respawn2,respawn3,respawn4,respawn5,respawn6,respawn7,respawn8,respawn9,respawn10,respawn11,respawn12];
+CityLocationArray   = [[CityLogic1, 500], [CityLogic2, 400], [CityLogic4, 500], [CityLogic5, 200], [Militarybase, 200],[CityLogic6, 180],[CityLogic7, 120]];
+sobrerlaubt 		= [];
+keineGun 			= [];
+keincriminal 		= [];
+keinterror 			= [];
+adminliste 			= ["976769"];
+superadminliste 	= ["976769"];
+mainvar 			= true;
+publicVariable "mainvar";
+publicVariable "respawnarray";
+
+onplayerconnected '
+
+publicVariable "GesetzArray";
+publicVariable "INV_ItemTypenArray";
+publicvariable "INV_itemstocks";
+currentTime = daytime; publicvariable "currentTime";
+
+format["if(%1)then{power1 setdamage 0};if(%2)then{power2 setdamage 0};", alive power1, alive power2] call broadcast;
+
+';
+
+};
+
 //=================================================================================
 INV_smscost				 = 100;
 add_civmoney			 = 1500;
@@ -400,12 +434,4 @@ civescortarray		 = ["Hooker1","Hooker2","Hooker3","Hooker4","Hooker5"];
 terroristarray   	 = ["GUE_Soldier_1", "GUE_Soldier_2", "GUE_Soldier_3", "Ins_Soldier_Sab", "Ins_Soldier_2", "GUE_Soldier_CO", "GUE_Soldier_AT", "Ins_Soldier_AR", "Ins_Soldier_CO"];
 Coplavearray		 = ["Policeman"];
 
-if(isServer)then
 
-{
-
-
-TankenCost = 100; publicvariable "TankenCost";
-bombactive = false; publicvariable "bombactive";
-
-};
