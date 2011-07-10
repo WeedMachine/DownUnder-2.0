@@ -82,6 +82,8 @@ publicvariable "station1robbed";
 publicvariable "station2robbed";
 publicvariable "station3robbed";
 publicvariable "station4robbed";
+publicvariable "station5robbed";
+publicvariable "station6robbed";
 
 if(!dedicatedserver) then
 

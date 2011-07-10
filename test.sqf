@@ -717,6 +717,12 @@ publicvariable "station3money";
 station4money = 5000;
 publicvariable "station4money";
 
+station5money = 5000;
+publicvariable "station5money";
+
+station6money = 5000;
+publicvariable "station6money";
+
 
 
 
