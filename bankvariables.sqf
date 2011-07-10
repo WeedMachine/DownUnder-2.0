@@ -57,7 +57,11 @@ TankstellenArray         =
 (nearestobject[getpos fuelshop34,"Land_A_FuelStation_Feed"]),
 (nearestobject[getpos fuelshop35,"Land_A_FuelStation_Feed"]),
 (nearestobject[getpos fuelshop36,"Land_A_FuelStation_Feed"]),
-(nearestobject[getpos fuelshop37,"Land_A_FuelStation_Feed"])
+(nearestobject[getpos fuelshop37,"Land_A_FuelStation_Feed"]),
+(nearestobject[getpos fuelshop38,"Land_A_FuelStation_Feed"]),
+(nearestobject[getpos fuelshop39,"Land_A_FuelStation_Feed"]),
+(nearestobject[getpos fuelshop40,"Land_A_FuelStation_Feed"]),
+(nearestobject[getpos fuelshop41,"Land_A_FuelStation_Feed"]),
 
 ];
 

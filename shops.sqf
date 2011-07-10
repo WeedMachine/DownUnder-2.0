@@ -10,6 +10,8 @@ INV_itemstocks =
 [25,10,10],
 [25,10,10],
 [25,10,10],
+[25,10,10],
+[25,10,10],
 //is
 [1,1,1,1,1,1,1,1,1,1,1],
 [1,1,1,1,1,1,1,1,1,1,1],
@@ -121,6 +123,8 @@ INV_itemmaxstocks =
 
 [
 //Fuel Station fs
+[50,20,20],
+[50,20,20],
 [50,20,20],
 [50,20,20],
 [50,20,20],
@@ -456,6 +460,8 @@ INV_ItemShops = [
 [fuelshop2,"Fuel-station Shop",dummyobj,dummyobj,_fs,_fs,true],
 [fuelshop3,"Fuel-station Shop",dummyobj,dummyobj,_fs,_fs,true],
 [fuelshop4,"Fuel-station Shop",dummyobj,dummyobj,_fs,_fs,true],
+[fuelshop5,"Fuel-station Shop",dummyobj,dummyobj,_fs,_fs,true],
+[fuelshop6,"Fuel-station Shop",dummyobj,dummyobj,_fs,_fs,true],
 
 [shop1,"Item Shop",dummyobj,dummyobj,_is,_is,true],
 [shop2,"Item Shop",dummyobj,dummyobj,_is,_is,true],

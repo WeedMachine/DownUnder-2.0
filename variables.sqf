@@ -88,11 +88,9 @@ payingbail			= false;
 drugstockinc		 = 900;
 druguserate		 = 120;
 milking			= false;
-
 //===== Gas station robbing
 maxstationmoney = 40000;
-
-if(debug)then{drugstockinc = 6;druguserate = 20};
+wantedamountforrobbing = 25000;
 //==============================PETROL/OIL=========================================
 petroluse                = 1;
 maxpetroluse             = 300; 
@@ -229,7 +227,7 @@ SelfKilled               = 0;
 killstrafe               = 25000;			
 copteamkillstrafe	 = 25000;		
 GesetzAnzahl             = 10;         				
-GesetzArray              = ["Always Drive on the RIGHT side of the road", "DONT place buildings or hideouts on streets", "Always Holster weapons in Towns 1k/1min jail.","Completing an assassination mission is murder", "", "","", "", "", ""];
+GesetzArray              = ["Always Drive on the Left side of the road", "DONT place buildings or hideouts on streets", "Always Holster weapons in Towns 1k/1min jail.","Completing an assassination mission is murder", "", "","", "", "", ""];
 									
 if(debug)then{suicidepenalty = 0;respawntimeinc = 0;killedplayerinc = 0};  
 

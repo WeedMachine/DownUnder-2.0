@@ -281,13 +281,12 @@ _role addaction ["Gang Shop","shopdialogs.sqf",[_num3],1,false,true,"","_control
 
 //===================================== Gas station Robbing===============================================
 
-_gsshop1 = fuelshop1 addaction ["Rob Gas Station 1","robthestations.sqf",["station 1"],1,false,true,"","isciv and station1money >= 5000"];
-
-_gsshop2 = fuelshop2 addaction ["Rob Gas Station 2","robthestations.sqf",["station 2"],1,false,true,"","isciv and station2money >= 5000"];
-
-_gsshop3 = fuelshop3 addaction ["Rob Gas Station 3","robthestations.sqf",["station 3"],1,false,true,"","isciv and station3money >= 5000"];
-
-_gsshop4 = fuelshop4 addaction ["Rob Gas Station 4","robthestations.sqf",["station 4"],1,false,true,"","isciv and station4money >= 5000"];
+_role addaction ["Rob The Servo","robthestations.sqf",["station 1"],1,false,true,"","isciv and station1money >= 5000 and player distance fuelshop4 <= 3"];
+_role addaction ["Rob The Servo","robthestations.sqf",["station 2"],1,false,true,"","isciv and station2money >= 5000 and player distance fuelshop2 <= 3"];
+_role addaction ["Rob The Servo","robthestations.sqf",["station 3"],1,false,true,"","isciv and station3money >= 5000 and player distance fuelshop3 <= 3"];
+_role addaction ["Rob The Servo","robthestations.sqf",["station 4"],1,false,true,"","isciv and station4money >= 5000 and player distance fuelshop1 <= 3"];
+_role addaction ["Rob The Servo","robthestations.sqf",["station 5"],1,false,true,"","isciv and station5money >= 5000 and player distance fuelshop5 <= 3"];
+_role addaction ["Rob The Servo","robthestations.sqf",["station 6"],1,false,true,"","isciv and station6money >= 5000 and player distance fuelshop6 <= 3"];
 
 //====================================== RED LIGHT ======================================================
 _role addaction [format ["Hire escort ($%1)", escort_cost],"escort.sqf", ["escort"],1,false,true,"","player distance redlight1 <= 5 and isciv"];
