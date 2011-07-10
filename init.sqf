@@ -128,6 +128,26 @@ _h = [] execVM "test.sqf";
 
 waitUntil{scriptDone _h};
 
+//=======================rob gas station init and variables================
+[] execVM "stationrobloop.sqf";
+station1money = 5000;
+publicvariable "station1money";
+
+station2money = 5000;
+publicvariable "station2money";
+
+station3money = 5000;
+publicvariable "station3money";
+
+station4money = 5000;
+publicvariable "station4money";
+
+station5money = 5000;
+publicvariable "station5money";
+
+station6money = 5000;
+publicvariable "station5money";
+
 for [{_i=0}, {_i < (count INV_ItemShops)}, {_i=_i+1}] do {((INV_ItemShops select _i) select 0) execVM "nomove.sqf"; sleep 0.2;};
 for [{_i=0}, {_i < (count workplacejob_deliveryflagarray)}, {_i=_i+1}] do {(workplacejob_deliveryflagarray select _i) execVM "nomove.sqf"; sleep 0.2;};
 
