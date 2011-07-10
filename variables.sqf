@@ -403,9 +403,22 @@ Coplavearray		 = ["Policeman"];
 if(isServer)then
 
 {
+{
 
+for [{_i=0}, {_i < count gangareas}, {_i=_i+1}] do {(gangareas select _i) setvariable["control", "cops", true]};
 
 TankenCost = 100; publicvariable "TankenCost";
 bombactive = false; publicvariable "bombactive";
+
+onplayerconnected '
+
+publicVariable "GesetzArray";
+publicVariable "INV_ItemTypenArray";
+publicvariable "INV_itemstocks";
+currentTime = daytime; publicvariable "currentTime";
+
+format["if(%1)then{power1 setdamage 0};if(%2)then{power2 setdamage 0};", alive power1, alive power2] call broadcast;
+
+';
 
 };

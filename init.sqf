@@ -71,14 +71,6 @@ _h = [] execVM "variables.sqf";
 
 waitUntil{scriptDone  _h};
 
-//Load ServerFiles
-if(isServer)then
-{
-_h = [] execVM "test.sqf";
-};
-
-waitUntil {!isNil"mainvar"};
-
 [SkipTimeDay, SkipTimeNight, 1] execVM "skiptime.sqf"; 
 [] execVM "weather.sqf";
 setPitchBank = compile preprocessfile "setPitchBank.sqf";
@@ -121,9 +113,21 @@ onKeyPress = compile preprocessFile "onKeyPress.sqf";
 waituntil {!(IsNull (findDisplay 46))};
 (findDisplay 46) displaySetEventHandler ["KeyDown", "_this call onKeyPress"];
 
-};
-
 _h = [] execVM "DUInitCarRadio.sqf";
 
 waitUntil{scriptDone  _h};
+
+};
+
+if (isServer) then 
+
+{
+
+_h = [] execVM "test.sqf";
+
+waitUntil{scriptDone _h};
+
+};
+
+
 

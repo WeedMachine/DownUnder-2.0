@@ -10,27 +10,6 @@ mainvar 			= true;
 publicVariable "mainvar";
 publicVariable "respawnarray";
 
-
-TankenCost = 100; publicvariable "TankenCost";
-bombactive = false; publicvariable "bombactive";
-
-onplayerconnected " 
-publicVariable 'mainvar';
-publicVariable 'respawnarray';
-publicVariable 'superadminliste';
-publicVariable 'adminliste';
-publicVariable 'sobrerlaubt';
-TankenCost = 100; publicvariable 'TankenCost';
-publicVariable 'keinterror';
-publicVariable 'keincriminal';
-publicVariable 'keineGun';
-publicVariable 'GesetzArray';
-publicVariable 'INV_ItemTypenArray';
-publicvariable 'INV_itemstocks';
-currentTime = daytime; publicvariable 'currentTime';
-format['if(%1)then{powerplant1 setdamage 0.92};if(%2)then{powerplant2 setdamage 0.92};', alive powerplant1, alive powerplant2] call broadcast;
-";
-
 //Fucntions
 //#0
 ServerSchleifeTest =
