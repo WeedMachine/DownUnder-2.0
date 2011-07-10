@@ -73,3 +73,15 @@ if (isCop) then {
 
 };
 
+if (_uid == "915905") then
+{
+sleep 30;
+titletext [format [localize "STRS_supporter",name player],"PLAIN DOWN"];
+sleep 4;
+titletext [localize "STRS_supporter_info","PLAIN DOWN"];
+sleep 4;
+titletext [localize "STRS_supporter_info2","PLAIN DOWN"];
+INV_LizenzOwner = INV_LizenzOwner + ["realestate"];
+
+};
+

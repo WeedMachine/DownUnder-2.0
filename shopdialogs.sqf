@@ -134,7 +134,7 @@ if (((INV_ItemShops select INV_ActiveShopNumber) select 0) == OilSell1)then
 
 	{
 
-	_demand      = ((tankencost - 100)/200);
+	_demand      = ((TankenCost - 100)/200);
 	_preis        = round((_preisOhneTax*(_preis/_preisOhneTax))*_demand);
 	if(_preis < oilbaseprice)then{_preis = oilbaseprice};
 		

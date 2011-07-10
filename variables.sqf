@@ -92,13 +92,13 @@ milking			= false;
 //===== Gas station robbing
 maxstationmoney = 40000;
 
-if(debug)then{drugstockinc = 6;druguserate = 20};
+
 //==============================PETROL/OIL=========================================
 petroluse                = 1;
 maxpetroluse             = 300; 
 oildemand                = 0.25;
 oilsellpricedec          = 30;
-oilbaseprice		 = 15000;
+oilbaseprice		 = 10000;
 //==============================MINING=============================================
 shoveldur=20;
 shovelmax=2;

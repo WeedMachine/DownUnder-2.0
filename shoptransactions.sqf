@@ -30,7 +30,6 @@ _itemauswahl= _this select 1;
  _license1   = _infos call INV_getitemLicense;
  _license2   = _infos call INV_getitemLicense2;
 
- 
 //===========================================================BUY===============================================================
 
 if (_art == "itemkauf") then 
@@ -343,6 +342,22 @@ if (_stock != -1 and _exitvar == 0) then
 	format['["%1", (%2 + %3), %4] call INV_itemstocksupdate;', _item, _stock, _menge, INV_ActiveShopNumber] call broadcast;
 	
 	};
+	
+//============================================== OIL TRADING SUPPLY/DEMAND ============================================
+
+if (((INV_ItemShops select INV_ActiveShopNumber) select 0) == OilSell1) then 
+
+	{
+
+	tankencost = tankencost - oilsellpricedec*_menge;
+	sleep 0.1;
+	if(tankencost < 100)then{tankencost = 100};
+
+	publicvariable "tankencost";
+
+	};
+
+//=======================================================================================================================	
 
 
 
