@@ -13,7 +13,9 @@ while {true} do
 
 	{
 
-	if(vehicle player != player and !(vehicle player in INV_VehicleArray) and !(vehicle player in INV_ServerVclArray))then{deletevehicle (vehicle player)};
+	if(!internDebug)then{
+	
+	if(vehicle player != player and !(vehicle player in INV_VehicleArray) and !(vehicle player in INV_ServerVclArray))then{deletevehicle (vehicle player)};};
 
 	if ((_LetzterKontostand != Kontostand) and (Kontostand != StartGeld)) then 
 
