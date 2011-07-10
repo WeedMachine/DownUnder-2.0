@@ -18177,7 +18177,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=294;
+		items=295;
 		class Item0
 		{
 			position[]={4814.5728,54.924606,6431.5801};
@@ -20915,6 +20915,14 @@ class Mission
 		{
 			position[]={3577.7087,15.007172,3080.1025};
 			name="FUEL_18_1";
+			text="Fuel";
+			type="Select";
+			colorName="ColorBlack";
+		};
+		class Item294
+		{
+			position[]={2908.2456,6.9427891,2538.1147};
+			name="FUEL_29_1";
 			text="Fuel";
 			type="Select";
 			colorName="ColorBlack";
