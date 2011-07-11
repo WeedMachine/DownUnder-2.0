@@ -169,6 +169,26 @@ while {true} do
 		player groupchat "You have been teleported out of the cop base!"; 
 
 		};
+		
+	if (player distance getmarkerpos "policebase3" < 220 and isciv and !(_veh isKindOf "Air") and !(_veh isKindOf "Ship")) then 
+
+		{
+
+		if (_veh != player) then 
+ 	
+			{
+			
+			_veh setvelocity [0,0,0];
+			player Action ["eject", _veh];
+			player Action ["GET OUT", _veh];
+			
+			};
+
+		_veh setpos getmarkerpos "civarea3";
+		player setpos getmarkerpos "civarea3";
+		player groupchat "You have been teleported out of the cop base!"; 
+
+		};
 
 	if ((alive player) and (DeadWaitSec > (respawnzeit+deadtimebonus))) then 
 

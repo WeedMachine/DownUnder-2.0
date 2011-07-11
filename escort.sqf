@@ -6,10 +6,8 @@ _geld = 'geld' call INV_GetItemAmount;
 if (_art == "escort") exitWith 
 
 {
-								
-if (localescort >= maxescort) exitWith {player groupChat "You have maxed escorts go away perv"};
-
-if (_geld <= escort_cost) exitWith {player groupChat "you aint no pimp come back when you have money"};
+if (localescort >= maxescort) exitWith {player groupChat "You have maxed escorts go away perv";};
+if (_geld <= escort_cost) exitWith {player groupChat "you aint no pimp come back when you have money";};
 
 ['geld', -(escort_cost)] call INV_AddInventoryItem;
 
@@ -21,9 +19,9 @@ localescort        = localescort + 1;
 _escortnumber      = localescortcounter;																				
 _escortname        = player;
 _escortname        = player;
-_civ 		  = civescortarray select round random(count civescortarray - 1);
+_civ 		  	= civescortarray select round random(count civescortarray - 1);
 
-//Ed: This be tidied up. You should use the correct escortarray from variables.sqf and GetMarkerPos. The variables are not global / permeating for me.
+//This be tidied up. You should use the correct escortarray from variables.sqf and GetMarkerPos. The variables are not global / permeating for me.
 escortarray = [[HRedlight1, 150], [HRedlight2, 150], [HRedlight3, 150]];  
 
 call compile format ['_escortname = "%3" createUnit [position player, group player, "%1escort%2 = this; this setVehicleVarName ""%1escort%2"";"]; _escortname = %1escort%2;_escortname setpos getpos player', rolestring, _escortnumber, _civ];															
@@ -39,6 +37,7 @@ _exitvar = 0;
 _a1 = 0; 
 _action = 0; 
 
+
 while {true} do 
 
 	{														
@@ -47,8 +46,8 @@ while {true} do
 
 		{
 		//Eds Debug text:
-		//_disbetween = (_escortname distance (getPos (_x select 0)));	//distance between red light district and escort
-		//player groupchat format ["distance from x to player is = %1", _disbetween];
+		_disbetween = (_escortname distance (getPos (_x select 0)));	//distance between red light district and escort
+		player groupchat format ["distance from x to player is = %1", _disbetween];
 		
 		//Escort earns money while she is inside one of the red light districts
 		if (_escortname distance ( getPos (_x select 0) ) < (_x select 1) ) then

@@ -108,6 +108,7 @@ if(!dedicatedserver) then
 [3] execVM "markers.sqf";
 [] execVM "salaries.sqf";
 [] execVM "actions.sqf";
+[] execVM "PoliceFuncs.sqf";
 
 [] execVM "SWATCHANGE.sqf";
 
