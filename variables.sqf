@@ -77,6 +77,7 @@ PKcost			 = 10000;
 SQUADcost		 = 20000;
 maxinfai		 = 16;
 firestrikes		 = 3;
+exportscript	 = 0;
 totalstrikes		 = 3;
 facworkercost		 = 5000;
 maxfacworkers		 = 100;

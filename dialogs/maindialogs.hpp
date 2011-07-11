@@ -2057,3 +2057,114 @@ controls[] = {pitabutton, corozbutton, terrorbutton, closebutton, teebutton};
 
 };
 
+class Distribute6			//Export Script defines how many buttons there are.
+
+{
+	
+idd = -1;
+movingEnable = true;
+controlsBackground[] = {DLG_BACK1, background};	
+objects[] = { };
+controls[] = {pitabutton, corozbutton, terrorbutton, closebutton, teebutton, tee2button, tee3button};		
+	
+	class DLG_BACK1: Rscbackground		
+	
+	{
+		x = 0.35; y = 0.20;
+		w = 0.30; h = 0.30;	
+	};
+	
+	class background : RscBgRahmen
+	
+	{
+		
+		x = 0.35;  y = 0.20;
+		w = 0.299; h = 0.30;
+
+		text = "Sell vehicle to:";
+
+	};
+	
+	class pitabutton : RscButton
+	{
+
+		idc = 3;
+		x = 0.40; y = 0.26;
+		w = 0.20; h = 0.04;
+		
+			
+	};
+	
+	class corozbutton : RscButton
+
+	{
+
+		idc = 4;
+		x = 0.40; y = 0.31;	
+		w = 0.20; h = 0.04;
+		
+				
+	};
+
+	class terrorbutton : RscButton
+
+	{
+
+		idc = 5;
+		x = 0.40; y = 0.36;	
+		w = 0.20; h = 0.04;
+		
+				
+	};
+
+	class teebutton : RscButton
+
+	{
+
+		idc = 6;
+		x = 0.40; y = 0.41;	
+		w = 0.20; h = 0.04;
+		
+				
+	};
+
+	class tee2button : RscButton
+
+	{
+
+		idc = 6;
+		x = 0.40; y = 0.41;	
+		w = 0.20; h = 0.04;
+		
+				
+	};
+
+	class tee3button : RscButton
+
+	{
+
+		idc = 6;
+		x = 0.40; y = 0.41;	
+		w = 0.20; h = 0.04;
+		
+				
+	};
+
+	class closebutton : RscButton
+
+	{
+		x = 0.618; y = 0.215;
+		w = 0.03; h = 0.03;	
+		
+		text = "x";	
+		action = "closedialog 0;";
+	};
+
+	class dummybutton : RscDummy 
+
+	{
+		idc = 1052;
+	};
+
+};
+

@@ -1,7 +1,9 @@
 _item    = _this select 0;
 _infos   = _item call INV_getitemArray;
 
-_carsinv   = (carshop1 call INV_getshopArray) select 4; 
+_carsinv   = (carshop1 call INV_getshopArray) select 4;
+_holdeninv = (holdenshop call INV_getshopArray) select 4;
+_evoinv    = (evoshop call INV_getshopArray) select 4;
 _pickupinv = (pickupshop1 call INV_getshopArray) select 4; 
 _boatinv   = (boatshop1 call INV_getshopArray) select 4;
 _truckinv  = (truckshop call INV_getshopArray) select 4;
@@ -35,7 +37,7 @@ if ([_item, _carsinv] call INV_iteminshop) exitwith
 
 if (!(createDialog "distribute4")) exitWith {hint "Dialog Error!"};
 
-//=====================Chernogorsk CAR SHOP====================================
+//=====================Bolabongo CAR SHOP====================================
 
 _shopnum      = carshop1 call INV_getshopnum;
 _stock        = [_item, _shopnum] call INV_getstock;
@@ -45,10 +47,10 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [3, format["Chernogorsk for $%1", _preis]];
+ctrlSetText [3, format["Bolabongo for $%1", _preis]];
 buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
-//=====================Balota CAR SHOP====================================
+//=====================Kinsella CAR SHOP====================================
 
 _shopnum      = carshop3 call INV_getshopnum;
 _stock        = [_item, _shopnum] call INV_getstock;
@@ -61,7 +63,7 @@ _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 ctrlSetText [4, format["Balota for $%1", _preis]];
 buttonSetAction [4, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
-//=====================Kamyshovo CAR SHOP====================================
+//=====================Canto CAR SHOP====================================
 
 _shopnum      = carshop2 call INV_getshopnum;
 _stock        = [_item, _shopnum] call INV_getstock;
@@ -71,10 +73,10 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [5, format["Kamyshovo for $%1", _preis]];
+ctrlSetText [5, format["Canto for $%1", _preis]];
 buttonSetAction [5, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
-//=====================Mogilveka CAR SHOP====================================
+//=====================Larenga CAR SHOP====================================
 
 _shopnum      = carshop4 call INV_getshopnum;
 _stock        = [_item, _shopnum] call INV_getstock;
@@ -84,12 +86,52 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [6, format["Mogilevka for $%1", _preis]];
+ctrlSetText [6, format["Larenga for $%1", _preis]];
 buttonSetAction [6, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
 };
 
+if ([_item, _holdeninv] call INV_iteminshop) exitwith
 
+{
+
+if (!(createDialog "distribute1")) exitWith {hint "Dialog Error!"};
+
+//=====================Holden CAR SHOP====================================
+
+_shopnum      = holdenshop call INV_getshopnum;
+_stock        = [_item, _shopnum] call INV_getstock;
+_maxstock     = [_item, _shopnum] call INV_getmaxstock;
+_preisOhneTax = (_infos call INV_getitemBuyCost)*1;																						
+_preis        = (_infos call INV_getitemCostWithTax)*1;
+_demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
+_preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
+
+ctrlSetText [3, format["Holden for $%1", _preis]];
+buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
+
+};
+
+if ([_item, _evoinv] call INV_iteminshop) exitwith
+
+{
+
+if (!(createDialog "distribute1")) exitWith {hint "Dialog Error!"};
+
+//=====================Mitsubishi CAR SHOP====================================
+
+_shopnum      = evoshop call INV_getshopnum;
+_stock        = [_item, _shopnum] call INV_getstock;
+_maxstock     = [_item, _shopnum] call INV_getmaxstock;
+_preisOhneTax = (_infos call INV_getitemBuyCost)*1;																						
+_preis        = (_infos call INV_getitemCostWithTax)*1;
+_demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
+_preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
+
+ctrlSetText [3, format["Mitsubishi for $%1", _preis]];
+buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
+
+};
 
 if ([_item, _pickupinv] call INV_iteminshop) exitwith
 
@@ -97,7 +139,7 @@ if ([_item, _pickupinv] call INV_iteminshop) exitwith
 
 if (!(createDialog "distribute1")) exitWith {hint "Dialog Error!"};
 
-//=====================Elektrozavodsk PICKUP SHOP====================================
+//=====================Bolabongo PICKUP SHOP====================================
 
 _shopnum      = pickupshop1 call INV_getshopnum;
 _stock        = [_item, _shopnum] call INV_getstock;
@@ -107,7 +149,7 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [3, format["Elektrozavodsk for $%1", _preis]];
+ctrlSetText [3, format["Bolabongo for $%1", _preis]];
 buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
 };
@@ -118,7 +160,7 @@ if ([_item, _boatinv] call INV_iteminshop) exitwith
 
 if (!(createDialog "distribute3")) exitWith {hint "Dialog Error!"};
 
-//=====================Elektrozavodsk Boat SHOP====================================
+//=====================Porto Hazena Boat SHOP====================================
 
 _shopnum      = boatshop1 call INV_getshopnum;
 _stock        = [_item, _shopnum] call INV_getstock;
@@ -128,10 +170,10 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [3, format["Elektrozavodsk for $%1", _preis]];
+ctrlSetText [3, format["Porto Hazena for $%1", _preis]];
 buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
-//=====================Balota Boat SHOP====================================
+//=====================Caspal Boat SHOP====================================
 
 _shopnum      = boatshop2 call INV_getshopnum;
 _stock        = [_item, _shopnum] call INV_getstock;
@@ -141,10 +183,10 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [4, format["Balota for $%1", _preis]];
+ctrlSetText [4, format["Caspal for $%1", _preis]];
 buttonSetAction [4, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
-//=====================Kamyshovo Boat SHOP====================================
+//=====================Kinsella Boat SHOP====================================
 
 _shopnum      = boatshop3 call INV_getshopnum;
 _stock        = [_item, _shopnum] call INV_getstock;
@@ -154,7 +196,7 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [5, format["Kamyshovo for $%1", _preis]];
+ctrlSetText [5, format["Kinsella for $%1", _preis]];
 buttonSetAction [5, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
 };
@@ -165,7 +207,7 @@ if ([_item, _truckinv] call INV_iteminshop) exitwith
 
 if (!(createDialog "distribute1")) exitWith {hint "Dialog Error!"};
 
-//=====================Elektrozavodsk SHOP====================================
+//=====================Bolabongo SHOP====================================
 
 _shopnum      = truckshop call INV_getshopnum;
 _stock        = [_item, _shopnum] call INV_getstock;
@@ -177,7 +219,7 @@ _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
 passvararray  = [_preis, _item, _stock, _maxstock, _shopnum, truckshop];
 
-ctrlSetText [3, format["Elektrozavodsk for $%1", _preis]];
+ctrlSetText [3, format["Bolabongo for $%1", _preis]];
 buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
 };
