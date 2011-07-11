@@ -3,7 +3,7 @@ WEST setFriend [EAST, 1];
 EAST setFriend [WEST, 1];
 version        	= "1.01";
 compatible     	= 102;
-internDebug    	= true;
+internDebug    	= false;
 debug          	= false;
 addonversion   	= false;
 dedicatedServer = false;
@@ -73,6 +73,8 @@ waitUntil{scriptDone  _h};
 _h = [] execVM "variables.sqf";
 
 waitUntil{scriptDone  _h};
+
+waitUntil {!isNil"IntroInit"};
 
 [SkipTimeDay, SkipTimeNight, 1] execVM "skiptime.sqf"; 
 [] execVM "weather.sqf";
