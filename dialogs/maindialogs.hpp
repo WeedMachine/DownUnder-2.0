@@ -1410,7 +1410,7 @@ class CopMenu
 	movingEnable = true;
 	controlsBackground[] = {DLG_BACK1, background};	
 	objects[] = { };
-	controls[] = {button1, button2, button3, button4, button5, button6, button7, dummybutton};		
+	controls[] = {button1, button2, button3, button4, button5, button6, button7, button8, dummybutton};		
 	
 	class DLG_BACK1: Rscbackground		
 	{
@@ -1500,6 +1500,17 @@ class CopMenu
 	{
 		x = 0.40;
 		y = 0.55;
+		w = 0.20;
+		h = 0.04;	
+		
+		text = "Police Records";	
+		action = "[] call BC_FIC";
+	};
+	
+	class button8 : RscButton
+	{
+		x = 0.40;
+		y = 0.65;
 		w = 0.20;
 		h = 0.04;	
 		
@@ -2167,4 +2178,195 @@ controls[] = {pitabutton, corozbutton, terrorbutton, closebutton, teebutton, tee
 	};
 
 };
+
+class fic_records
+{
+	idd = -1;
+	movingEnable = true;
+	controlsBackground[] = {DLG_BACK1, FRAME1};
+	objects[] = { };
+	controls[] = {LOG, TIMEDATE, NAME, REASON, ADDRESS, VEHICLE, DISPOSITION, TIMEDATETEXT, NAMETEXT, REASONTEXT, ADDRESSTEXT, VEHICLETEXT, DISPOTEXT, EXITBUTTON, SUBMITBUTTON};
+	
+	class DLG_BACK1: RscText
+	{
+		x = 0.0025;
+		y = 0.0039;
+		w = 0.985;
+		h = 0.927;
+		colorBackground[] = {0,0,0,0.8};
+	};
+	class FRAME1 : RscText
+	{
+		x = 0.0025;
+		y = 0.0039;
+		idc = -1;
+		w = 0.985;
+		h = 0.927;
+		style = ST_FRAME;
+		text = "FIC Records";
+	};
+	class LOG : RscListBox
+	{
+		x = 0.01;
+		y = 0.03119;
+		idc = 91;
+		w = 0.97125;
+		h = 0.56725;
+		style = ST_LEFT;
+		colorText[] = {1, 1, 1, 1};
+		RowHeight = 0.04;
+	};
+	class TIMEDATE : RscEdit
+	{
+		x = 0.75;
+		y = 0.62;
+		idc = 61;
+		w = 0.2;
+		h = 0.045;
+		colorText[] = {1, 1, 1, 1};
+		style = ST_LEFT;
+	};
+	class NAME : RscEdit
+	{
+		x = 0.10;
+		y = 0.62;
+		idc = 62;
+		w = 0.2;
+		h = 0.045;
+		colorText[] = {1, 1, 1, 1};
+		style = ST_LEFT;
+	};
+	class REASON : RscCombo
+	{
+		x = 0.40;
+		y = 0.62;
+		idc = 63;
+		w = 0.2;
+		h = 0.04;
+		colorText[] = {1, 1, 1, 1};
+		style = ST_LEFT;
+		RowHeight = 0.04;
+	};
+	class ADDRESS : RscEdit
+	{
+		x = 0.10;
+		y = 0.67;
+		idc = 64;
+		w = 0.85;
+		h = 0.045;
+		colorText[] = {1, 1, 1, 1};
+		style = ST_LEFT;
+	};
+	class VEHICLE : RscEdit
+	{
+		x = 0.10;
+		y = 0.72;
+		idc = 65;
+		w = 0.2;
+		h = 0.045;
+		colorText[] = {1, 1, 1, 1};
+		style = ST_LEFT;
+	};
+	class DISPOSITION : RscEdit
+	{
+		x = 0.10;
+		y = 0.77;
+		idc = 66;
+		w = 0.85;
+		h = 0.045;
+		colorText[] = {1, 1, 1, 1};
+		style = ST_LEFT;
+	};
+	class TIMEDATETEXT : RscText
+	{
+		x = 0.620;
+		y = 0.62;
+		idc = -1;
+		w = 0.09;
+		h = 0.045;
+		style = ST_LEFT;
+		colorText[] = {1, 1, 1, 1};
+		text = "Time & Date:";
+	};
+	class NAMETEXT : RscText
+	{
+		x = 0.0125;
+		y = 0.62;
+		idc = -1;
+		w = 0.08;
+		h = 0.045;
+		style = ST_LEFT;
+		colorText[] = {1, 1, 1, 1};
+		text = "Name:";
+	};
+	class REASONTEXT : RscText
+	{
+		x = 0.325;
+		y = 0.62;
+		idc = -1;
+		w = 0.08;
+		h = 0.045;
+		style = ST_LEFT;
+		colorText[] = {1, 1, 1, 1};
+		text = "Reason:";
+	};
+	class ADDRESSTEXT : RscText
+	{
+		x = 0.0125;
+		y = 0.67;
+		idc = -1;
+		w = 0.08;
+		h = 0.045;
+		style = ST_LEFT;
+		colorText[] = {1, 1, 1, 1};
+		text = "Location:";
+	};
+	class VEHICLETEXT : RscText
+	{
+		x = 0.0125;
+		y = 0.72;
+		idc = -1;
+		w = 0.08;
+		h = 0.045;
+		style = ST_LEFT;
+		colorText[] = {1, 1, 1, 1};
+		text = "Vehicle:";
+	};
+	class DISPOTEXT : RscText
+	{
+		x = 0.0125;
+		y = 0.77;
+		idc = -1;
+		w = 0.08;
+		h = 0.09;
+		style = ST_LEFT;
+		colorText[] = {1, 1, 1, 1};
+		text = "Disposition:";
+	};
+	class EXITBUTTON : RscButton
+	{
+		x = 0.77875;
+		y = 0.87914;
+		idc = -1;
+		w = 0.2;
+		h = 0.04;
+		style = ST_CENTER;
+		text = "Exit";
+		action = "closeDialog 0";
+		default = false;
+	};
+	class SUBMITBUTTON : RscButton
+	{
+		x = 0.01;
+		y = 0.87914;
+		idc = -1;
+		w = 0.2;
+		h = 0.04;
+		style = ST_CENTER;
+		text = "Submit";
+		action = "[] call BC_UpdateFIC";
+		default = false;
+	};
+};
+
 

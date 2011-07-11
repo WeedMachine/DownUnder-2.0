@@ -1,9 +1,11 @@
 _vcls = nearestobjects [getpos player, ["LandVehicle", "Air"], 7];
 _vcl = _vcls select 0;
 
+
 if(!(_vcl in INV_VehicleArray))exitwith{player groupchat "You don't have the key to this vehicle!";};
 if(!isnull _vcl)then
 {
+if ((count crew _vcl) > 0) exitWith {player groupChat "The vehicle is not empty!"};
 if (!(createDialog "itemkaufdialog")) exitWith {hint "Dialog Error!";};
 if (isNil "INV_StorageDialoge") then {INV_StorageDialoge = 0;} else {INV_StorageDialoge = INV_StorageDialoge + 1;};
 private ["_veh"];

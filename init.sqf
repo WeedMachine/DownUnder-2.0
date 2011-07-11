@@ -127,7 +127,7 @@ if (isServer) then
 
 {
 
-_h = [] execVM "test.sqf";
+_h = [] execVM "ServerScripts\test.sqf";
 
 waitUntil{scriptDone _h};
 
