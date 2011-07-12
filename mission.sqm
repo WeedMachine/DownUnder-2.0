@@ -97,7 +97,6 @@ class Mission
 		"caweapons_warfare_weapons",
 		"CAWheeled2_Kamaz",
 		"monaro",
-		"MP_MB",
 		"ca_animals2_cow",
 		"qin_evoix",
 		"castructures_e_misc_misc_well",
@@ -4748,14 +4747,14 @@ class Mission
 				class Item0
 				{
 					position[]={1615.474,2.8548737,1548.1025};
-					azimut=232.7675;
+					azimut=232.76801;
 					id=433;
 					side="CIV";
 					vehicle="RU_Profiteer4";
 					leader=1;
 					skill=0.60000002;
 					text="kaviarverkauf";
-					init=" call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";"";  this disableAI ""move"";  this disableAI ""anim""; this allowdamage false; this setPos ((nearestobject [this, ""house""]) buildingPos 7); ";
+					init=" call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";"";  this disableAI ""move"";  this disableAI ""anim""; this allowdamage false;";
 				};
 			};
 		};
@@ -20643,7 +20642,7 @@ class Mission
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed1";
-			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01]; this setPos [getPos this select 0, getPos this select 1, 20]";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, 20]";
 		};
 		class Item1495
 		{
@@ -20657,7 +20656,7 @@ class Mission
 		class Item1496
 		{
 			position[]={5175.8403,19.932768,5435.7681};
-			azimut=-180.62747;
+			azimut=-180.627;
 			id=1763;
 			side="EMPTY";
 			vehicle="du_roadsign_speed";
@@ -20667,13 +20666,13 @@ class Mission
 		class Item1497
 		{
 			position[]={4355.2432,14.976334,2653.7983};
-			azimut=67.391006;
+			azimut=67.390999;
 			id=1764;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed2";
-			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01];";
+			init="this allowdamage false;this setPos [getPos this select 0, getPos this select 1, 20]";
 		};
 		class Item1498
 		{
@@ -20724,7 +20723,7 @@ class Mission
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed4";
-			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01];";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, 20]";
 		};
 		class Item1503
 		{
@@ -20749,13 +20748,13 @@ class Mission
 		class Item1505
 		{
 			position[]={4907.8052,29.603291,6751.4194};
-			azimut=-91.623405;
+			azimut=-91.623398;
 			id=1772;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed5";
-			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01];";
+			init="this allowdamage false;this setPos [getPos this select 0, getPos this select 1, 20]";
 		};
 		class Item1506
 		{
@@ -20780,13 +20779,13 @@ class Mission
 		class Item1508
 		{
 			position[]={5163.5908,15.850733,3765.8013};
-			azimut=178.51703;
+			azimut=178.517;
 			id=1775;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed3";
-			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01];";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, 20]";
 		};
 		class Item1509
 		{
@@ -20857,7 +20856,7 @@ class Mission
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed6";
-			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01];";
+			init="this allowdamage false;this setPos [getPos this select 0, getPos this select 1, 20]";
 		};
 		class Item1516
 		{

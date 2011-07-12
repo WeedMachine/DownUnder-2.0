@@ -431,6 +431,35 @@ civclassarray		 =
 
 ];
 
+SupporterFeatureList 	=
+
+[
+
+"976769", // WeedMachine
+"1083009", // Whippy
+"1012993", // Swampy
+"1885825", // Riggs
+"3734278",
+"915905",
+"1664390", //DunNZ
+"433856", //Jan
+"1047169", // Jonzie
+"4464646" //Dustoff
+
+];
+publicVariable "SupporterFeatureList";
+
+SupporterFeatureCarePackage  =
+
+[
+
+"1885825", // Riggs
+"976769" // WeedMachine
+
+];
+publicVariable "SupporterFeatureCarePackage";
+
+
 civslavearray		 = ["Citizen1","Citizen2","Citizen3","Citizen4"];
 civworkerarray		 = ["Worker1","Worker2","Worker3","Worker4"];
 civescortarray		 = ["Hooker1","Hooker2","Hooker3","Hooker4","Hooker5"];
