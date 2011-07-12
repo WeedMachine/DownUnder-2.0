@@ -121,7 +121,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=273;
+		items=274;
 		class Item0
 		{
 			side="LOGIC";
@@ -1859,7 +1859,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2152.2056,0.46513563,6801.8784};
+					position[]={2190.7449,0.5660249,6773.936};
 					azimut=-101.96097;
 					id=196;
 					side="LOGIC";
@@ -2571,7 +2571,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2175.5449,0.43418124,6781.7998};
+					position[]={2178.9563,0.47550353,6780.2031};
 					id=275;
 					side="LOGIC";
 					vehicle="Logic";
@@ -3125,7 +3125,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="pub1";
-					init=" call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";"";  this disableAI ""move"";  this disableAI ""anim""; this allowdamage false; this setPos ((nearestobject [this, ""house""]) buildingPos 7); ";
+					init=" call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";"";  this disableAI ""move"";  this disableAI ""anim""; this allowdamage false;";
 				};
 			};
 		};
@@ -6066,7 +6066,7 @@ class Mission
 				class Item0
 				{
 					position[]={4418.2573,15.360554,1494.1377};
-					azimut=186.01878;
+					azimut=186.019;
 					id=1546;
 					side="CIV";
 					vehicle="Damsel5";
@@ -6210,6 +6210,25 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="sfacspawn";
+				};
+			};
+		};
+		class Item273
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2180.1482,0.51219547,6779.3057};
+					azimut=-101.961;
+					id=1898;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="boatspawn2";
 				};
 			};
 		};
@@ -22984,7 +23003,7 @@ class Mission
 		};
 		class Item102
 		{
-			position[]={2174.145,0.44077402,6782.6519};
+			position[]={2178.9353,0.44750121,6781.563};
 			name="boatdocks";
 			text="Boat dock";
 			type="mil_dot";
@@ -24614,7 +24633,7 @@ class Mission
 		};
 		class Item271
 		{
-			position[]={8549.5459,24.20817,8856.6914};
+			position[]={8547.4014,29.647511,8839.5371};
 			name="FUEL_10";
 			text="Fuel";
 			type="Select";
