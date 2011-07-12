@@ -222,6 +222,8 @@ INV_AlleFahrzeugeArray = [
 
 ["M1030",["Fahrzeug", "car"],["M1030", "Motorbike"], [3000, 1500], [1, "car", "", 100], [50,[1,0,0,1] ], "M1030" call ISSE_Cfg_Vehicle_GetName, "M1030" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 1],["erdoel", 1]]],
 
+["MP_MB",["Fahrzeug", "car"],["MP_MB", "Harley-Davidson Motorbike"], [14000, 9000], [1, "car", "", 100], [50,[1,0,0,1] ], "M1030" call ISSE_Cfg_Vehicle_GetName, "M1030" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 1],["erdoel", 1]]],
+
 ["TT650_Civ",["Fahrzeug", "car"],["TT650G", "Motorbike"],[3000, 1500], [1, "car", "probator", 100], [50, [1,0,0,1]], "TT650G" call ISSE_Cfg_Vehicle_GetName, "TT650G" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 1],["erdoel", 1]] ],
 
 ["TT650_Ins",["Fahrzeug", "car"],["TT650C", "Sports Motorbike"],[5000, 2500], [1, "car", "", 100], [50,[1,0,0,1] ], "TT650C" call ISSE_Cfg_Vehicle_GetName,"TT650C" call ISSE_Cfg_Vehicle_GetDesc,[["stahl", 1],["erdoel", 1]]],

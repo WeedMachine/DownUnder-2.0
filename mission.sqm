@@ -30,6 +30,7 @@ class Mission
 		"du_characters",
 		"map_eu",
 		"monaro",
+		"MP_MB",
 		"aston_martin_db9",
 		"BMW_135I",
 		"BMW_M3",
@@ -96,6 +97,7 @@ class Mission
 		"caweapons_warfare_weapons",
 		"CAWheeled2_Kamaz",
 		"monaro",
+		"MP_MB",
 		"ca_animals2_cow",
 		"qin_evoix",
 		"castructures_e_misc_misc_well",
@@ -24068,7 +24070,7 @@ class Mission
 		class Item212
 		{
 			position[]={2948.4629,0.1990516,5231.9175};
-			name="stoerfischen";
+			name="fishingsturgeon";
 			text="Fishing Area (Illegal sturgeon)";
 			type="mil_circle";
 			colorName="ColorRed";

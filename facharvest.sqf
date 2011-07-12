@@ -95,6 +95,7 @@ _vehiclefactory=
 [
 
 "MMT_Civ",
+"MP_MB",
 "TT650_Civ",
 "TT650_Ins",
 "Tractor",
@@ -282,6 +283,7 @@ INV_FarmItemArray =
 
 [[["fishingwhale",400]],"Whale",2,1,["Ship"]],
 [[["fishingbass",400]],"bass",7,4,["Ship"]],
+[[["fishingsturgeon",20]],"Kaviar",4,1,["Ship"]],
 [[["fishingblowfish",200]],"blowfish",15,8,["Ship"]],
 [[["fishingherring",200]],"herring",15,8,["Ship"]],
 [[["fishingmackerel",200]],"mackerel",15,8,["Ship"]],
