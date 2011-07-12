@@ -4,6 +4,7 @@ _infos   = _item call INV_getitemArray;
 _carsinv   = (carshop1 call INV_getshopArray) select 4;
 _holdeninv = (holdenshop call INV_getshopArray) select 4;
 _evoinv    = (evoshop call INV_getshopArray) select 4;
+_sportsinv = (sportsshop call INV_getshopArray) select 4;
 _pickupinv = (pickupshop1 call INV_getshopArray) select 4; 
 _boatinv   = (boatshop1 call INV_getshopArray) select 4;
 _truckinv  = (truckshop call INV_getshopArray) select 4;
@@ -29,6 +30,25 @@ ctrlSetText [3, format["Airfield for $%1", _preis]];
 buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 };
 
+if ([_item, _sportsinv] call INV_iteminshop) exitwith
+
+{
+
+if (!(createDialog "distribute1")) exitWith {hint "Dialog Error!"};
+
+//=====================Sports Car Factory====================================
+
+_shopnum      = sportsshop call INV_getshopnum;
+_stock        = [_item, _shopnum] call INV_getstock;
+_maxstock     = [_item, _shopnum] call INV_getmaxstock;
+_preisOhneTax = (_infos call INV_getitemBuyCost)*1;																						
+_preis        = (_infos call INV_getitemCostWithTax)*1;
+_demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
+_preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
+
+ctrlSetText [3, format["Sports Shop for $%1", _preis]];
+buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
+};
 
 
 if ([_item, _carsinv] call INV_iteminshop) exitwith
