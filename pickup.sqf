@@ -1,4 +1,5 @@
 if(pickingup)exitwith{player groupchat "you are already picking up an item"};
+pickingup = true;
 
 _action	    = _this select 2;
 _this 	    = _this select 3;

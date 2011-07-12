@@ -4,7 +4,7 @@ _amount = _this select 1;
 da = "THIS PLAYER TRY DROP " + format ["%1", _amount ] + ". NickName = " + (name player);
 
 
-if(_amount < 0)then { fuelshop3 GlobalChat "!!WARNING!! !!CHEATER!! KICK THIS PLAYER OR BAN", fuelshop3 GlobalChat da } else {
+if(_amount <= 0)then { fuelshop3 GlobalChat "!!WARNING!! !!CHEATER!! KICK THIS PLAYER OR BAN", fuelshop3 GlobalChat da } else {
 
 
 
