@@ -151,6 +151,30 @@ _vehiclefactory=
 
 ];
 
+_sportsfactory=
+
+[
+
+"ASTON_MARTIN_DB9",
+"BMW_135I",
+"BMW_M3_GTR",
+"BMW_M3_RALLY",
+"CHEVROLET_CAMARO_SS_396",
+"chevrolet_chevelle",
+"CHRYSLER_300",
+"CHRYSLER_B_limmo",
+"CORVETTE_Z06",
+"FORD_MUSTANG_SHELBY_COBRA",
+"FORD_MUSTANG_SHELBY_COBRA1",
+"FORD_SHELBY_GT",
+"MERCEDES_BENZ_CLK_500",
+"JAGUAR_XK",
+"MERCEDES_BENZ_CLK_500",
+"NISSAN_SKYLINE_GT_R_Z",
+"NISSAN_SKYLINE_GT_R_Z2"
+
+];
+
 _itemfactory=
 
 [
@@ -228,8 +252,7 @@ Oilraffineriequeue  = [];
 Steelfactoryqueue  = [];
 Juwelierqueue  = [];
 Baekereiqueue  = [];
-
-
+sportsvehiclequeue = [];
 
 INV_ItemFabriken =
 
@@ -246,6 +269,7 @@ INV_ItemFabriken =
 [Oil_1,"factory10","Oil Refinery",dummyobj,dummyobj,_Oilraffinerie,50000,"Fabrikablage10", "Oilraffineriequeue"],
 [Steel_Fac,"factory11","Steel Factory",dummyobj,dummyobj,_Steelfactory,75000,"Fabrikablage11", "Steelfactoryqueue"],
 [Diamond_1,"factory12","Jeweler",dummyobj,dummyobj,_Juwelier,50000,"Fabrikablage12", "Juwelierqueue"],
+[sportsfactory,"factory14","Sports Car Factory",dummyobj,sfacspawn,_sportsfactory,600000,"Fabrikablage14", "sportsvehiclequeue"],
 [Bakery_2,"factory13","Industrial Bakery",dummyobj,dummyobj,_Baekerei,20000,"Fabrikablage13", "Baekereiqueue"]
 
 ];

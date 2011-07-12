@@ -489,6 +489,7 @@ STRS_cop_inprison,You are in prison for either team-killing cops or firing repea
 STRS_cop_freeprison,You are free again .,
 STRM_mission_marker_fac_weapon,Weapon Factory,
 STRM_mission_marker_fac_vehicle,Vehicle Factory,
+STRM_mission_marker_fac_sportsvehicle,Sports Car Factory,
 STRM_mission_marker_fac_item,General Factory,
 STRM_mission_marker_fac_res,Resource Factory,
 STRM_mission_marker_mine_erz,Iron Ore Mine,

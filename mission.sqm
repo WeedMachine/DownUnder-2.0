@@ -31,7 +31,6 @@ class Mission
 		"map_eu",
 		"monaro",
 		"aston_martin_db9",
-		"utes",
 		"BMW_135I",
 		"BMW_M3",
 		"BMW_M3_RALLY",
@@ -90,26 +89,6 @@ class Mission
 		"CAWheeled2_VWGolf",
 		"warfarebuildings",
 		"GLT_Objects",
-		"aston_martin_db9",
-		"BMW_135I",
-		"bmw_m3",
-		"BMW_M3_RALLY",
-		"BMW_M6",
-		"CHEVROLET_CAMARO_SS_396",
-		"chevrolet_chevelle",
-		"CHRYSLER_300",
-		"CHRYSLER_B_limmo",
-		"CORVETTE_Z06",
-		"DODGE_VIPER_SRT10",
-		"FORD_GT",
-		"FORD_MUSTANG_SHELBY_COBRA",
-		"FORD_SHELBY_GT",
-		"JAGUAR_XK",
-		"LAMBORGHINI_GALLARDO",
-		"LAMBORGHINI_REVENTON",
-		"LAMBORGHINI_MURCIELAGO",
-		"MERCEDES_BENZ_CLK_500",
-		"nissan_skyline_gt_r_z",
 		"map_eu",
 		"castructures_e_housec",
 		"castructures_e_housea_a_stationhouse",
@@ -141,7 +120,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=271;
+		items=273;
 		class Item0
 		{
 			side="LOGIC";
@@ -6177,10 +6156,49 @@ class Mission
 				};
 			};
 		};
+		class Item271
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6693.749,75.414162,4182.1123};
+					azimut=-149.16234;
+					id=1895;
+					side="CIV";
+					vehicle="RU_Functionary2";
+					leader=1;
+					skill=0.60000002;
+					text="sportsfactory";
+					init="this disableAI ""move""; this disableAI ""anim""; this allowdamage false;nul = this execVM ""nomove.sqf""; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 0.01];";
+				};
+			};
+		};
+		class Item272
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6697.0728,75.414162,4172.4072};
+					azimut=-417.89072;
+					id=1896;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="sfacspawn";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=1623;
+		items=1624;
 		class Item0
 		{
 			position[]={3847.5354,14.888542,7339.6558};
@@ -7471,7 +7489,7 @@ class Mission
 		class Item129
 		{
 			position[]={3672.7056,14.897629,6332.9971};
-			azimut=-558.31268;
+			azimut=-558.31299;
 			id=214;
 			side="EMPTY";
 			vehicle="HeliHEmpty";
@@ -20617,12 +20635,13 @@ class Mission
 		class Item1494
 		{
 			position[]={5178.501,20.930199,5378.584};
+			azimut=93.368896;
 			id=1761;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed1";
-			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01];";
+			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01]; this setPos [getPos this select 0, getPos this select 1, 20]";
 		};
 		class Item1495
 		{
@@ -22005,10 +22024,21 @@ class Mission
 			skill=0.60000002;
 			init="this allowdamage false;";
 		};
+		class Item1623
+		{
+			position[]={6695.7163,75.414162,4172.5684};
+			azimut=-563.71149;
+			id=1897;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			init=" this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 8]; call compile ""[""""light"""", this, 0.2] execvm """"effects.sqf"""";"";";
+		};
 	};
 	class Markers
 	{
-		items=301;
+		items=302;
 		class Item0
 		{
 			position[]={4814.5728,54.924606,6431.5801};
@@ -24817,6 +24847,17 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			angle=-2.8422301;
+		};
+		class Item301
+		{
+			position[]={6693.8638,75.414162,4181.3154};
+			name="heavyweaponshop_1_1_1";
+			text="@STRM_mission_marker_fac_sportsvehicle";
+			type="mil_box";
+			colorName="ColorOrange";
+			a=0.69999999;
+			b=0.69999999;
+			angle=54.821484;
 		};
 	};
 	class Sensors
