@@ -17919,7 +17919,7 @@ class Mission
 		};
 		class Item1244
 		{
-			position[]={4686.1968,14.955147,8205.3232};
+			position[]={5127.5093,15.303291,8014.4961};
 			azimut=-1249.4536;
 			id=1509;
 			side="EMPTY";
@@ -17930,7 +17930,7 @@ class Mission
 		};
 		class Item1245
 		{
-			position[]={4691.3223,14.955147,8205.2217};
+			position[]={5132.6348,19.773954,8014.3945};
 			azimut=189.89999;
 			id=1510;
 			side="EMPTY";
@@ -20477,7 +20477,7 @@ class Mission
 		};
 		class Item1478
 		{
-			position[]={4683.4233,14.955147,8203.7598};
+			position[]={5124.7358,15.303291,8012.9326};
 			azimut=-470.55301;
 			id=1745;
 			side="EMPTY";
@@ -24598,7 +24598,7 @@ class Mission
 		};
 		class Item269
 		{
-			position[]={4685.0327,14.955147,8203.7559};
+			position[]={5126.3452,15.303291,8012.9287};
 			name="FUEL_8";
 			text="Fuel";
 			type="Select";
