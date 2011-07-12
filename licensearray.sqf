@@ -23,7 +23,7 @@ INV_Lizenzen =
 ["Rifle",licenseflag2,"Rifle License",50000],
 ["engineer",university,localize "STRS_license_engineer",25000],
 ["engineer",university1,localize "STRS_license_engineer",25000],
-["realestate",objnull,localize "STRS_realestate_permit",1],
+["donator",objnull,localize "STRS_realestate_permit",1],
 ["probator",copbank,localize "STRS_license_probator",10000],
 ["patrol_training",copbank,localize "STRS_license_coppatrol",25000],
 ["response_training",copbank,localize "STRS_license_copresponse",50000],

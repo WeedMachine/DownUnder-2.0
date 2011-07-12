@@ -272,6 +272,29 @@ INV_AlleFahrzeugeArray = [
 ["qin_evoix_green",["Fahrzeug", "car"],["qin_evoix_green", "Mitsubishi Lancer Evolution Green"],[34095, 32888], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
 ["qin_evoix_orange",["Fahrzeug", "car"],["qin_evoix_orange", "Mitsubishi Lancer Evolution Orange"],[34095, 32888], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
 ["qin_evoix_red",["Fahrzeug", "car"],["qin_evoix_red", "Mitsubishi Lancer Evolution Red"],[34095, 32888], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["ASTON_MARTIN_DB9",["Fahrzeug", "car"],["ASTON_MARTIN_DB9", "Aston Martin DB9"],[440000, 340000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["BMW_135I",["Fahrzeug", "car"],["BMW_135I", "BMW 135I"],[70000, 54000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["BMW_M3_GTR",["Fahrzeug", "car"],["BMW_M3_GTR", "BMW M3 GTR"],[500000, 400000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["BMW_M3_RALLY",["Fahrzeug", "car"],["BMW_M3_RALLY", "BMW M3 Rally"],[120000, 100000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["BMW_M6",["Fahrzeug", "car"],["BMW_M6", "BMW M6"],[210000, 180000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CHEVROLET_CAMARO_SS_396",["Fahrzeug", "car"],["CHEVROLET_CAMARO_SS_396", "Chevrolet Camaro SS 396"],[90000, 79000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["chevrolet_chevelle",["Fahrzeug", "car"],["chevrolet_chevelle", "Chevrolet Chevelle"],[70000, 59000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CHRYSLER_300",["Fahrzeug", "car"],["CHRYSLER_300", "Chrysler 300"],[77000, 61000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CHRYSLER_B_limmo",["Fahrzeug", "car"],["CHRYSLER_B_limmo", "Chrysler B Limmo"],[90000, 90000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["CORVETTE_Z06",["Fahrzeug", "car"],["CORVETTE_Z06", "Corvette Z06"],[440000, 340000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["FORD_MUSTANG_SHELBY_COBRA",["Fahrzeug", "car"],["FORD_MUSTANG_SHELBY_COBRA", "Ford Mustang Shelby Cobra"],[55000, 35000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["FORD_MUSTANG_SHELBY_COBRA1",["Fahrzeug", "car"],["FORD_MUSTANG_SHELBY_COBRA1", "Ford Mustang Shelby Cobra"],[60000, 34000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["FORD_SHELBY_GT",["Fahrzeug", "car"],["FORD_SHELBY_GT", "Ford Shelby GT"],[110000, 100000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["JAGUAR_XK",["Fahrzeug", "car"],["JAGUAR_XK", "Jaguar XK"],[223000, 200000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["MERCEDES_BENZ_CLK_500",["Fahrzeug", "car"],["MERCEDES_BENZ_CLK_500", "Mecedes Benz Clk 500"],[65000, 54000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["NISSAN_SKYLINE_GT_R_Z",["Fahrzeug", "car"],["NISSAN_SKYLINE_GT_R_Z", "Nissan Skyline GTR Z"],[90000, 80000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["NISSAN_SKYLINE_GT_R_Z2",["Fahrzeug", "car"],["NISSAN_SKYLINE_GT_R_Z2", "Nissan Skyline GTR Z2"],[95000, 79000], [1, "sportscar", "NotForCops", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["LAMBORGHINI_GALLARDO",["Fahrzeug", "car"],["LAMBORGHINI_GALLARDO", "Lamborghini Gallardo"],[10, 10], [1, "donator", "donator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["LAMBORGHINI_REVENTON",["Fahrzeug", "car"],["LAMBORGHINI_REVENTON", "Lamborghini Reventon"],[10, 10], [1, "donator", "donator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["LAMBORGHINI_MURCIELAGO",["Fahrzeug", "car"],["LAMBORGHINI_MURCIELAGO", "Lamborghini Murcielago"],[10, 10], [1, "donator", "donator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["DODGE_VIPER_SRT10",["Fahrzeug", "car"],["DODGE_VIPER_SRT10", "Dodge Viper SRT10"],[10, 10], [1, "donator", "donator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+["FORD_GT",["Fahrzeug", "car"],["FORD_GT", "Ford GT"],[10, 10], [1, "donator", "donator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 4],["glas", 1],["plastik", 1],["erdoel", 4]] ],
+
 
 ["Kamaz", ["Fahrzeug", "truck"],["Kamaz", "Kamaz"],[45000, 22500],[2, "truck", "patrol_training", 1500], [500, [1,0,0,14] ], "Kamaz" call ISSE_Cfg_Vehicle_GetName,"Kamaz" call ISSE_Cfg_Vehicle_GetDesc,[["stahl", 17],["ebauteile", 2],["glas", 2],["plastik", 3],["erdoel", 6]] ],
 
@@ -480,7 +503,7 @@ INV_AlleItemsArray = [
 
 ["Sign_Checkpoint",["Item", "misc"],["Sign_Checkpoint", "Sign Checkpoint"],[500, 250], [2, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["bunkersmall",["Item", "misc"],["Land_fortified_nest_small", "Bunker (Small)"],[10000, 5000], [20, "realestate", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_bunkersmall",localize "STRS_inv_item_bunkersmall_info", [] ],
+["bunkersmall",["Item", "misc"],["Land_fortified_nest_small", "Bunker (Small)"],[10000, 5000], [20, "donator", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_bunkersmall",localize "STRS_inv_item_bunkersmall_info", [] ],
 
 ["landconelight",["Item", "misc"],["Land_coneLight", "Road cone (light)"],[500, 250], [3, "", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_landconelight",localize "STRS_inv_item_landconelight_info", [] ],
 
@@ -492,7 +515,7 @@ INV_AlleItemsArray = [
 
 ["vclammo",["Item", "carobjects"],["vclammo", "Vehicle Ammo"],[50000, 25000], [50, "", "sobr_training"], [true, true, true,!(iscop),"vclammo.sqf"],localize "STRS_inv_item_vclammo",localize "STRS_inv_item_vclammo_info", [["kupfer", 5],["schwarzpulver", 5]] ],
 
-["hideout",["Item", "misc"],["hideout", "Hideout"],[20000, 10000], [15, "realestate","Notforcops"], [false, true, false,false,"hideout.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
+["hideout",["Item", "misc"],["hideout", "Hideout"],[20000, 10000], [15, "donator","Notforcops"], [false, true, false,false,"hideout.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
 
 ["stoersender",["Item", ",misc"],["stoersender", "Radio jammer"],[15000, 7500],[5, ""], [true, true, true,true,"radiojammer.sqf"],localize "STRS_item_stoersender",localize "STRS_item_stoersender_info", [["plastik", 4],["ebauteile", 4]] ],
 
@@ -512,15 +535,15 @@ INV_AlleItemsArray = [
 
 ["LocalBasicWeaponsBox", ["Item", "misc"], ["LocalBasicWeaponsBox", "Storage box"],[10000, 3750], [0, "", "", 200],[true,true,true, false, "nouse.sqf"], "Storage box", "Storage box",[] ],
 
-["Camonet",["Item", "misc"],["Land_CamoNetB_NATO", "Camo Net"],[7500, 3750], [15, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_Camo_net",localize "STRS_inv_item_Camo_net_info", [] ],
+["Camonet",["Item", "misc"],["Land_CamoNetB_NATO", "Camo Net"],[7500, 3750], [15, "donator", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_Camo_net",localize "STRS_inv_item_Camo_net_info", [] ],
 
 ["FortRazorWireCop",["Item", "misc"],["Fort_RazorWire", "RazorWire"],[3000, 1500], [5, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["Barricade",["Item", "misc"],["Land_fort_rampart", "Barricade"],[40000, 20000], [50, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["Barricade",["Item", "misc"],["Land_fort_rampart", "Barricade"],[40000, 20000], [50, "donator", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["fireplace",["Item", "misc"],["Land_Fire", "Fireplace"],[2500, 1250], [5, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_fireplace",localize "STRS_inv_item_Land_fireplace", [] ],
+["fireplace",["Item", "misc"],["Land_Fire", "Fireplace"],[2500, 1250], [5, "donator", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_fireplace",localize "STRS_inv_item_Land_fireplace", [] ],
 
-["campeast",["Item", "misc"],["CampEast", "Tent"],[15000, 7500], [25, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["campeast",["Item", "misc"],["CampEast", "Tent"],[15000, 7500], [25, "donator", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
 ["roadbarrierlong",["Item", "misc"],["RoadBarrier_long", "Road Barrier"],[1000, 500], [5, "", "patrol_training"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_roadbarrierlong",localize "STRS_inv_item_Land_roadbarrierlong", [] ],
 
@@ -536,9 +559,9 @@ INV_AlleItemsArray = [
 
 ["supgrade5",["Item", "carobjects"],["nitro", "Speed Upgrade 5"], [60000, 35000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 5",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["House",["Item", "misc"],["House", "House"],[800000, 400000], [60, "realestate", "Notforcops"], [false, true, false,false,"house.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
+["House",["Item", "misc"],["House", "House"],[800000, 400000], [60, "donator", "Notforcops"], [false, true, false,false,"house.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
 
-["House2",["Item", "misc"],["House2", "Small House"],[400000, 200000], [60, "realestate", "Notforcops"], [false, true, false,false,"house2.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
+["House2",["Item", "misc"],["House2", "Small House"],[400000, 200000], [60, "donator", "Notforcops"], [false, true, false,false,"house2.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
 
 ["signtape",["Item", "misc"],["Sign_tape_redwhite", "Warning Tape"],[500, 250], [1, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_roadbarrierlong",localize "STRS_inv_item_Land_roadbarrierlong", [] ],
 
@@ -546,15 +569,15 @@ INV_AlleItemsArray = [
 
 ["Apfelkuchen",["Item", "food"],["Apple Pie", "Apple Pie"],[2000, 2000], [0.25, ""], [true, true, true,false,"food.sqf"],localize "STRS_inv_item_Bread",localize "STRS_inv_item_nahrung_info", [["getreide", 3],["Apfel", 2]] ],
 
-["Tor",["Item", "misc"],["Land_BarGate2", "Gate"],[6000, 3000], [15, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["Tor",["Item", "misc"],["Land_BarGate2", "Gate"],[6000, 3000], [15, "donator", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
 ["Sandsacke",["Item", "misc"],["Land_fort_bagfence_long", "Sandbag Wall"],[3000, 1500], [10, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
 ["Baracke",["Item", "misc"],["Land_Barrack2", "Barracks"],[20000, 10000], [30, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["Jaegerstand",["Item", "misc"],["Land_Misc_deerstand", "Small Tower"],[15000, 7500], [20, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["Jaegerstand",["Item", "misc"],["Land_Misc_deerstand", "Small Tower"],[15000, 7500], [20, "donator", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
-["Blechzaun",["Item", "misc"],["Fence_corrugated_plate", "Fence"],[3000, 1500], [5, "realestate", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
+["Blechzaun",["Item", "misc"],["Fence_corrugated_plate", "Fence"],[3000, 1500], [5, "donator", "Notforcops"], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_campeast",localize "STRS_inv_item_Land_campeast", [] ],
 
 ["Stoer",["Item", "drug"],["Stoer", "Sturgeon"],[500, 500], [10, ""], [true, true, true,true,"food.sqf"],"Stoer",localize "STRS_inv_item_nahrung_info", [] ],
 

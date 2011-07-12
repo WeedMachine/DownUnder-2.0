@@ -30,6 +30,27 @@ class Mission
 		"du_characters",
 		"map_eu",
 		"monaro",
+		"aston_martin_db9",
+		"utes",
+		"BMW_135I",
+		"BMW_M3",
+		"BMW_M3_RALLY",
+		"BMW_M6",
+		"CHEVROLET_CAMARO_SS_396",
+		"chevrolet_chevelle",
+		"CHRYSLER_300",
+		"CHRYSLER_B_limmo",
+		"CORVETTE_Z06",
+		"DODGE_VIPER_SRT10",
+		"FORD_GT",
+		"FORD_MUSTANG_SHELBY_COBRA",
+		"FORD_SHELBY_GT",
+		"JAGUAR_XK",
+		"LAMBORGHINI_GALLARDO",
+		"LAMBORGHINI_REVENTON",
+		"LAMBORGHINI_MURCIELAGO",
+		"MERCEDES_BENZ_CLK_500",
+		"nissan_skyline_gt_r_z",
 		"qin_evoix",
 		"as_eu_oa_misc",
 		"GLT_Objects",
@@ -69,6 +90,26 @@ class Mission
 		"CAWheeled2_VWGolf",
 		"warfarebuildings",
 		"GLT_Objects",
+		"aston_martin_db9",
+		"BMW_135I",
+		"bmw_m3",
+		"BMW_M3_RALLY",
+		"BMW_M6",
+		"CHEVROLET_CAMARO_SS_396",
+		"chevrolet_chevelle",
+		"CHRYSLER_300",
+		"CHRYSLER_B_limmo",
+		"CORVETTE_Z06",
+		"DODGE_VIPER_SRT10",
+		"FORD_GT",
+		"FORD_MUSTANG_SHELBY_COBRA",
+		"FORD_SHELBY_GT",
+		"JAGUAR_XK",
+		"LAMBORGHINI_GALLARDO",
+		"LAMBORGHINI_REVENTON",
+		"LAMBORGHINI_MURCIELAGO",
+		"MERCEDES_BENZ_CLK_500",
+		"nissan_skyline_gt_r_z",
 		"map_eu",
 		"castructures_e_housec",
 		"castructures_e_housea_a_stationhouse",
@@ -100,7 +141,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=269;
+		items=271;
 		class Item0
 		{
 			side="LOGIC";
@@ -6093,6 +6134,46 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="copbase1";
+				};
+			};
+		};
+		class Item269
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8528.9092,14.964226,3166.7964};
+					azimut=-176.386;
+					id=1893;
+					side="CIV";
+					vehicle="RU_Worker2";
+					leader=1;
+					skill=0.60000002;
+					text="sportsshop";
+					init=" call compile ""[""""light"""", this, 0.1] execvm """"effects.sqf"""";"";  this disableAI ""move""; this disableAI ""anim""; this allowdamage false; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 0.01];  ";
+				};
+			};
+		};
+		class Item270
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8532.0459,14.964226,3160.9263};
+					azimut=87.795303;
+					id=1894;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="sportsspawn";
+					init="(nearestObject [getpos this, ""Land_a_stationhouse""]) allowdamage false; carshopcherno = nearestObject [getpos this, ""Land_a_stationhouse""]; carshopcherno allowdamage false;";
 				};
 			};
 		};
@@ -21927,7 +22008,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=300;
+		items=301;
 		class Item0
 		{
 			position[]={4814.5728,54.924606,6431.5801};
@@ -24725,6 +24806,17 @@ class Mission
 			position[]={5448.6909,11.961105,4847.3687};
 			name="policebase3";
 			type="Empty";
+		};
+		class Item300
+		{
+			position[]={8528.9043,14.964226,3166.7576};
+			name="sportsshop";
+			text="@STRM_mission_marker_sportsshop_car";
+			type="mil_box";
+			colorName="ColorBlue";
+			a=0.69999999;
+			b=0.69999999;
+			angle=-2.8422301;
 		};
 	};
 	class Sensors
