@@ -5545,7 +5545,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3761.155,56.433815,2492.4241};
+					position[]={3761.1929,56.433815,2492.4241};
 					azimut=89.427933;
 					id=1207;
 					side="GUER";
@@ -6068,7 +6068,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3128.4941,27.634987,2501.3147};
+					position[]={3128.6162,27.634987,2501.2537};
 					azimut=-227.435;
 					id=1782;
 					side="LOGIC";
@@ -6106,7 +6106,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5585.4941,14.936981,7642.1533};
+					position[]={5594.5923,14.936981,7642.0327};
 					azimut=-227.435;
 					id=1892;
 					side="LOGIC";
@@ -22039,7 +22039,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=302;
+		items=303;
 		class Item0
 		{
 			position[]={4814.5728,54.924606,6431.5801};
@@ -24859,6 +24859,13 @@ class Mission
 			a=0.69999999;
 			b=0.69999999;
 			angle=54.821484;
+		};
+		class Item302
+		{
+			position[]={3786.7703,16.571747,2501.0999};
+			name="hospitaltentnz";
+			type="Empty";
+			angle=132.90945;
 		};
 	};
 	class Sensors
