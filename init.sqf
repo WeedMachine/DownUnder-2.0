@@ -21,22 +21,23 @@ facworkercost2 = 5000;
 publicVariable "INV_ItemTypenArray";
 publicvariable "INV_itemstocks";
 
-
-
 [] execVM "briefing.sqf";
 
 call compile preprocessfile "triggers.sqf";
-
-
-if(!internDebug)then{["kamera"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};
-
-if(local server)then{execVM "targets.sqf";};
 
 waitUntil { ( (time > 1) and ((alive player) or (local server)) ) };
 
 _h = [] execVM "playerarrays.sqf";																																			
 
 waitUntil{scriptDone  _h};
+
+if (player in auspawn) then {
+if(!internDebug)then{["auspawn"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};};
+
+if (player in nzspawn) then {
+if(!internDebug)then{["nzspawn"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};};
+
+if(local server)then{execVM "targets.sqf";};
 
 _h = [53, rolenumber] execVM "initfuncs.sqf";
 
