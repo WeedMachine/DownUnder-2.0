@@ -1068,7 +1068,7 @@ class Mission
 				class Item0
 				{
 					position[]={5601.3521,14.924495,7675.1563};
-					azimut=-2699.4109;
+					azimut=-2699.4099;
 					id=274;
 					side="WEST";
 					vehicle="DU_Charactersman";
@@ -1076,7 +1076,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop1";
-					description="Cop 1";
+					init="removeallweapons this;";
+					description="Police Chief (AWT)";
 				};
 			};
 		};
@@ -1089,7 +1090,7 @@ class Mission
 				class Item0
 				{
 					position[]={5598.1646,14.924408,7675.1919};
-					azimut=-175.75896;
+					azimut=-175.759;
 					id=119;
 					side="WEST";
 					vehicle="DU_Characters";
@@ -1097,7 +1098,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop2";
-					description="Cop 2";
+					init="removeallweapons this;";
+					description="Police Officer 2";
 				};
 			};
 		};
@@ -1110,7 +1112,7 @@ class Mission
 				class Item0
 				{
 					position[]={5594.7021,14.924024,7675.3506};
-					azimut=-175.75896;
+					azimut=-181.356;
 					id=120;
 					side="WEST";
 					vehicle="DU_Characters";
@@ -1118,7 +1120,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop3";
-					description="Cop 3";
+					init="removeallweapons this;";
+					description="Police Officer 3";
 				};
 			};
 		};
@@ -1131,7 +1134,7 @@ class Mission
 				class Item0
 				{
 					position[]={5591.519,14.923923,7675.3921};
-					azimut=-175.75896;
+					azimut=-175.91901;
 					id=121;
 					side="WEST";
 					vehicle="DU_Characters";
@@ -1139,7 +1142,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop4";
-					description="Cop 4";
+					init="removeallweapons this;";
+					description="Police Officer 4";
 				};
 			};
 		};
@@ -1152,7 +1156,7 @@ class Mission
 				class Item0
 				{
 					position[]={5588.0425,14.924,7675.3604};
-					azimut=-175.75896;
+					azimut=-175.759;
 					id=122;
 					side="WEST";
 					vehicle="DU_Characters";
@@ -1160,7 +1164,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop5";
-					description="Cop 5";
+					init="removeallweapons this;";
+					description="Police Officer 5";
 				};
 			};
 		};
@@ -1181,7 +1186,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop6";
-					description="Cop 6";
+					init="removeallweapons this;";
+					description="Police Officer 6";
 				};
 			};
 		};
@@ -1194,7 +1200,7 @@ class Mission
 				class Item0
 				{
 					position[]={5598.0068,14.913478,7679.7056};
-					azimut=-175.75896;
+					azimut=-175.759;
 					id=124;
 					side="WEST";
 					vehicle="DU_Characters";
@@ -1202,7 +1208,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop7";
-					description="Cop 7";
+					init="removeallweapons this;";
+					description="Police Officer 7";
 				};
 			};
 		};
@@ -1215,7 +1222,7 @@ class Mission
 				class Item0
 				{
 					position[]={5594.8604,14.913976,7679.5};
-					azimut=-175.75896;
+					azimut=-175.759;
 					id=125;
 					side="WEST";
 					vehicle="DU_Characters";
@@ -1223,7 +1230,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop8";
-					description="Cop 8";
+					init="removeallweapons this;";
+					description="Police Officer 8";
 				};
 			};
 		};
@@ -1236,7 +1244,7 @@ class Mission
 				class Item0
 				{
 					position[]={5591.6763,14.913876,7679.5415};
-					azimut=-175.75896;
+					azimut=-175.759;
 					id=126;
 					side="WEST";
 					vehicle="DU_Characters";
@@ -1244,7 +1252,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop9";
-					description="Cop 9";
+					init="removeallweapons this;";
+					description="Police Officer 9";
 				};
 			};
 		};
@@ -1257,7 +1266,7 @@ class Mission
 				class Item0
 				{
 					position[]={5588.1978,14.913952,7679.5098};
-					azimut=-175.75896;
+					azimut=-175.759;
 					id=127;
 					side="WEST";
 					vehicle="DU_Characters";
@@ -1265,7 +1274,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop10";
-					description="Cop 10";
+					init="removeallweapons this;";
+					description="Police Officer 10";
 				};
 			};
 		};
@@ -4351,7 +4361,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop11";
-					description="NZ Cop 11";
+					init="removeallweapons this;";
+					description="NZ Police Officer 11";
 				};
 			};
 		};
@@ -4372,7 +4383,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop12";
-					description="NZ Cop 12";
+					init="removeallweapons this;";
+					description="NZ Police Officer 12";
 				};
 			};
 		};
@@ -4393,7 +4405,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop13";
-					description="NZ Cop 13";
+					init="removeallweapons this;";
+					description="NZ Police Officer 13";
 				};
 			};
 		};
@@ -4433,7 +4446,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop14";
-					description="NZ Cop 14";
+					init="removeallweapons this;";
+					description="NZ Police Officer 14";
 				};
 			};
 		};
@@ -4474,7 +4488,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop15";
-					description="NZ Cop 15";
+					init="removeallweapons this;";
+					description="NZ Police Officer 15";
 				};
 			};
 		};
@@ -4495,7 +4510,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop16";
-					description="NZ Cop 16";
+					init="removeallweapons this;";
+					description="NZ Police Officer 16";
 				};
 			};
 		};
@@ -4516,7 +4532,8 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="cop17";
-					description="NZ Cop 17";
+					init="removeallweapons this;";
+					description="NZ Police Officer 17";
 				};
 			};
 		};
@@ -7533,7 +7550,7 @@ class Mission
 		};
 		class Item133
 		{
-			position[]={5241.6938,14.936981,7656.9907};
+			position[]={1852.5228,15.46002,4649.3784};
 			azimut=-79.66983;
 			id=219;
 			side="AMBIENT LIFE";
@@ -7542,7 +7559,7 @@ class Mission
 		};
 		class Item134
 		{
-			position[]={5466.7524,16.237997,7837.5054};
+			position[]={2077.5806,47.957573,4829.8931};
 			azimut=-79.66983;
 			id=220;
 			side="AMBIENT LIFE";
@@ -7551,7 +7568,7 @@ class Mission
 		};
 		class Item135
 		{
-			position[]={5388.1294,14.912766,8040.7637};
+			position[]={1998.958,38.106602,5033.1514};
 			azimut=-79.66983;
 			id=221;
 			side="AMBIENT LIFE";
@@ -7560,7 +7577,7 @@ class Mission
 		};
 		class Item136
 		{
-			position[]={5226.1333,14.741031,8068.2334};
+			position[]={1836.9623,27.740772,5060.6211};
 			azimut=-79.66983;
 			id=222;
 			side="AMBIENT LIFE";
@@ -7569,7 +7586,7 @@ class Mission
 		};
 		class Item137
 		{
-			position[]={5128.5308,14.936981,7659.4048};
+			position[]={1739.3597,21.791265,4651.7925};
 			azimut=-79.66983;
 			id=223;
 			side="AMBIENT LIFE";
@@ -7578,7 +7595,7 @@ class Mission
 		};
 		class Item138
 		{
-			position[]={5034.7993,15.368635,7918.8706};
+			position[]={1645.6283,37.151676,4911.2583};
 			azimut=-79.66983;
 			id=224;
 			side="AMBIENT LIFE";
@@ -7587,7 +7604,7 @@ class Mission
 		};
 		class Item139
 		{
-			position[]={5453.3198,14.912766,7936.1875};
+			position[]={2064.1479,56.268829,4928.5752};
 			azimut=-79.66983;
 			id=225;
 			side="AMBIENT LIFE";
@@ -7596,7 +7613,7 @@ class Mission
 		};
 		class Item140
 		{
-			position[]={5368.9517,14.912766,7768.0122};
+			position[]={1979.7803,26.748667,4760.3999};
 			azimut=-79.66983;
 			id=226;
 			side="AMBIENT LIFE";
@@ -7605,7 +7622,7 @@ class Mission
 		};
 		class Item141
 		{
-			position[]={5041.5366,15.114083,7775.7578};
+			position[]={1652.3656,48.656647,4768.1455};
 			azimut=-79.66983;
 			id=227;
 			side="AMBIENT LIFE";
@@ -7614,7 +7631,7 @@ class Mission
 		};
 		class Item142
 		{
-			position[]={5109.811,14.960954,7910.2373};
+			position[]={1720.64,48.852192,4902.625};
 			azimut=-79.66983;
 			id=228;
 			side="AMBIENT LIFE";
@@ -7675,7 +7692,7 @@ class Mission
 		};
 		class Item148
 		{
-			position[]={5278.0767,14.912766,7748.3682};
+			position[]={1888.9056,20.585394,4740.7559};
 			azimut=-79.66983;
 			id=235;
 			side="AMBIENT LIFE";
@@ -7684,7 +7701,7 @@ class Mission
 		};
 		class Item149
 		{
-			position[]={5341.4575,14.912766,7870.415};
+			position[]={1952.2863,55.625629,4862.8027};
 			azimut=-79.66983;
 			id=236;
 			side="AMBIENT LIFE";
@@ -7693,7 +7710,7 @@ class Mission
 		};
 		class Item150
 		{
-			position[]={5078.9609,15.297234,8026.5869};
+			position[]={1689.7899,34.258022,5018.9746};
 			azimut=-79.66983;
 			id=237;
 			side="AMBIENT LIFE";
@@ -7702,7 +7719,7 @@ class Mission
 		};
 		class Item151
 		{
-			position[]={5197.8589,14.912766,7874.7852};
+			position[]={1808.6879,52.477589,4867.1729};
 			azimut=-79.66983;
 			id=238;
 			side="AMBIENT LIFE";
@@ -7711,7 +7728,7 @@ class Mission
 		};
 		class Item152
 		{
-			position[]={5229.7485,14.912766,7960.6855};
+			position[]={1840.5775,48.177917,4953.0732};
 			azimut=-79.66983;
 			id=239;
 			side="AMBIENT LIFE";
@@ -7720,7 +7737,7 @@ class Mission
 		};
 		class Item153
 		{
-			position[]={5134.394,15.139596,7798.6494};
+			position[]={1745.223,47.648853,4791.0371};
 			azimut=-79.66983;
 			id=240;
 			side="AMBIENT LIFE";
@@ -7729,7 +7746,7 @@ class Mission
 		};
 		class Item154
 		{
-			position[]={5267.9331,14.876032,7858.0771};
+			position[]={1878.7621,48.330364,4850.4648};
 			azimut=-79.66983;
 			id=241;
 			side="AMBIENT LIFE";
@@ -7738,7 +7755,7 @@ class Mission
 		};
 		class Item155
 		{
-			position[]={5156.1948,14.912766,7991.6772};
+			position[]={1767.0238,36.088085,4984.0649};
 			azimut=-79.66983;
 			id=242;
 			side="AMBIENT LIFE";
@@ -7747,7 +7764,7 @@ class Mission
 		};
 		class Item156
 		{
-			position[]={5315.3247,14.912766,8004.7524};
+			position[]={1926.1537,49.574093,4997.1401};
 			azimut=-79.66983;
 			id=243;
 			side="AMBIENT LIFE";
@@ -7756,7 +7773,7 @@ class Mission
 		};
 		class Item157
 		{
-			position[]={5426.7593,14.617811,7687.9819};
+			position[]={2037.5876,16.867432,4680.3696};
 			azimut=-79.66983;
 			id=244;
 			side="AMBIENT LIFE";
@@ -8290,7 +8307,7 @@ class Mission
 		};
 		class Item213
 		{
-			position[]={5084.4238,14.955147,7847.0869};
+			position[]={1695.2528,54.633347,4839.4746};
 			azimut=-79.66983;
 			id=373;
 			side="EMPTY";
@@ -8299,7 +8316,7 @@ class Mission
 		};
 		class Item214
 		{
-			position[]={5415.105,14.912766,7981.1147};
+			position[]={2025.9333,52.61108,4973.5024};
 			azimut=-79.66983;
 			id=374;
 			side="EMPTY";
@@ -8308,7 +8325,7 @@ class Mission
 		};
 		class Item215
 		{
-			position[]={5313.4878,14.912766,7808.519};
+			position[]={1924.3168,34.938854,4800.9067};
 			azimut=-79.66983;
 			id=375;
 			side="EMPTY";
@@ -8317,7 +8334,7 @@ class Mission
 		};
 		class Item216
 		{
-			position[]={5332.6265,14.935366,7670.667};
+			position[]={1943.4552,15.543222,4663.0547};
 			azimut=-79.66983;
 			id=376;
 			side="EMPTY";
@@ -8326,7 +8343,7 @@ class Mission
 		};
 		class Item217
 		{
-			position[]={5162.6909,14.912766,8058.0044};
+			position[]={1773.5199,29.811018,5050.3921};
 			azimut=-79.66983;
 			id=377;
 			side="EMPTY";
@@ -17902,7 +17919,7 @@ class Mission
 		};
 		class Item1244
 		{
-			position[]={5133.3906,15.303291,8017.791};
+			position[]={4686.1968,14.955147,8205.3232};
 			azimut=-1249.4536;
 			id=1509;
 			side="EMPTY";
@@ -17913,7 +17930,7 @@ class Mission
 		};
 		class Item1245
 		{
-			position[]={5138.5161,15.303291,8017.6895};
+			position[]={4691.3223,14.955147,8205.2217};
 			azimut=189.89999;
 			id=1510;
 			side="EMPTY";
@@ -20460,7 +20477,7 @@ class Mission
 		};
 		class Item1478
 		{
-			position[]={5130.6172,15.303291,8016.228};
+			position[]={4683.4233,14.955147,8203.7598};
 			azimut=-470.55301;
 			id=1745;
 			side="EMPTY";
@@ -22772,7 +22789,7 @@ class Mission
 		};
 		class Item82
 		{
-			position[]={5248.1118,14.912766,7868.9888};
+			position[]={1858.9408,50.610966,4861.3765};
 			name="huntingarea";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -22783,7 +22800,7 @@ class Mission
 		};
 		class Item83
 		{
-			position[]={5251.6167,15.072349,7854.7266};
+			position[]={1862.4457,47.316154,4847.1143};
 			name="boarhunting";
 			text="Hunting grounds";
 			type="mil_circle";
@@ -24581,7 +24598,7 @@ class Mission
 		};
 		class Item269
 		{
-			position[]={5132.2266,15.303291,8016.2241};
+			position[]={4685.0327,14.955147,8203.7559};
 			name="FUEL_8";
 			text="Fuel";
 			type="Select";

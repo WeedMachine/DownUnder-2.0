@@ -5,7 +5,7 @@ if (_label == "texte") then
 {
 
 sleep 5;
-playmusic "Track17_Marauder_Song";
+playmusic "DownUnder2LoadIn";
 disableUserInput false;
 titletext [localize "STRS_anfang_02","plain"];
 sleep 4;
