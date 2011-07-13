@@ -820,7 +820,7 @@ STRS_bank_rob_somemoneylost,The bank has been robbed. You lost $%1 and have $%2 
 STRS_bank_rob_allmoneylost,The bank has been robbed. You lost all the money on your account!,
 STRS_bank_rob_success,You robbed the bank successfully. Escape before the cops catch you!,
 STRS_bank_rob_nosuccess,You escaped too early and didn't get the money!,
-STRS_bank_rob_info,"You have bust open the safe and steal the money! \n Quick, Load it in and get out of here before the police arrives!",
+STRS_bank_rob_info,"You have bust open the safe and steal the money!  Quick, Load it in and get out of here before the police arrives!",
 STRS_bank_rob_noweapon,You can't rob the bank without being armed.,
 STRS_bank_rob_no,You can't rob the bank at the moment.,
 STRS_bank_dialog_inventargeld,Money in your Inventory: $%1,
