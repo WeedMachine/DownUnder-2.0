@@ -4,15 +4,15 @@ if (_art == "use") then
 
 {
 
-_this 	 = _this select 3;
+//_this 	 = _this select 3;
 _item    = _this select 1;
 _class	 = _item call INV_getitemClassName;
 _exitvar = 0;
-_license = _this select 3;
+//license = _this select 3;
 
 
 if (player != vehicle player) exitWith {player groupChat localize "STRS_inv_item_sperre_invcl";};
-if(!(_license call INV_HasLicense))exitwith{player groupchat "you do not have the permit to do this"};
+//if(!(_license call INV_HasLicense))exitwith{player groupchat "you do not have the permit to do this"};
 
 	{
 
@@ -43,7 +43,7 @@ Rechtsverschieben 	= player addaction ["Move 1 meter right", "noscript.sqf",' _w
 Linksverschieben 	= player addaction ["Move 1 meter left", "noscript.sqf",'_winkel = getdir lastbuilding; _pos=[ ((position lastbuilding select 0) - cos((360 - _winkel))), ((position lastbuilding select 1) - sin((360 - _winkel))), (position lastbuilding select 2)] ; lastbuilding setpos _pos;'];
 Vorverschieben 		= player addaction ["Move 1 meter forward", "noscript.sqf",'_winkel = getdir lastbuilding; _pos=[ ((position lastbuilding select 0) + sin(_winkel)), ((position lastbuilding select 1) + cos(_winkel)) , (position lastbuilding select 2)] ; lastbuilding setpos _pos;'];
 Rueckverschieben 	= player addaction ["Move 1 meter backward", "noscript.sqf",'_winkel = getdir lastbuilding; _pos=[ ((position lastbuilding select 0) - sin(_winkel)), ((position lastbuilding select 1) - cos(_winkel)), (position lastbuilding select 2)] ; lastbuilding setpos _pos;'];
-Hochverschieben 	= player addaction ["Move 0.5 meter up", "noscript.sqf",'_pos=[ (position lastbuilding select 0); (position lastbuilding select 1) , ((position lastbuilding select 2) + 0.5)] ; lastbuilding setpos _pos;'];
+Hochverschieben 	= player addaction ["Move 0.5 meter up", "noscript.sqf",'_pos=[ (position lastbuilding select 0), (position lastbuilding select 1) , ((position lastbuilding select 2) + 0.5)] ; lastbuilding setpos _pos;'];
 Runterverschieben 	= player addaction ["Move 0.5 meter down", "noscript.sqf",'_pos=[ (position lastbuilding select 0), (position lastbuilding select 1) , ((position lastbuilding select 2) - 0.5)] ; lastbuilding setpos _pos;'];
 Rotierenrechts 		= player addaction ["Rotate 10 right", "noscript.sqf",'_dir =(( getdir lastbuilding) + 10); lastbuilding setdir _dir;'];
 Rotierenlinks 		= player addaction ["Rotate 10 left", "noscript.sqf",'_dir =(( getdir lastbuilding) - 10); lastbuilding setdir _dir;'];

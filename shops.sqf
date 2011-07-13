@@ -328,7 +328,6 @@ _copshop_patrol =
 "bargate",
 "Jaegerstand",
 "Sandsacke",
-"Baracke",
 "nitro",
 "supgrade1",
 "supgrade2",
