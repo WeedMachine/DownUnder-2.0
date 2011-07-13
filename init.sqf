@@ -29,7 +29,7 @@ waitUntil { ( (time > 1) and ((alive player) or (local server)) ) };
 
 _h = [] execVM "playerarrays.sqf";																																			
 
-waitUntil{scriptDone  _h};
+waitUntil{!isNil"rolenumber"};
 
 if (player in auspawn) then {
 if(!internDebug)then{["auspawn"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};};
