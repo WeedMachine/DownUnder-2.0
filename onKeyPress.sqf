@@ -58,17 +58,22 @@ switch _key do
 	case 20: 
 
 	{
-
+	
 	if(!INV_shortcuts)exitwith{};
 	
 	if(dialog)exitwith{closeDialog 0;};
-	
-	_vcls = nearestobjects [getpos player, ["LandVehicle", "Air", "ship", "LocalBasicWeaponsBox"], 7];
+		
+	_vcls = nearestobjects [getpos player, ["LandVehicle", "Air", "ship"], 7];
+	_hsls = nearestobjects [getpos player, ["LocalBasicWeaponsBox"], 7];
 	_vcl = _vcls select 0;
-    if (player != driver _vcl)exitwith{player groupchat "You must be in the drivers seat to get to the trunk";};
+	_hsl = _hsls select 0;
+	if (player != driver _vcl)exitwith{player groupchat "You must be in the drivers seat to get to the trunk";};
 	if(!(_vcl in INV_VehicleArray) and typeof _vcl == "LocalBasicWeaponsBox")exitwith{};
+	if(!(_hsl in INV_VehicleArray) and typeof _vcl == "LocalBasicWeaponsBox")exitwith{};
 	if(!(_vcl in INV_VehicleArray))exitwith{player groupchat "You do not have the keys to this vehicle.";};
+	if(!(_hsl in INV_VehicleArray))exitwith{player groupchat "You do not have the keys to this vehicle.";};
 	if(!isnull _vcl)then{call compile format['[0,0,0,["%3", "public", ["vcl", "%2", %1]]] execVM "storage.sqf";', _vcl, (typeOf _vcl), format["%1_storage", _vcl]];}; 
+	if(!isnull _hsl)then{call compile format['[0,0,0,["%3", "public", ["vcl", "%2", %1]]] execVM "storage.sqf";', _hsl, (typeOf _hsl), format["%1_storage", _hsl]];};
 	
 	};
 

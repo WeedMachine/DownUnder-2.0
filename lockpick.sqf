@@ -34,6 +34,8 @@ if (not(_closest == -1)) then
 	{
 
 	if(_closeVcl isKindOf "Tank" || _closeVcl isKindOf "Air")exitwith{player groupchat "You can't lockpick this vehicle!"};
+	
+	if(_closeVcl isKindOf "LocalBasicWeaponsBox")exitwith{player groupchat "You can't lockpick this house!"};
 																						
 	if (_closeVcl in INV_VehicleArray) then 
 

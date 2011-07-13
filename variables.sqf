@@ -13,8 +13,8 @@ sobrerlaubt 		= [];
 keineGun 			= [];
 keincriminal 		= [];
 keinterror 			= [];
-adminliste 			= ["976769"];
-superadminliste 	= ["976769"];
+adminliste 			= ["976769","4464646"];
+superadminliste 	= ["976769","4464646"];
 mainvar 			= true;
 publicVariable "mainvar";
 publicVariable "respawnarray";
@@ -444,6 +444,7 @@ SupporterFeatureList 	=
 "1664390", //DunNZ
 "433856", //Jan
 "1047169", // Jonzie
+"363905", //Mattaust
 "4464646" //Dustoff
 
 ];
