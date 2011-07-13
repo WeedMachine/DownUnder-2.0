@@ -12082,7 +12082,7 @@ class Mission
 			vehicle="glt_billboard_big";
 			skill=0.60000002;
 			text="blah_4";
-			init="this setobjecttexture [0,""albill2.paa""] ";
+			init="this setobjecttexture [0,""billboards\albill2.paa""] ";
 		};
 		class Item636
 		{
@@ -12093,7 +12093,7 @@ class Mission
 			vehicle="glt_billboard_big";
 			skill=0.60000002;
 			text="blah_4_1";
-			init="this setobjecttexture [0,""albill3.paa""] ";
+			init="this setobjecttexture [0,""billboards\billboards\albill3.paa""] ";
 		};
 		class Item637
 		{
@@ -12140,7 +12140,7 @@ class Mission
 			vehicle="glt_billboard_big";
 			skill=0.60000002;
 			text="blah_4_2";
-			init="this setobjecttexture [0,""albill.paa""] ";
+			init="this setobjecttexture [0,""billboards\albill.paa""] ";
 		};
 		class Item642
 		{
@@ -12151,7 +12151,7 @@ class Mission
 			vehicle="glt_billboard_big";
 			skill=0.60000002;
 			text="blah_4_3";
-			init="this setobjecttexture [0,""albill.paa""] ";
+			init="this setobjecttexture [0,""billboards\albill.paa""] ";
 		};
 		class Item643
 		{
@@ -12162,7 +12162,7 @@ class Mission
 			vehicle="glt_billboard_big";
 			skill=0.60000002;
 			text="blah_4_6";
-			init="this setobjecttexture [0,""albill4.paa""] ";
+			init="this setobjecttexture [0,""billboards\albill4.paa""] ";
 		};
 		class Item644
 		{
@@ -12173,7 +12173,7 @@ class Mission
 			vehicle="glt_billboard_big";
 			skill=0.60000002;
 			text="blah_4_7";
-			init="this setobjecttexture [0,""albill5.paa""] ";
+			init="this setobjecttexture [0,""billboards\albill5.paa""] ";
 		};
 		class Item645
 		{
