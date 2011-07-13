@@ -163,7 +163,11 @@ for [{_i=0}, {_i < (count workplacejob_deliveryflagarray)}, {_i=_i+1}] do {(work
 waituntil {!isnil "bis_fnc_init"};
 _fnc = ["ca\missions_pmc\data\ui_gps_ca.paa",-0.05,0.16] call bis_fnc_customGPS;
 
-
 _h = [] execVM "DUInitCarRadio.sqf";
 
 waitUntil{scriptDone  _h};
+
+xx = [this] execvm "\GNT_FSF\Lash.sqf";
+
+
+
