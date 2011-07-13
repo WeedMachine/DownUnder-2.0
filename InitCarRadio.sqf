@@ -13,7 +13,7 @@ DuMusicFull = 1;
 //Checks for Down Under Music Pack Lite Version
 if (isClass(configFile >> "CfgPatches" >> "DUmusicLite")) then
 {
-_h = [] execVM "CLAY_CarRadio\initCarRadio.sqf";
+_h = [] execVM "CLAY_CarRadioLite\initCarRadio.sqf";
 
 waitUntil{scriptDone  _h};
 DuMusicLite = 1;
