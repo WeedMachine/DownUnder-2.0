@@ -13,8 +13,6 @@ sobrerlaubt 		= [];
 keineGun 			= [];
 keincriminal 		= [];
 keinterror 			= [];
-adminliste 			= ["976769","4464646"];
-superadminliste 	= ["976769","4464646"];
 mainvar 			= true;
 publicVariable "mainvar";
 publicVariable "respawnarray";
