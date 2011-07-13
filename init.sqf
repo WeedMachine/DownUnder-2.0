@@ -165,7 +165,7 @@ _h = [] execVM "InitCarRadio.sqf";
 
 waitUntil{scriptDone  _h};
 
-xx = [this] execvm "\GNT_FSF\Lash.sqf";
+//xx = [this] execvm "\GNT_FSF\Lash.sqf";
 
 waituntil {!isnil "bis_fnc_init"};
 _fnc = ["ca\missions_pmc\data\ui_gps_ca.paa",-0.05,0.16] call bis_fnc_customGPS;
