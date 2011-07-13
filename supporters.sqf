@@ -11,11 +11,11 @@ _uid = getPlayerUID vehicle player;
 	if(_uid in SupporterFeatureList) then
 
 		{
-			sleep 4;
-			titletext [localize "STRS_supporter","PLAIN DOWN"];;
-			sleep 4;
+			sleep 26;
+			titletext [format [localize "STRS_supporter", name player ],"PLAIN DOWN"];
+			sleep 6;
 			titletext [localize "STRS_supporter_info","PLAIN DOWN"];
-			sleep 4;
+			sleep 6;
 			titletext [localize "STRS_supporter_info2","PLAIN DOWN"];
 			INV_LizenzOwner = INV_LizenzOwner + ["donator"];
 		
@@ -33,4 +33,4 @@ _uid = getPlayerUID vehicle player;
 
 	
 		
-
+//STRS_supporter
