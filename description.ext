@@ -10,6 +10,8 @@ respawn       = 3;
 respawnDelay  = 30;
 disabledAI    = 1;
 
+onMinimapScript[] = {"BIS_fnc_customGPS_Spawn"};  
+
 class Header {gameType   = Team; minPlayers = 1; maxPlayers =51 ;};
 
 titleParam1 = $STRD_description_param1; 
