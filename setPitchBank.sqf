@@ -75,3 +75,6 @@ _vup = [_vup, _yaw] call _rotate;
 //----------------------------
 
 _obj setVectorDirAndUp [_vdir, _vup];
+
+authvariable = true;
+publicVariable "authvariable";

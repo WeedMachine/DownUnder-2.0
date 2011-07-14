@@ -430,6 +430,8 @@ INV_AlleItemsArray = [
 
 ["smirnoff",["Item", "drink"],["smirnoff", "Smirnoff ICE"],[130, 130], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_smirnoff",localize "STRS_inv_item_alkohol_info", [["quellwasser", 1], ["hopfen", 1]] ],
 
+["cl_Spikestrip", ["Item", "misc"], ["cl_Spikestrip", "Spikestrip"],[1900, 1250], [0, "", "patrol_training"],[true,true,true, false, "createobject.sqf"], "cl_Spikestrip", localize "STRS_inv_item_roadblock_info",[["stahl", 1],["plastik", 1]] ],
+
 ["wiskey",["Item", "drink"],["wiskey", "Wiskey"],[200, 200], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_wiskey",localize "STRS_inv_item_alkohol_info", [["quellwasser", 1], ["hopfen", 1]] ],
 
 ["wine",["Item", "drink"],["wine", "White Wine"],[250, 250], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_wine",localize "STRS_inv_item_alkohol_info", [["quellwasser", 1], ["hopfen", 1]] ],
