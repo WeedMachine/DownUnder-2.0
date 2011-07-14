@@ -1662,7 +1662,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1679.5575,0.60565913,2810.9458};
+					position[]={1021.5176,0.46564585,4802.8765};
 					azimut=259.25693;
 					id=182;
 					side="CIV";
@@ -3087,7 +3087,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5412.147,15.406219,1523.1174};
+					position[]={1052.8503,0.57575583,2875.7185};
 					azimut=240;
 					id=330;
 					side="CIV";
@@ -4024,7 +4024,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9416.9063,15,8824.8213};
+					position[]={9411.6289,15,8827.1934};
 					azimut=300;
 					id=387;
 					side="CIV";
@@ -4044,7 +4044,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1690.7911,0.34906483,3258.5793};
+					position[]={980.59534,0.61095798,5050.4814};
 					azimut=-36.627148;
 					id=388;
 					side="CIV";
@@ -4064,7 +4064,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1696.9747,0.46027324,2962.8979};
+					position[]={1071.5183,0.43395612,3090.4158};
 					azimut=177.33311;
 					id=389;
 					side="CIV";
@@ -4084,7 +4084,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1692.8407,0.66352451,2875.1162};
+					position[]={1067.3843,0.65372479,3002.634};
 					azimut=150;
 					id=390;
 					side="CIV";
@@ -4773,7 +4773,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1692.2312,0.4663474,3119.6875};
+					position[]={1017.8545,0.46172133,4583.9707};
 					azimut=232.76801;
 					id=431;
 					side="CIV";
@@ -6268,7 +6268,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5842.2842,15.554558,6183.5371};
+					position[]={5842.3301,15.554558,6182.9854};
 					id=1897;
 					side="CIV";
 					vehicle="Pilot";
@@ -6288,7 +6288,7 @@ class Mission
 				class Item0
 				{
 					position[]={5845.082,15.554558,6208.2588};
-					azimut=193.869;
+					azimut=90.951462;
 					id=1898;
 					side="LOGIC";
 					vehicle="Logic";
@@ -7936,7 +7936,7 @@ class Mission
 		};
 		class Item165
 		{
-			position[]={6922.2231,54.882729,7591.9819};
+			position[]={951.71594,0.30112791,5335.3643};
 			id=296;
 			side="EMPTY";
 			vehicle="FlagCarrierCDF";
@@ -7981,7 +7981,7 @@ class Mission
 		};
 		class Item170
 		{
-			position[]={6920.9575,54.87991,7588.1382};
+			position[]={950.45032,0.34742802,5331.5205};
 			id=306;
 			side="EMPTY";
 			vehicle="LocalBasicWeaponsBox";
@@ -7991,7 +7991,7 @@ class Mission
 		};
 		class Item171
 		{
-			position[]={6472.8027,17.676727,4902.8027};
+			position[]={1020.2944,0.349935,3392.0259};
 			id=310;
 			side="EMPTY";
 			vehicle="FlagCarrierCDF";
@@ -8001,7 +8001,7 @@ class Mission
 		};
 		class Item172
 		{
-			position[]={6476.0371,17.676727,4899.8906};
+			position[]={1023.5288,0.39763027,3389.1138};
 			id=311;
 			side="EMPTY";
 			vehicle="LocalBasicWeaponsBox";
@@ -8012,7 +8012,7 @@ class Mission
 		};
 		class Item173
 		{
-			position[]={2574.5251,10.650269,5807.4917};
+			position[]={1004.6981,0.67355502,3709.7373};
 			id=312;
 			side="EMPTY";
 			vehicle="FlagCarrierCDF";
@@ -8022,7 +8022,7 @@ class Mission
 		};
 		class Item174
 		{
-			position[]={2576.0388,10.650269,5808.8726};
+			position[]={1006.2118,0.6507827,3711.1182};
 			id=313;
 			side="EMPTY";
 			vehicle="LocalBasicWeaponsBox";
@@ -8243,7 +8243,7 @@ class Mission
 		};
 		class Item198
 		{
-			position[]={2581.4297,10.650269,5807.8301};
+			position[]={1011.6024,0.53341204,3710.0757};
 			id=354;
 			side="EMPTY";
 			vehicle="Sound_Music";
@@ -8334,7 +8334,7 @@ class Mission
 		};
 		class Item207
 		{
-			position[]={6934.4824,54.84037,7578.6416};
+			position[]={963.97522,0.64393139,5322.0239};
 			azimut=40;
 			id=367;
 			side="EMPTY";
@@ -20058,7 +20058,7 @@ class Mission
 		};
 		class Item1432
 		{
-			position[]={2587.6296,10.650269,5800.8647};
+			position[]={1017.8026,0.40400273,3703.1104};
 			azimut=-470.55301;
 			id=1699;
 			side="EMPTY";
@@ -20366,7 +20366,7 @@ class Mission
 		};
 		class Item1460
 		{
-			position[]={5413.0586,15.406219,1523.8427};
+			position[]={1053.762,0.60135949,2876.4436};
 			azimut=-470.55301;
 			id=1727;
 			side="EMPTY";
@@ -20542,7 +20542,7 @@ class Mission
 		};
 		class Item1476
 		{
-			position[]={6909.0454,54.868526,7590.6172};
+			position[]={938.53821,0.5292713,5333.9995};
 			azimut=-470.55301;
 			id=1743;
 			side="EMPTY";
@@ -22728,7 +22728,7 @@ class Mission
 		};
 		class Item71
 		{
-			position[]={1683.005,0.53699458,2813.6003};
+			position[]={1024.9651,0.43455386,4805.5308};
 			name="drugsell5";
 			text="Sell Marijuana";
 			type="mil_flag";
@@ -23300,7 +23300,7 @@ class Mission
 		};
 		class Item130
 		{
-			position[]={6919.9849,54.882053,7589.5679};
+			position[]={949.47766,0.34205219,5332.9502};
 			name="gangarea1";
 			text="Gang area";
 			markerType="ELLIPSE";
@@ -23311,7 +23311,7 @@ class Mission
 		};
 		class Item131
 		{
-			position[]={6919.0259,54.881054,7589.8687};
+			position[]={948.51868,0.35471272,5333.251};
 			name="gangmarker1";
 			text="Gang Area 1 (cocaine - lsd)";
 			type="mil_triangle";
@@ -23441,7 +23441,7 @@ class Mission
 		};
 		class Item143
 		{
-			position[]={6477.605,17.676727,4926.6665};
+			position[]={1025.0967,0.49770531,3415.8896};
 			name="gangarea3";
 			text="Gang area 3";
 			markerType="ELLIPSE";
@@ -23452,7 +23452,7 @@ class Mission
 		};
 		class Item144
 		{
-			position[]={6476.647,17.676727,4926.9692};
+			position[]={1024.1387,0.52147084,3416.1924};
 			name="gangmarker3";
 			text="Gang Area 3 (heroin - mariajuana)";
 			type="mil_triangle";
@@ -23462,7 +23462,7 @@ class Mission
 		};
 		class Item145
 		{
-			position[]={2595.5039,10.650269,5807.814};
+			position[]={1025.6766,0.58028603,3710.0596};
 			name="gangarea2";
 			text="Gang area 2";
 			markerType="ELLIPSE";
@@ -23473,7 +23473,7 @@ class Mission
 		};
 		class Item146
 		{
-			position[]={2589.6208,10.650269,5811.3335};
+			position[]={1019.7938,0.51426774,3713.5791};
 			name="gangmarker2";
 			text="Gang Area 2 (heroin - lsd)";
 			type="mil_triangle";
@@ -23546,7 +23546,7 @@ class Mission
 		};
 		class Item153
 		{
-			position[]={5418.9653,18.576004,1531.2571};
+			position[]={1059.6687,0.5350129,2883.8582};
 			name="Sellwhale";
 			text="Sell Whale";
 			type="mil_flag";
@@ -23629,7 +23629,7 @@ class Mission
 		};
 		class Item161
 		{
-			position[]={511.03247,19.571838,7019.7529};
+			position[]={1011.9997,0.42854875,5529.1113};
 			name="lsdfield";
 			text="LSDfield";
 			type="mil_circle";
@@ -23640,7 +23640,7 @@ class Mission
 		};
 		class Item162
 		{
-			position[]={510.97388,19.571838,7019.4473};
+			position[]={1011.9411,0.43182141,5528.8057};
 			name="lsd_field";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -23785,7 +23785,7 @@ class Mission
 		};
 		class Item177
 		{
-			position[]={9419.2676,15,8825.8643};
+			position[]={9413.9902,15,8828.2363};
 			name="drogenmarker4";
 			text="Drug Seller";
 			type="mil_flag";
@@ -23796,7 +23796,7 @@ class Mission
 		};
 		class Item178
 		{
-			position[]={1690.3151,0.29996628,3256.2244};
+			position[]={980.11926,0.59191829,5048.126};
 			name="drogenmarker3";
 			text="Sell Heroin";
 			type="mil_flag";
@@ -23807,7 +23807,7 @@ class Mission
 		};
 		class Item179
 		{
-			position[]={1697.9562,0.46944082,2963.688};
+			position[]={1072.4998,0.4618834,3091.2058};
 			name="drogenmarker3_1";
 			text="Sell Cocaine";
 			type="mil_flag";
@@ -23817,7 +23817,7 @@ class Mission
 		};
 		class Item180
 		{
-			position[]={1695.7704,0.66686994,2875.6582};
+			position[]={1070.314,0.66465664,3003.176};
 			name="DrugFactory";
 			text="Sell LSD";
 			type="mil_flag";
@@ -24160,7 +24160,7 @@ class Mission
 		};
 		class Item214
 		{
-			position[]={1691.5007,0.52048737,3117.9292};
+			position[]={1017.124,0.44197512,4582.2124};
 			name="Kaviarverkauf";
 			text="Sell Caviar";
 			type="mil_flag";
