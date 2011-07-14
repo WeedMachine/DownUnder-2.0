@@ -12,7 +12,7 @@ player createDiaryRecord ["rules",
 <br/>
 Basic Rules and Laws of Down-Under:<br/>
 <br/>
-Every citizen AND cop have to obey and play these laws.<br/>
+Every player must obey and play these Rules,<br/>
 This is a condition of playing to agree to the following...<br/>
 <br/>
 [1.0] Compliance Rules<br/>
@@ -93,7 +93,7 @@ Keep up with the latest news, and join our forums to keep in touch with our comm
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Violent #29", 
+"#29 MANSLAUGHTER", 
 "
 <br/>
 MANSLAUGHTER: Manslaughter is the accidental death of one person by another. It will be determined by discussion with Police Officials and the victim as to whether this death was accidental, punishment will occur but will be less severe than that of Murder. If manslaughter is not found to be the crime, and it is indeed murder, that punishment WILL occur (see MURDER)<br/>
@@ -104,7 +104,7 @@ Jail: 5 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Violent #28", 
+"#28 MURDER", 
 "
 <br/>
 MURDER: Committing a homicide of either civilian or police officer's will be met with severe punishment, you must have motive to kill any player in the server, if you are found death matching (killing players for fun or no reasonable reason) will result in being banned.<br/>
@@ -116,7 +116,7 @@ Jail: 15 min (Cop)<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Violent #27", 
+"#27 ATTEMPTED MURDER", 
 "
 <br/>
 ATTEMPTED MURDER: A person found to have attempted the murder of a civilian or to have caused enough harm for it to be classed as such will be jailed.<br/>
@@ -127,7 +127,7 @@ Jail: 3 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Violent #26", 
+"#26 TERRORISM", 
 "
 <br/>
 TERRORISM: Any person found to be in possession of Terrorist Training, or associated equipment in relation to this training will face severe punishment.<br/>
@@ -138,7 +138,7 @@ Jail: 6 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Violent #25", 
+"#25 DESTRUCTION OF PROPERTY", 
 "
 <br/>
 DESTRUCTION OF PROPERTY: Fines will be issued and restitution must be made to the owner of the property. If civilian cannot afford to pay owner of said property they will face 1 Minute Jail for each $15,000 or part thereof value of said property.<br/>
@@ -150,7 +150,7 @@ Jail: 1 min/$15K<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Violent #24", 
+"#24 VEHICULAR ASSAULT", 
 "
 <br/>
 VEHICULAR ASSAULT: Running down any person with your vehicle but failing to kill them is a serious offence, this also includes intentional use of your vehicle to ram another's (serial offenders may face jail).<br/>
@@ -162,7 +162,7 @@ Jail: 2 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Violent #23", 
+"#23 ROBBERY", 
 "
 <br/>
 ROBBERY: Civilians seen, or found to be guilty of armed robbery (even if no gain was apparent) said civilian will face jail time irrespective of whether victim lays charges. All weapons and money earned will be taken/fined to be sure assailant made no profit.<br/>
@@ -173,10 +173,10 @@ Jail: 4 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Vehicular #22", 
+"#22 DEATH BY DANGEROUS DRIVING", 
 "
 <br/>
-DEATH BY DANGEROUS DRIVING: As this crime incorporates two divergent crimes the assailant in question will be punished for both crimes +1 minute jail in addition to these punishments, (see RECKLESS DRIVING & MANSLAUGHTER/MURDER).<br/>
+DEATH BY DANGEROUS DRIVING: As this crime incorporates two divergent crimes the assailant in question will be punished for both crimes +1 minute jail in addition to these punishments, (see RECKLESS DRIVING and MANSLAUGHTER/MURDER).<br/>
 <br/>
 Jail/Fine: Variable +1 minute Jail<br/>
 "
@@ -184,7 +184,7 @@ Jail/Fine: Variable +1 minute Jail<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Vehicular #21", 
+"#21 SPEEDING", 
 "
 <br/>
 SPEEDING: The speed limit within towns is determined by the user using the Q (50km/h) button; the W (100km/h) button is for out of towns. Fines will be issued for violators. Violations will vary from what is seen by the police officer, if the officer believes you were intent of doing an illegal speed purposely he will fine you, if the speed was accidental the officer may give a warning. This rule also applies for other vehicle offences as well.<br/>
@@ -198,7 +198,7 @@ Jail: 2min 41+km (over)<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Vehicular #20", 
+"#20 RECKLESS DRIVING", 
 "
 <br/>
 RECKLESS DRIVING: Driving a vehicle recklessly whether around other persons or not will result in fines.<br/>
@@ -210,7 +210,7 @@ Fine: $1000<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Vehicular #19", 
+"#19 FAIL TO STOP", 
 "
 <br/>
 FAIL TO STOP: Failing to stop at an intersection where the road no longer continues will result in a fine as this is a dangerous practice, (remember always give way to your right).<br/>
@@ -221,7 +221,7 @@ Fine: $500<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Vehicular #18", 
+"#18 OFF-ROADING", 
 "
 <br/>
 OFF-ROADING: Off-Roading is NOT permitted. Civilians found to be Off-Roading without a lawful or reasonable excuse (determined by the officer) will be fined. Lawful excuses include Hunting, Fishing, Baking, Oil Drilling or other legitimate civilian employ (taking a shortcut is not).<br/>
@@ -232,7 +232,7 @@ Fine: $500<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Vehicular #17", 
+"#17 DRIVING/FLYING UNLICENCED", 
 "
 <br/>
 DRIVING/FLYING UNLICENCED: Unlicensed driving /flying will be met with harsh penalties.<br/>
@@ -244,7 +244,7 @@ Fine: $15,000 (Air)<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Vehicular #16", 
+"#16 ABANDONMENT OF VEHICLE", 
 "
 <br/>
 ABANDONMENT OF VEHICLE: Any civilian found to have left a vehicle in a place which is not a car park with no intention of claiming this vehicle again in a short period of time will be found guilty of vehicle abandonment. Vehicle WILL be impounded and civilian will be fined when next seen for said crime.<br/>
@@ -256,7 +256,7 @@ Fine: $1000<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Vehicular #15", 
+"#15 FAILURE TO STOP/EVASION", 
 "
 <br/>
 FAILURE TO STOP/EVASION: Failure to comply/resisting arrest is a pain for all police involved, heavy fines and on occasion (for serial offenders) jail time will be issued. In particular this law relates to not pulling a vehicle over when directed, but also to not following orders (see COMPLIANCE #2)<br/>
@@ -268,7 +268,7 @@ Jail: 2 mins<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: Vehicular #14", 
+"#14 VEHICLE SAFETY (LIGHTS", 
 "
 <br/>
 VEHICLE SAFETY (LIGHTS): Civilians found to be flying or driving vehicles without appropriate night time illumination (lights) will be fined as this is a safety issue for other civilians.<br/>
@@ -280,7 +280,7 @@ Fine: $500 (Car)<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #13", 
+"#13 AIDING AND ABETING", 
 "
 <br/>
 AIDING AND ABETING: Civilians found to be aiding criminals in the escape or evasion of pursuit will be guilty of a crime.<br/>
@@ -291,7 +291,7 @@ Jail: 3 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #12", 
+"#12 ILLEGAL IMMIGRATION", 
 "
 <br/>
 ILLEGAL IMMIGRATION: Civilians found to be crossing the border without a Passport issued by the Government of Down Under will face fines and/or jail for attempting to cross border without said passport.<br/>
@@ -303,7 +303,7 @@ Jail: 2 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #11", 
+"#11 FALSE REPORT", 
 "
 <br/>
 FALSE REPORT: Misleading information given by a civilian will lead to jail time, wasting a police officer's time will then come back to you ten-fold.<br/>
@@ -314,7 +314,7 @@ Jail: 5 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #10", 
+"#10 NARCOTICS/WHALE", 
 "
 <br/>
 NARCOTICS: If you have narcotics on you/within your vehicle or illegal weapons, you will face jail time, this will also include any passengers of the vehicle found containing drugs or persons who have drugs on them, so make sure when hitchhiking you know what people have within the vehicle. This includes Whale<br/>
@@ -327,7 +327,7 @@ Jail: 7 min 200k+ worth<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #9", 
+"#9 GRAND THEFT AUTO", 
 "
 <br/>
 GRAND THEFT AUTO: If found committing or have committed grand theft auto you will face jail time.<br/>
@@ -339,7 +339,7 @@ Jail: 7 min (Cop)<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #8", 
+"#8 JAIL BREAK", 
 "
 <br/>
 JAIL BREAK: If you are caught attempting to break out of jail or break someone out of jail both violators will be jailed, jail time will increase on your original jail time, the person attempting to assist the jail break will receive the same time as the person who was in jail.<br/>
@@ -350,7 +350,7 @@ Jail : +5 min <br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #7", 
+"#7 RANDOM SEARCH", 
 "
 <br/>
 RANDOM SEARCH: Police officers are permitted to search any vehicle OR house at anytime, random vehicle checks will take place, and if you are non-co-operative you will be placed under arrest and fined for your misconduct, if you display misconduct, officers will jail you, excessiveness of misconduct and stupid behaviour will result in yourself being banned.<br/>
@@ -362,7 +362,7 @@ Jail : 3 min (misconduct)<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #6", 
+"#6 COMPLIANCE #2", 
 "
 <br/>
 COMPLIANCE #2: When a police officer requests you pull over on the VOIP or Team Speak, when in the vicinity you are to do so, if you do not respond when given a direct order be it to pull over, get on the ground, put your hands up, do not move etc, the police officer then has probable cause to stun you. If the officer feels his safety is in danger within good reason that officer may fire lethal rounds to warn or kill you. If the officer fears for his safety he will warn you once, then if you continue to disregard the order the officer is permitted open fire, if the threat is imitate the officer may fire without warning. Not following orders will result in jail time if the officer has subdued you.<br/>
@@ -373,7 +373,7 @@ Jail : 3 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #5", 
+"#5 COMPLIANCE", 
 "
 <br/>
 COMPLIANCE: If you see a police officer with lights/sirens on, pull to the side of the road and comply with their instruction. Failure to do so will result in punishment. If they continue past you, they are obviously on their way to a job and you may carry on.<br/>
@@ -384,7 +384,7 @@ Fine : $500<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #4", 
+"#4 PROSTITUTION", 
 "
 <br/>
 PROSTITUTION: Civilians found to be soliciting prostitutes for sex, in exchange for money will be jailed.<br/>
@@ -395,18 +395,18 @@ Jail : 2 min<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #3", 
+"#3 THREAT WITH A FIREARM", 
 "
 <br/>
 THREAT WITH A FIREARM: Aiming any kind of firearm at officers/civilians will likely be met with deadly force. This is allowed and if an officer chooses non-lethal force, you will be jailed.<br/>
-<br>
+<br/>
 Jail : 5 min<br/>
 "
 ]
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #2", 
+"#2 WEAPONS #2", 
 "
 <br/>
 WEAPONS #2: If asked by a police officer if you or your property (car) is in possession of a firearm and you give the Officer incorrect information, you will be fined.<br/>
@@ -417,7 +417,7 @@ Fine : $5000<br/>
 ];
 player createDiaryRecord ["law", 
 [
-"Laws: General #1", 
+"#1 UNHOLSTERED WEAPON", 
 "
 <br/>
 UNHOLSTERED WEAPON: Handguns/Rifles un-holstered within/outside towns are not permitted; they must be holstered at all times (Unless being used in an authorised area (e.g. Hunting Grounds)). Punishment for violation of this law will result in jail time.<br/>
@@ -430,11 +430,46 @@ player createDiaryRecord ["changelog",
 [
 "DU 2.0", 
 "
-Added: Things<br/>
-Fixed: Bugs<br/>
-Updated: Rules<br/>
-Changed: Map<br/>
-Removed: The stuff we didn't like<br/>
+<br/>
+ADDED:<br/>
+<br/>
+Added realestate License to Donating players
+Added ability to plant, and grow apples
+Added apples to market and shop arrays
+Added demand to status menu for apples
+Added new laws for Down Under. Found in briefing
+Added ability for Cops to elect in Chief in Cop bases
+Re-introduced military base
+NZ Civ slots
+NZ Police slots
+Added NZ Civ Spawn
+Added NZ Cop Spawn
+<br/>
+FIXED:<br/>
+<br/>
+Fixed Crop strength in status menu for Wheat
+Fixed Cops from being elected Mayor
+Fixed Civs from being elected Police Chief
+Many multiple small script errors
+Rebalancing has made more jobs more viable
+Fixed Taxi missions
+Fixed ability to cut power by blowing power plant
+<br/>
+UPDATED:<br/>
+<br/>
+Major Update on car radio. Off, Light and Full options now available
+Re-built briefing.sqf
+<br/>
+CHANGED:<br/>
+<br/>
+Changed songs available on Radio
+Revamped item pricings for balance
+Revamped item weights for Balance
+Changed map to Duala, away from ArmA map, to ArmA II map. Reduce bugs and map issues
+Changed stun script. Now when stuned, vehciles are locked to stop exploiting
+<br/>
+REMOVED:
+Removed 1/5 Graphics setting option for Balacing of gameplay
 <br/>
 while this code was being re-ported bugs script errors were found and fixed<br/>
 We are sure there are more and would appreciate them being reported<br/>
