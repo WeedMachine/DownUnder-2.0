@@ -430,8 +430,6 @@ INV_AlleItemsArray = [
 
 ["smirnoff",["Item", "drink"],["smirnoff", "Smirnoff ICE"],[130, 130], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_smirnoff",localize "STRS_inv_item_alkohol_info", [["quellwasser", 1], ["hopfen", 1]] ],
 
-["cl_Spikestrip", ["Item", "misc"], ["cl_Spikestrip", "Spikestrip"],[1900, 1250], [0, "", "patrol_training"],[true,true,true, false, "createobject.sqf"], "cl_Spikestrip", localize "STRS_inv_item_roadblock_info",[["stahl", 1],["plastik", 1]] ],
-
 ["wiskey",["Item", "drink"],["wiskey", "Wiskey"],[200, 200], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_wiskey",localize "STRS_inv_item_alkohol_info", [["quellwasser", 1], ["hopfen", 1]] ],
 
 ["wine",["Item", "drink"],["wine", "White Wine"],[250, 250], [0.5, ""], [true, true, true,false,"alkeffekt.sqf"],localize "STRS_inv_item_wine",localize "STRS_inv_item_alkohol_info", [["quellwasser", 1], ["hopfen", 1]] ],
@@ -509,6 +507,8 @@ INV_AlleItemsArray = [
 ["handy",["Item", "misc"], ["handy", "Mobile Phone"], [500, 300], [0, ""],[false,false,false, false, "handy.sqf"], localize "STRS_inv_item_handy",localize "STRS_inv_item_handy_info", [["plastik", 2],["ebauteile", 2]]],
 
 ["roadblock",["Item", "misc"],["Land_CncBlock_Stripes", "Roadblock"],[3000, 1500], [15, "", ""], [true, true, true,false,"createobject.sqf"],localize "STRS_inv_item_roadblock",localize "STRS_inv_item_roadblock_info", [] ],
+
+["cl_Spikestrip", ["Item", "misc"], ["cl_Spikestrip", "Spikestrip"],[1900, 1250], [0, "", "patrol_training"],[true,true,true, false, "createobject.sqf"], "cl_Spikestrip", localize "STRS_inv_item_roadblock_info",[["stahl", 1],["plastik", 1]] ],
 
 ["Satelit",["Item", "misc"],["Satelit", "Speed Trap"],[3000, 1500], [5, "", "patrol_training"], [true, true, true,false,"blitzer.sqf"],"Satelit",localize "STRS_inv_item_searchlight_info", [] ],
 
