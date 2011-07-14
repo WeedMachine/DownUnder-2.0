@@ -33,6 +33,8 @@ INV_Lizenzen =
 ["air_support_training",copbank,localize "STRS_license_copairsupport",100000],
 //["medic",university,localize "STRS_license_medic",5000]
 ["terror",terrorshop,"Terrorist training",250000],
+["auspass",university,"Australian Passport",20000],
+["nzpass",university1,"New Zealand Passport",20000],
 //["assassin",agunshop,"Assassin training",30000]
 ["Notforcivs",Nicht_DA,"Notforcivs",1],						//Notwendige Lizens für alle Autos die Civs nicht fahren dürfen. Sichert das sie in diesen geblitz werden und sie nicht kaufen können
 ["Notforcops",Nicht_DA,"NotforCops",1],						//Notwendige Lizens für alle Gegenstände die Cops nicht kaufen dürfen

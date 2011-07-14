@@ -29,10 +29,10 @@ INV_itemstocks =
 [2,2,2,1,1,1],
 [2,2,2,1,1,1],
 //cs
-[-1,5,5,5,5,2,2,2,2,2,2,2,3,3],
-[-1,5,5,5,5,2,2,2,2,2,2,2,3,3],
-[-1,5,5,5,5,2,2,2,2,2,2,2,3,3],
-[-1,5,5,5,5,2,2,2,2,2,2,2,3,3],
+[-1,5,5,5,5,2,2,2,2,2,2,2,3,3,3,3,3,3,3],
+[-1,5,5,5,5,2,2,2,2,2,2,2,3,3,3,3,3,3,3],
+[-1,5,5,5,5,2,2,2,2,2,2,2,3,3,3,3,3,3,3],
+[-1,5,5,5,5,2,2,2,2,2,2,2,3,3,3,3,3,3,3],
 //ps
 [2,2,2,2,2,2,2],
 //ts
@@ -52,7 +52,7 @@ INV_itemstocks =
 //bs3
 [4,4,2,2,2],
 //tbs
-[-1,-1,5],
+[-1,-1,5,7],
 //bc
 -1,
 //ms
@@ -148,10 +148,10 @@ INV_itemmaxstocks =
 [10,10,8,6,4],
 [10,10,8,6,4],
 //cs
-[-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30],
-[-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30],
-[-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30],
-[-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30],
+[-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30,30,30,30,30,30],
+[-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30,30,30,30,30,30],
+[-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30,30,30,30,30,30],
+[-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30,30,30,30,30,30],
 //ps
 [5,5,5,5,5,5,5],
 //ts
@@ -171,7 +171,7 @@ INV_itemmaxstocks =
 //bs3
 [4,4,2,2,2],
 //tbs
-[-1,-1,5],
+[-1,-1,5,8],
 //bc
 -1,
 //ms
@@ -245,7 +245,7 @@ _pub = ["beer","beer2","vodka","smirnoff","wiskey","wine","wine2"];
 _gs = ["Makarov", "8Rnd_9x18_Makarov", "M9", "Rnd_9x19_M9", "Colt1911", "Rnd_45ACP_1911", "Saiga12K", "Rnd_B_Saiga12_74Slug", "MP5A5","30Rnd_9x19_MP5"];
 _es = ["Binocular", "NVGoggles", "GPS", "fishingpole", "medikit", "lockpick"];
 _cu = ["nitro", "supgrade1", "supgrade2", "supgrade3", "supgrade4"];
-_cs = ["MMT_Civ","TT650_Civ","MP_MB","TT650_Ins","Tractor","Skoda","SkodaBlue","SkodaRed","SkodaGreen","Lada_base","Lada1","Lada2","Car_hatchback","Car_Sedan","VWGolf"]; 
+_cs = ["MMT_Civ","TT650_Civ","MP_MB","TT650_Ins","Tractor","Skoda","SkodaBlue","SkodaRed","SkodaGreen","Lada_base","Lada1","Lada2","Car_hatchback","Car_Sedan","VWGolf","fury","barcuda","cuda","hemicuda","challenger"]; 
 _ps = ["datsun1_civil_1_open", "datsun1_civil_2_covered", "hilux1_civil_1_open", "hilux1_civil_2_covered", "SUV_TK_CIV_EP1", "UAZ_RU","LandRover_CZ_EP1","LandRover_TK_CIV_EP1"];
 _av = ["Pickup_PK_INS", "HMMWV"];
 _ts = ["Ikarus", "UralCivil", "UralCivil2", "V3S_Civ", "KamazOpen","MTVR"];
@@ -256,7 +256,7 @@ _as = ["Mi17_Civilian","Mi17_medevac_CDF","MV22"];
 _bs1 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
 _bs2 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
 _bs3 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
-_tbs = ["PBX", "Zodiac", "RHIB"];
+_tbs = ["PBX", "Zodiac", "RHIB","GNTFSF"];
 _bc = ["PBX", "Zodiac", "RHIB"];
 _td = ["strangemeat", "medikit"];
 _ms = ["Shovel","Pickaxe","JackHammer"];
