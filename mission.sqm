@@ -131,7 +131,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=277;
+		items=283;
 		class Item0
 		{
 			side="LOGIC";
@@ -3048,7 +3048,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3019.021,14.840103,6076.125};
+					position[]={3019.021,14.840103,6074.1953};
 					azimut=193.86885;
 					id=308;
 					side="LOGIC";
@@ -6298,10 +6298,127 @@ class Mission
 				};
 			};
 		};
+		class Item277
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7138.541,18.475945,2235.9683};
+					azimut=425.4118;
+					id=1899;
+					side="CIV";
+					vehicle="RU_Pilot";
+					leader=1;
+					skill=0.60000002;
+					text="airshop4";
+					init="this disableAI ""move""; this disableAI ""anim""; this allowdamage false;";
+				};
+			};
+		};
+		class Item278
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7163.1392,18.475945,2245.1792};
+					azimut=193.869;
+					id=1901;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="asairspawn4";
+				};
+			};
+		};
+		class Item279
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4263.6396,15.254852,2224.6816};
+					azimut=193.20856;
+					id=1903;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="asairspawn3";
+				};
+			};
+		};
+		class Item280
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4255.8574,15.254852,2183.8955};
+					azimut=362.39142;
+					id=1904;
+					side="CIV";
+					vehicle="RU_Pilot";
+					leader=1;
+					skill=0.60000002;
+					text="airshop3";
+					init="this disableAI ""move""; this disableAI ""anim""; this allowdamage false;";
+				};
+			};
+		};
+		class Item281
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7135.2422,18.475945,2246.2891};
+					azimut=425.41199;
+					id=1906;
+					side="CIV";
+					vehicle="RU_Functionary1";
+					leader=1;
+					skill=0.60000002;
+					text="airfac";
+					init="this disableAI ""move""; this disableAI ""anim""; this allowdamage false;";
+				};
+			};
+		};
+		class Item282
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7154.4541,18.475945,2259.3591};
+					azimut=193.869;
+					id=1908;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="airfacspawn";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=1621;
+		items=1625;
 		class Item0
 		{
 			position[]={3847.5354,14.888542,7339.6558};
@@ -7914,7 +8031,7 @@ class Mission
 		};
 		class Item163
 		{
-			position[]={3018.8188,14.840103,6075.7583};
+			position[]={3018.8188,14.840103,6073.8286};
 			azimut=-486.68408;
 			id=290;
 			side="EMPTY";
@@ -22107,10 +22224,54 @@ class Mission
 			skill=0.60000002;
 			init="this attachto [speed1, [0,0,-1.5]];";
 		};
+		class Item1621
+		{
+			position[]={7162.3931,18.475945,2244.4541};
+			azimut=-486.68408;
+			id=1900;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			init=" this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 8]; call compile ""[""""light"""", this, 0.2] execvm """"effects.sqf"""";"";";
+		};
+		class Item1622
+		{
+			position[]={4263.4429,15.254852,2224.3096};
+			azimut=-487.34454;
+			id=1902;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			init=" this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 8]; call compile ""[""""light"""", this, 0.2] execvm """"effects.sqf"""";"";";
+		};
+		class Item1623
+		{
+			position[]={5845.6436,15.554558,6209.0371};
+			azimut=-486.68408;
+			id=1905;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			init=" this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 8]; call compile ""[""""light"""", this, 0.2] execvm """"effects.sqf"""";"";";
+		};
+		class Item1624
+		{
+			position[]={7153.708,18.475945,2258.634};
+			azimut=-486.68408;
+			id=1907;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			init=" this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) + 8]; call compile ""[""""light"""", this, 0.2] execvm """"effects.sqf"""";"";";
+		};
 	};
 	class Markers
 	{
-		items=304;
+		items=308;
 		class Item0
 		{
 			position[]={4814.5728,54.924606,6431.5801};
@@ -23401,7 +23562,7 @@ class Mission
 		{
 			position[]={3056.5046,14.340599,6079.8389};
 			name="airshop";
-			text="Air Shop";
+			text="@STRM_mission_marker_shop_air";
 			type="mil_box";
 			colorName="ColorBlue";
 			a=0.69999999;
@@ -24940,14 +25101,58 @@ class Mission
 		};
 		class Item303
 		{
-			position[]={5845.4351,15.554558,6183.9199};
+			position[]={5843.6426,15.554558,6208.0801};
 			name="airshop3";
-			text="@STRM_mission_marker_shop_air2";
+			text="Air Spawn";
 			type="mil_dot";
 			colorName="ColorYellow";
 			a=0.69999999;
 			b=0.69999999;
 			angle=70.495796;
+		};
+		class Item304
+		{
+			position[]={7137.8262,18.475945,2236.2822};
+			name="airshop_1";
+			text="@STRM_mission_marker_shop_air4";
+			type="mil_box";
+			colorName="ColorBlue";
+			a=0.69999999;
+			b=0.69999999;
+			angle=46.700901;
+		};
+		class Item305
+		{
+			position[]={4256.0894,15.254852,2184.502};
+			name="airshop_3";
+			text="@STRM_mission_marker_shop_air3";
+			type="mil_box";
+			colorName="ColorBlue";
+			a=0.69999999;
+			b=0.69999999;
+			angle=46.700901;
+		};
+		class Item306
+		{
+			position[]={5844.3638,15.554558,6186.5371};
+			name="airshop_1_2";
+			text="@STRM_mission_marker_shop_air2";
+			type="mil_box";
+			colorName="ColorBlue";
+			a=0.69999999;
+			b=0.69999999;
+			angle=46.700901;
+		};
+		class Item307
+		{
+			position[]={7134.5273,18.475945,2246.603};
+			name="airshop_1_1";
+			text="Air Factory";
+			type="mil_box";
+			colorName="ColorYellow";
+			a=0.69999999;
+			b=0.69999999;
+			angle=46.700901;
 		};
 	};
 	class Sensors
