@@ -14,7 +14,7 @@ if ([_item, _airinv] call INV_iteminshop) exitwith
 
 {
 
-if (!(createDialog "distribute4")) exitWith {hint "Dialog Error!"};
+if (!(createDialog "distribute3")) exitWith {hint "Dialog Error!"};
 
 //=====================Airfield====================================
 
@@ -55,20 +55,6 @@ _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
 ctrlSetText [3, format["Airfield 3 for $%1", _preis]];
-buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
-};
-
-//=====================Airfield 4====================================
-
-_shopnum      = airshop4 call INV_getshopnum;
-_stock        = [_item, _shopnum] call INV_getstock;
-_maxstock     = [_item, _shopnum] call INV_getmaxstock;
-_preisOhneTax = (_infos call INV_getitemBuyCost)*1;																						
-_preis        = (_infos call INV_getitemCostWithTax)*1;
-_demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
-_preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
-
-ctrlSetText [3, format["Airfield 4 for $%1", _preis]];
 buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 };
 

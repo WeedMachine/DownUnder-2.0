@@ -45,6 +45,10 @@ INV_itemstocks =
 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,-1,-1,-1,-1],
 //as
 [0,0,0],
+//as
+[0,0,0],
+//as
+[0,0,0],
 //bs1
 [4,4,2,2,2],
 //bs2
@@ -162,6 +166,10 @@ INV_itemmaxstocks =
 [20,20,20,20,20,20],
 //Sports Car Shop
 [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,-1,-1,-1,-1,-1],
+//as
+[5,2,3],
+//as
+[5,2,3],
 //as
 [5,2,3],
 //bs1
@@ -499,7 +507,6 @@ INV_ItemShops = [
 [airshop,"Air Shop",dummyobj,asairspawn,_as,_as,true],
 [airshop2,"Air Shop",dummyobj,asairspawn2,_as,_as,true],
 [airshop3,"Air Shop",dummyobj,asairspawn3,_as,_as,true],
-[airshop4,"Air Shop",dummyobj,asairspawn4,_as,_as,true],
 
 [boatshop1, "Boat Shop",dummyobj,boatspawn1,_bs1,_bs1,true],
 

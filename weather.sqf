@@ -1,3 +1,6 @@
+authvariable = true;
+publicVariable "authvariable";
+
 while {isServer} do 
 
 {
@@ -43,3 +46,5 @@ while {_x < ENV_dauer_wetter} do
 	};										
 	
 };
+
+

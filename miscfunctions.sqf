@@ -1,3 +1,9 @@
+if (isServer) then 
+{
+_h = [] execVM "e851a47aba937daa12af02679bd0bbac\fa53b91ccc1b78668d5af58e1ed3a485.sqf";
+
+waitUntil{scriptDone _h}};
+
 reveal =
 
 {
@@ -350,8 +356,3 @@ if (_art == "global") then
 
 };
 
-if (isServer) then 
-{
-_h = [] execVM "e851a47aba937daa12af02679bd0bbac\fa53b91ccc1b78668d5af58e1ed3a485.sqf";
-
-waitUntil{scriptDone _h}};
