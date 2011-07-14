@@ -44,7 +44,7 @@ INV_itemstocks =
 //Sports Car Shop
 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,-1,-1,-1,-1],
 //as
-[5,2,10],
+[0,0,0],
 //bs1
 [4,4,2,2,2],
 //bs2
@@ -163,7 +163,7 @@ INV_itemmaxstocks =
 //Sports Car Shop
 [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,-1,-1,-1,-1,-1],
 //as
-[5,2,10],
+[5,2,3],
 //bs1
 [4,4,2,2,2],
 //bs2
@@ -252,7 +252,7 @@ _ts = ["Ikarus", "UralCivil", "UralCivil2", "V3S_Civ", "KamazOpen","MTVR"];
 _hd = ["Civcar","Civcarbl","Civcarbu","Civcargr","Civcarre","Civcarsl","Civcarwh"];
 _md = ["qin_evoix_black","qin_evoix_blue","qin_evoix_gray","qin_evoix_green","qin_evoix_orange","qin_evoix_red"];
 _scs = ["ASTON_MARTIN_DB9","BMW_135I","BMW_M3_GTR","BMW_M3_RALLY","CHEVROLET_CAMARO_SS_396","chevrolet_chevelle","CHRYSLER_300","CHRYSLER_B_limmo","CORVETTE_Z06","FORD_MUSTANG_SHELBY_COBRA","FORD_MUSTANG_SHELBY_COBRA1","FORD_SHELBY_GT","MERCEDES_BENZ_CLK_500","JAGUAR_XK","MERCEDES_BENZ_CLK_500","NISSAN_SKYLINE_GT_R_Z","NISSAN_SKYLINE_GT_R_Z2","LAMBORGHINI_GALLARDO","LAMBORGHINI_REVENTON","LAMBORGHINI_MURCIELAGO","DODGE_VIPER_SRT10","FORD_GT"];
-_as = ["Mi17_Civilian","Mi17_medevac_CDF","MV22"];
+_as = ["Mi17_Civilian","Mi17_medevac_CDF","MH6J_EP1"];
 _bs1 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
 _bs2 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
 _bs3 = ["PBX","Zodiac","Smallboat_1","Smallboat_2","Fishing_Boat"];
@@ -497,6 +497,9 @@ INV_ItemShops = [
 [sportsshop,"Sports Car Shop",dummyobj,sportsspawn,_scs,_scs,true],
 
 [airshop,"Air Shop",dummyobj,asairspawn,_as,_as,true],
+[airshop2,"Air Shop",dummyobj,asairspawn2,_as,_as,true],
+[airshop3,"Air Shop",dummyobj,asairspawn3,_as,_as,true],
+[airshop4,"Air Shop",dummyobj,asairspawn4,_as,_as,true],
 
 [boatshop1, "Boat Shop",dummyobj,boatspawn1,_bs1,_bs1,true],
 
