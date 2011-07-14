@@ -122,6 +122,11 @@ _vehiclefactory=
 "Car_hatchback",
 "Car_Sedan",
 "VWGolf",
+"fury",
+"barcuda",
+"cuda",
+"hemicuda",
+"challenger",
 
 "Smallboat_1",
 "Smallboat_2",
@@ -144,12 +149,7 @@ _vehiclefactory=
 "KamazOpen",
 "V3S_Civ",
 "Ikarus",
-"MTVR",
-
-"Mi17_Civilian",
-"Mi17_medevac_CDF",
-"MV22"
-
+"MTVR"
 ];
 
 _sportsfactory=
@@ -219,6 +219,7 @@ _tairfactory =
 
 "Mi17_Ins",
 "Mi17_medevac_CDF",
+"MH6J_EP1",
 "HMMWV",
 "UAZ_RU",
 "Ural_CDF",
@@ -227,6 +228,16 @@ _tairfactory =
 "Offroad_DSHKM_INS",
 "reparaturkit",
 "nitro"
+
+];
+
+_airfactory = 
+
+[
+
+"Mi17_Civilian",
+"Mi17_medevac_CDF",
+"MH6J_EP1"
 
 ];
 
@@ -251,6 +262,7 @@ terrorfactoryitemsqueue = [];
 efactoryqueue  = [];
 Oilraffineriequeue  = [];
 Steelfactoryqueue  = [];
+
 Juwelierqueue  = [];
 Baekereiqueue  = [];
 sportsvehiclequeue = [];
@@ -271,6 +283,7 @@ INV_ItemFabriken =
 [Steel_Fac,"factory11","Steel Factory",dummyobj,dummyobj,_Steelfactory,75000,"Fabrikablage11", "Steelfactoryqueue"],
 [Diamond_1,"factory12","Jeweler",dummyobj,dummyobj,_Juwelier,50000,"Fabrikablage12", "Juwelierqueue"],
 [sportsfactory,"factory14","Sports Car Factory",dummyobj,sfacspawn,_sportsfactory,600000,"Fabrikablage14", "sportsvehiclequeue"],
+[airfac,"factory15","Air Factory",dummyobj,airfacspawn,_airfactory,100000,"Fabrikablage15", "avehiclequeue"],
 [Bakery_2,"factory13","Industrial Bakery",dummyobj,dummyobj,_Baekerei,20000,"Fabrikablage13", "Baekereiqueue"]
 
 ];

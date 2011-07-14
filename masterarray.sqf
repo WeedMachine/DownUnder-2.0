@@ -302,6 +302,8 @@ INV_AlleFahrzeugeArray = [
 ["cuda",["Fahrzeug", "car"],["cuda", "70 Plymouth Cuda"],[125000, 115500], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["steel", 4],["glass", 1],["plastic", 1],["plastic", 4]] ],
 ["hemicuda",["Fahrzeug", "car"],["hemicuda", "70 Plymouth Hemi"],[175000, 171500], [1, "car", "probator", 100], [150, [1,0,0,3]], "Skoda" call ISSE_Cfg_Vehicle_GetName, "Skoda" call ISSE_Cfg_Vehicle_GetDesc, [["steel", 4],["glass", 1],["plastic", 1],["plastic", 4]] ],
 ["challenger",["Fahrzeug", "car"],["challenger", "08 Dodge Challenger"],[24,895, 17,895], [1, "car", "probator", 180], [150, [1,0,0,3]], "challenger" call ISSE_Cfg_Vehicle_GetName, "challenger" call ISSE_Cfg_Vehicle_GetDesc, [["stahl", 5],["ebauteile", 1],["glas", 1],["plastik", 1],["erdoel", 5]] ],
+["MH6J_EP1",["Fahrzeug", "Air"],["MH6J_EP1", "6 Seat Little Bird"],[1800000, 1000000], [5, "air", "air_support_training", 360], [1000, [1,2,0,13] ], "Mi-17", "Mi-17", [["steel", 500],["ebauteile", 15],["glass", 10],["plastic", 40],["mineraloel", 60],["geld",8000]]],
+["ArMaT_OH6A",["Fahrzeug", "Air"],["ArMaT_OH6A", "Victoria Police Helicopter"],[500000, 400000], [5, "air", "air_support_training", 360], [1000, [1,2,0,13] ], "Mi-17", "Mi-17", [["steel", 500],["ebauteile", 15],["glass", 10],["plastic", 40],["mineraloel", 60],["geld",8000]]],
 
 ["Kamaz", ["Fahrzeug", "truck"],["Kamaz", "Kamaz"],[45000, 22500],[2, "truck", "patrol_training", 1500], [500, [1,0,0,14] ], "Kamaz" call ISSE_Cfg_Vehicle_GetName,"Kamaz" call ISSE_Cfg_Vehicle_GetDesc,[["stahl", 17],["ebauteile", 2],["glas", 2],["plastik", 3],["erdoel", 6]] ],
 
