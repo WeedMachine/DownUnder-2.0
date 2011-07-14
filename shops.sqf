@@ -295,6 +295,8 @@ _copshop =
 "8Rnd_B_Beneli_74Slug",
 "Colt1911",
 "Rnd_45ACP_1911",
+"glock17_EP1"
+"17Rnd_9x19_glock17"
 "M9",
 "Rnd_9x19_M9",
 "M9SD",

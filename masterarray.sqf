@@ -68,6 +68,8 @@ INV_AlleWaffenObjekte = [
 
 ["Colt1911",["Waffe", "pistol"],["Colt1911", "M1911A1"],[6500, 3250], [1, "Pistol", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ]
 
+["glock17_EP1",["Waffe", "pistol"],["glock17_EP1", "Glock 17"],[4000, 3250], [1, "Pistol", "patrol_training"],[], "Makarov" call ISSE_Cfg_Weapons_GetName,"Makarov" call ISSE_Cfg_Weapons_GetDesc,[["stahl", 5], ["kupfer", 1],["plastik", 1]] ]
+
 ];
 
 INV_AlleMagazinObjekte = [

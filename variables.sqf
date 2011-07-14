@@ -140,18 +140,18 @@ CopStartGear_Mags        =
 "8Rnd_B_Beneli_74Slug", 
 "8Rnd_B_Beneli_74Slug", 
 "8Rnd_B_Beneli_74Slug",
-"7Rnd_45ACP_1911", 
-"7Rnd_45ACP_1911",
-"7Rnd_45ACP_1911", 
-"7Rnd_45ACP_1911",
-"7Rnd_45ACP_1911",
-"7Rnd_45ACP_1911",
-"7Rnd_45ACP_1911",
-"7Rnd_45ACP_1911"
+"17Rnd_9x19_glock17", 
+"17Rnd_9x19_glock17",
+"17Rnd_9x19_glock17", 
+"17Rnd_9x19_glock17",
+"17Rnd_9x19_glock17",
+"17Rnd_9x19_glock17",
+"17Rnd_9x19_glock17",
+"17Rnd_9x19_glock17"
 
 ];
 
-CopStartGear_Weap        = ["M1014","Colt1911","ItemGPS","NVGoggles","Binocular"];
+CopStartGear_Weap        = ["M1014","glock17_EP1","ItemGPS","NVGoggles","Binocular"];
 
 if (iscop) then 
 
