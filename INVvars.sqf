@@ -12,7 +12,7 @@ INV_ServerVclArray      = [];
 INV_SaveObjArray        = false;
 INV_shortcuts           = true;
 INV_SperrenVerbotArray  = [[copbase1, 250],[sperrenverbot1, 250],[civspawn, 25],[sperrenverbot3, 30 ],[CopPrison, 45],[licenseflag2, 35],[banklogic, 19],[gunshop1, 15]];
-INV_Serverspeedcamarray = [speed1,speed2,speed3,speed4,speed5]; publicVariable "INV_Serverspeedcamarray";
+INV_Serverspeedcamarray = [speed1,speed2,speed3,speed4,speed5,speed6,speed7,speed8,speed9,speed10]; publicVariable "INV_Serverspeedcamarray";
 INV_JIP = true; publicVariable "INV_JIP";
 
 

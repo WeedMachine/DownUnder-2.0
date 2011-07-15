@@ -10,7 +10,7 @@ _type   = typeof _car;
 
 	{
 
-	if ((player == driver _car) and (_car distance _x < 30) and (_speed >= 103) and !(_car iskindof "Air")) then 
+	if ((player == driver _car) and (_car distance _x < 30) and (_speed >= 95) and !(_car iskindof "Air")) then 
 
 		{ 
 
@@ -19,13 +19,13 @@ _type   = typeof _car;
 
 		titleCut [" ","white in",1];
 
-		if(_speed >= 103  and _speed < 108) then {_penalty = 2};
-		if(_speed >= 109 and _speed < 115) then {_penalty = 3};
-		if(_speed >= 116 and _speed < 131) then {_penalty = 4};
-		if(_speed >= 132 and _speed < 150) then {_penalty = 7};
-		if(_speed >= 151 and _speed < 180) then {_penalty = 12};
+		if(_speed >= 95  and _speed < 110) then {_penalty = 1};
+		if(_speed >= 110 and _speed < 130) then {_penalty = 2};
+		if(_speed >= 130 and _speed < 150) then {_penalty = 3};
+		if(_speed >= 150 and _speed < 170) then {_penalty = 5};
+		if(_speed >= 200 		 ) then {_penalty = 10};
 
-		player groupchat format["You have just been flashed by a speed camera Slow down! (Limit: 100, Speed: %1)", round _speed];
+		player groupchat format["You have just been flashed by a speed camera Slow down! (Limit: 90, Speed: %1)", round _speed];
 
 		sleep 2;
 

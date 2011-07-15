@@ -18,7 +18,6 @@ Kontostand               = StartGeld;
 shopflagarray            = [shop1,shop2,shop3,shop4,shop5];
 bankflagarray            = [mainbank, copbank, copsobr, atm1, atm2, atm3, atmpf, atmassa, bank5, bank6];
 drugsellarray		 = [mdrugsell,cdrugsell,ldrugsell,hdrugsell];
-speedcamarray            = [speed1,speed2,speed3,speed4,speed5,speed6,speed7,speed8,speed9,speed10];
 TankstellenArray         = 
 
 [
