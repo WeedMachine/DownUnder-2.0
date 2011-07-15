@@ -83,7 +83,6 @@ class Mission
 		"du_characters",
 		"ca_modules_clouds",
 		"ca_modules_functions",
-		"cacharacters_e",
 		"CAMisc",
 		"camisc3",
 		"CAWheeled2_MTVR",
@@ -132,7 +131,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=284;
+		items=283;
 		class Item0
 		{
 			side="LOGIC";
@@ -2108,7 +2107,7 @@ class Mission
 					azimut=-211.722;
 					id=243;
 					side="WEST";
-					vehicle="ru_policeman";
+					vehicle="DU_Charactersman";
 					leader=1;
 					skill=1;
 					text="bailflag";
@@ -2125,10 +2124,10 @@ class Mission
 				class Item0
 				{
 					position[]={9062.4248,25.641836,1033.8451};
-					azimut=-272.71957;
+					azimut=-272.72;
 					id=244;
 					side="WEST";
-					vehicle="ru_policeman";
+					vehicle="DU_Characters";
 					leader=1;
 					skill=1;
 					init="this moveingunner search3; this allowdamage false;";
@@ -2147,7 +2146,7 @@ class Mission
 					azimut=-442.09299;
 					id=245;
 					side="WEST";
-					vehicle="ru_policeman";
+					vehicle="DU_Characters";
 					leader=1;
 					skill=1;
 					init="this moveingunner search1; this allowdamage false;";
@@ -2166,7 +2165,7 @@ class Mission
 					azimut=-295.53201;
 					id=246;
 					side="WEST";
-					vehicle="ru_policeman";
+					vehicle="DU_Characters";
 					leader=1;
 					skill=1;
 					init="this moveingunner search2; this allowdamage false;";
@@ -2185,7 +2184,7 @@ class Mission
 					azimut=-120.773;
 					id=247;
 					side="WEST";
-					vehicle="ru_policeman";
+					vehicle="DU_Characters";
 					leader=1;
 					skill=1;
 					init="this moveingunner search4; this allowdamage false;";
@@ -6413,24 +6412,6 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="airfacspawn";
-				};
-			};
-		};
-		class Item283
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5615.5347,9.9929285,4052.7549};
-					id=1910;
-					side="WEST";
-					vehicle="US_Delta_Force_Undercover_Takistani06_EP1";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.60000002;
 				};
 			};
 		};
@@ -20852,13 +20833,13 @@ class Mission
 		class Item1492
 		{
 			position[]={4355.2432,14.976334,2653.7983};
-			azimut=67.390999;
+			azimut=-200.06743;
 			id=1759;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed2";
-			init="this allowdamage false;this setPos [getPos this select 0, getPos this select 1, 20]";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, -1]";
 		};
 		class Item1493
 		{
@@ -20909,7 +20890,7 @@ class Mission
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed4";
-			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, 20]";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, -1]";
 		};
 		class Item1498
 		{
@@ -20934,13 +20915,13 @@ class Mission
 		class Item1500
 		{
 			position[]={4907.8052,29.603291,6751.4194};
-			azimut=-91.623398;
+			azimut=-182.10043;
 			id=1767;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed5";
-			init="this allowdamage false;this setPos [getPos this select 0, getPos this select 1, 20]";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, -1]";
 		};
 		class Item1501
 		{
@@ -20965,13 +20946,13 @@ class Mission
 		class Item1503
 		{
 			position[]={5163.5908,15.850733,3765.8013};
-			azimut=178.517;
+			azimut=88.336296;
 			id=1770;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed3";
-			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, 20]";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, -1]";
 		};
 		class Item1504
 		{
@@ -21036,13 +21017,13 @@ class Mission
 		class Item1510
 		{
 			position[]={3961.8113,14.898136,6641.2993};
-			azimut=77.8564;
+			azimut=165.93367;
 			id=1778;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed6";
-			init="this allowdamage false;this setPos [getPos this select 0, getPos this select 1, 20]";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, -1]";
 		};
 		class Item1511
 		{
@@ -21098,13 +21079,13 @@ class Mission
 		class Item1516
 		{
 			position[]={5033.5537,15.354752,1451.0851};
-			azimut=64.041298;
+			azimut=153.65508;
 			id=1784;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed8";
-			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01];";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, -1]";
 		};
 		class Item1517
 		{
@@ -21129,13 +21110,13 @@ class Mission
 		class Item1519
 		{
 			position[]={5980.7749,14.961197,2068.418};
-			azimut=-1.7408;
+			azimut=-89.807999;
 			id=1787;
 			side="EMPTY";
 			vehicle="du_speedcam";
 			skill=0.60000002;
 			text="speed9";
-			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) - 2.01];";
+			init="this allowdamage false; this setPos [getPos this select 0, getPos this select 1, -1]";
 		};
 		class Item1520
 		{
@@ -22303,7 +22284,7 @@ class Mission
 		{
 			position[]={5628.7007,7.7512536,4087.8503};
 			azimut=90.051147;
-			id=1911;
+			id=1910;
 			side="EMPTY";
 			vehicle="Base_WarfareBBarrier10xTall";
 			skill=0.60000002;
