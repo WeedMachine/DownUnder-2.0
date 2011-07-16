@@ -28,9 +28,10 @@ titles[] = {};
 
 };
 
-class sms_incoming
+class coin
 {
 	name     = "";
-	sound[]  = {"\snd\sms_tone.ogg", 0.3, 1};
+	sound[]  = {"\sounds\SuperMario.ogg", 0.3, 1};
 	titles[] = {};
 };
+

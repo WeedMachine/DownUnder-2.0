@@ -14,6 +14,7 @@ _uid = getPlayerUID vehicle player;
 			sleep 26;
 			titletext [format [localize "STRS_supporter", name player ],"PLAIN DOWN"];
 			sleep 6;
+			playsound "coin";
 			titletext [localize "STRS_supporter_info","PLAIN DOWN"];
 			sleep 6;
 			titletext [localize "STRS_supporter_info2","PLAIN DOWN"];
