@@ -8,7 +8,7 @@ _planttype = null;
 _plantyield is how many units of drug item return you get per harvest action and 
 _seedyield is how many seed/s you will get back
 */
-_plantyield = 5;
+_plantyield = 8;
 _seedyield = 1;
 
 //D$, this is if statement that basically says if "burn" is selected, delete the plant that is closest to the player

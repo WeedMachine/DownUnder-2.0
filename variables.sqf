@@ -60,6 +60,7 @@ milking			= false;
 
 //===== Gas station robbing
 maxstationmoney = 40000;
+wantedamountforrobbing = 45000;
 
 
 //==============================PETROL/OIL=========================================

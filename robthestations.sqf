@@ -10,11 +10,11 @@ if (!(call INV_isArmed)) exitwith
 	{
 	player groupchat "You need a gun to rob the Servo!";
 	}; 
-_sel = "NZ Servo";
+_sel = "Service Station 1";
 (format['if(!("Robbed a Servo" in %1_reason))then{%1_reason = %1_reason + ["Robbed a Servo"]}; %1_wanted = 1; kopfgeld_%1 = kopfgeld_%1 + wantedamountforrobbing;', player]) call broadcast;
 ['geld', station1money] call INV_AddInventoryItem;
 (format ['server globalChat "Someone robbed %1!";', _sel]) call broadcast;
-player sidechat format ["You stole $%1 from the NZ Servo!", station1money];
+player sidechat format ["You stole $%1 from the Service Station 1!", station1money];
 station1money = 0;
 publicvariable "station1money";
 };
@@ -25,11 +25,11 @@ if (!(call INV_isArmed)) exitwith
 	{
 	player groupchat "You need a gun to rob the Servo!";
 	};
-_sel = "Outback Servo";
+_sel = "Service Station 2";
 (format['if(!("Robbed a Servo" in %1_reason))then{%1_reason = %1_reason + ["Robbed a Servo"]}; %1_wanted = 1; kopfgeld_%1 = kopfgeld_%1 + wantedamountforrobbing;', player]) call broadcast;
 ['geld', station2money] call INV_AddInventoryItem;
 (format ['server globalChat "Someone robbed %1!";', _sel]) call broadcast;
-player sidechat format ["You stole $%1 from the Outback Servo!", station2money];
+player sidechat format ["You stole $%1 from the Service Station 2!", station2money];
 station2money = 0;
 publicvariable "station2money";
 };
@@ -40,11 +40,11 @@ if (!(call INV_isArmed)) exitwith
 	{
 	player groupchat "You need a gun to rob the Servo!";
 	};
-_sel = "DU Servo";
+_sel = "Service Station 3";
 (format['if(!("Robbed a Servo" in %1_reason))then{%1_reason = %1_reason + ["Robbed a Servo"]}; %1_wanted = 1; kopfgeld_%1 = kopfgeld_%1 + wantedamountforrobbing;', player]) call broadcast;
 ['geld', station3money] call INV_AddInventoryItem;
 (format ['server globalChat "Someone robbed %1!";', _sel]) call broadcast;
-player sidechat format ["You stole $%1 from the DU Servo!", station3money];
+player sidechat format ["You stole $%1 from the Service Station 3!", station3money];
 station3money = 0;
 publicvariable "station3money";
 };
@@ -55,11 +55,11 @@ if (!(call INV_isArmed)) exitwith
 	{
 	player groupchat "You need a gun to rob the Servo!";
 	};
-_sel = "Dusty Fuel Servo";
+_sel = "Service Station 4";
 (format['if(!("Robbed a Servo" in %1_reason))then{%1_reason = %1_reason + ["Robbed a Servo"]}; %1_wanted = 1; kopfgeld_%1 = kopfgeld_%1 + wantedamountforrobbing;', player]) call broadcast;
 ['geld', station4money] call INV_AddInventoryItem;
 (format ['server globalChat "Someone robbed %1!";', _sel]) call broadcast;
-player sidechat format ["You stole $%1 from the Dusty Fuel Servo!", station4money];
+player sidechat format ["You stole $%1 from the Service Station 4!", station4money];
 station4money = 0;
 publicvariable "station4money";
 };
@@ -70,11 +70,11 @@ if (!(call INV_isArmed)) exitwith
 	{
 	player groupchat "You need a gun to rob the Servo!";
 	};
-_sel = "OZ Fuel Servo";
+_sel = "Service Station 5";
 (format['if(!("Robbed a Servo" in %1_reason))then{%1_reason = %1_reason + ["Robbed a Servo"]}; %1_wanted = 1; kopfgeld_%1 = kopfgeld_%1 + wantedamountforrobbing;', player]) call broadcast;
 ['geld', station5money] call INV_AddInventoryItem;
 (format ['server globalChat "Someone robbed %1!";', _sel]) call broadcast;
-player sidechat format ["You stole $%1 from the OZ Fuel Servo!", station5money];
+player sidechat format ["You stole $%1 from the Service Station 5!", station5money];
 station5money = 0;
 publicvariable "station5money";
 };
@@ -85,13 +85,12 @@ if (!(call INV_isArmed)) exitwith
 	{
 	player groupchat "You need a gun to rob the Servo!";
 	};
-_sel = "Buzz's Servo";
+_sel = "Service Station 6";
 (format['if(!("Robbed a Servo" in %1_reason))then{%1_reason = %1_reason + ["Robbed a Servo"]}; %1_wanted = 1; kopfgeld_%1 = kopfgeld_%1 + wantedamountforrobbing;', player]) call broadcast;
 ['geld', station6money] call INV_AddInventoryItem;
 (format ['server globalChat "Someone robbed %1!";', _sel]) call broadcast;
-player sidechat format ["You stole $%1 from Buzz's Servo!", station6money];
+player sidechat format ["You stole $%1 from Service Station 6!", station6money];
 station6money = 0;
 publicvariable "station6money";
 };
 
-// edit by whippy

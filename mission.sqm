@@ -24311,7 +24311,7 @@ class Mission
 		};
 		class Item211
 		{
-			position[]={2948.0742,0.19986784,5231.2241};
+			position[]={3390.6602,0.8690685,4577.9263};
 			name="fisharea6land";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -24321,8 +24321,8 @@ class Mission
 		};
 		class Item212
 		{
-			position[]={2948.4629,0.1990516,5231.9175};
-			name="fishingsturgeon";
+			position[]={3391.0488,0.82068026,4578.6196};
+			name="stoerfischen";
 			text="Fishing Area (Illegal sturgeon)";
 			type="mil_circle";
 			colorName="ColorRed";

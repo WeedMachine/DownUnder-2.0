@@ -218,7 +218,6 @@ _tairfactory =
 [
 
 "Mi17_Ins",
-"Mi17_medevac_CDF",
 "MH6J_EP1",
 "HMMWV",
 "UAZ_RU",
@@ -236,7 +235,6 @@ _airfactory =
 [
 
 "Mi17_Civilian",
-"Mi17_medevac_CDF",
 "MH6J_EP1"
 
 ];
@@ -296,7 +294,6 @@ INV_FarmItemArray =
 
 [[["fishingwhale",400]],"Whale",2,1,["Ship"]],
 [[["fishingbass",400]],"bass",7,4,["Ship"]],
-[[["fishingsturgeon",20]],"Kaviar",4,1,["Ship"]],
 [[["fishingblowfish",200]],"blowfish",15,8,["Ship"]],
 [[["fishingherring",200]],"herring",15,8,["Ship"]],
 [[["fishingmackerel",200]],"mackerel",15,8,["Ship"]],

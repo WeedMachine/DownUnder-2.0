@@ -80,6 +80,8 @@ INV_AlleMagazinObjekte = [
 
 ["Rnd_9x19_M9",["Magazin", "pistol"],["15Rnd_9x19_M9", "15Rnd 9mm M9/92FS Mag"],[500, 400], [1, ""], [], "15Rnd_9x19_M9" call ISSE_Cfg_MagazineInfo, "15Rnd_9x19_M9" call ISSE_Cfg_MagazineInfo, [["kupfer", 1],["schwarzpulver", 1]] ],
 
+["17Rnd_9x19_glock17",["Magazin", "pistol"],["17Rnd_9x19_glock17", "17Rnd 9x19 Glock17 Mag"],[500, 400], [1, ""], [], "17Rnd_9x19_glock17" call ISSE_Cfg_MagazineInfo, "17Rnd_9x19_glock17" call ISSE_Cfg_MagazineInfo, [["kupfer", 1],["schwarzpulver", 1]] ],
+
 ["15Rnd_9x19_M9SD",["Magazin", "pistol"],["15Rnd_9x19_M9SD", "15Rnd 9mm M9/92FS Mag"],[500, 400], [1, ""], [], "15Rnd_9x19_M9SD" call ISSE_Cfg_MagazineInfo, "15Rnd_9x19_M9" call ISSE_Cfg_MagazineInfo, [["kupfer", 1],["schwarzpulver", 1]] ],
 
 ["Rnd_45ACP_1911",["Magazin", "pistol"],["7Rnd_45ACP_1911", "7Rnd 45ACP 1911 Mag"],[400, 400], [1, ""], [], "15Rnd_9x19_M9" call ISSE_Cfg_MagazineInfo, "15Rnd_9x19_M9" call ISSE_Cfg_MagazineInfo, [["kupfer", 1],["schwarzpulver", 1]] ],

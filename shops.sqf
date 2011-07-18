@@ -6,12 +6,12 @@ INV_itemstocks =
 
 [
 //fs
-[25,10,10],
-[25,10,10],
-[25,10,10],
-[25,10,10],
-[25,10,10],
-[25,10,10],
+[10,10],
+[10,10],
+[10,10],
+[10,10],
+[10,10],
+[10,10],
 //is
 [1,1,1,1,1,1,1,1,1,1,1],
 [1,1,1,1,1,1,1,1,1,1,1],
@@ -111,7 +111,7 @@ INV_itemstocks =
 //ec
 -1,
 //hs
-[5,10,10,3,3,0,0,0,0,0,0],
+[5,10,0,1,1,0,0,0,0,0,0],
 //kv
 -1,
 //ig
@@ -129,12 +129,12 @@ INV_itemmaxstocks =
 
 [
 //Fuel Station fs
-[50,20,20],
-[50,20,20],
-[50,20,20],
-[50,20,20],
-[50,20,20],
-[50,20,20],
+[20,20],
+[20,20],
+[20,20],
+[20,20],
+[20,20],
+[20,20],
 //Item Shop is
 [100,150,350,200,200,80,200,200,200,100,100],
 [100,150,350,200,200,80,200,200,200,100,100],
@@ -234,7 +234,7 @@ INV_itemmaxstocks =
 //ec
 -1,
 //hs
-[5,10,15,20,20,20,20,20,20,20,20],
+[5,10,2,2,2,2,2,2,2,2,2],
 //kv
 -1,
 //ig
@@ -247,7 +247,7 @@ INV_itemmaxstocks =
 // Shop items
 
 _emptyshop = [];
-_fs = ["kanister", "kleinesreparaturkit", "reparaturkit"];
+_fs = ["kleinesreparaturkit", "reparaturkit"];
 _is = ["Apfel","Apfelkuchen","blowfish", "mackerel", "herring", "bass", "Bread", "barramundi", "boar", "trout", "milk"];
 _pub = ["beer","beer2","vodka","smirnoff","wiskey","wine","wine2"];
 _gs = ["Makarov", "8Rnd_9x18_Makarov", "M9", "Rnd_9x19_M9", "Colt1911", "Rnd_45ACP_1911", "Saiga12K", "Rnd_B_Saiga12_74Slug", "MP5A5","30Rnd_9x19_MP5"];
@@ -330,14 +330,11 @@ _copshop_patrol =
 "roadblock",
 "FortRazorWireCop",
 "Satelit",
-"bunkersmall",
 "fortenvelopesmall",
 "roadbarrierlong",
 "roadbarrierlight",
 "landconelight",
 "bargate",
-"Jaegerstand",
-"Sandsacke",
 "nitro",
 "supgrade1",
 "supgrade2",
@@ -431,7 +428,6 @@ _terrorshop =
 "aktivierungsbombe",
 "geschwindigkeitsbombe",
 "fernzuender",
-"bunkersmall",
 "fortenvelopesmall",
 "fireplace",
 "campeast",
