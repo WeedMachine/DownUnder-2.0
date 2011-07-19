@@ -354,7 +354,6 @@ closedialog 0;
 sleep 3;
 shopactivescript = 0;
 
-[0,0,0,[INV_ActiveShopNumber]] execVM "shopdialogs.sqf";
 
 
 

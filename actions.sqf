@@ -182,9 +182,9 @@ _role addaction [format ["Buy CDF Universal Soldier Style ($%1)", SkinTerr],"ski
 
 //==================================== Hospitals in Cities ================================================
 
-_role addaction [format ["Healt for ($%1)", Hospital],"newscripts\Chernhospital.sqf", ["healt"],1,false,true,"","player distance Hospital1 <= 5"];
+_role addaction [format ["Heal for ($%1)", Hospital],"newscripts\Chernhospital.sqf", ["healt"],1,false,true,"","player distance Hospital1 <= 5"];
 
-_role addaction [format ["Healt for ($%1)", Hospital],"newscripts\Chernhospital.sqf", ["healt"],1,false,true,"","player distance Hospital2 <= 5"];
+_role addaction [format ["Heal for ($%1)", Hospital],"newscripts\Chernhospital.sqf", ["healt"],1,false,true,"","player distance Hospital2 <= 5"];
 
 
 //==================================== PRIVATE STORAGE ================================================
