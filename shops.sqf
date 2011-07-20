@@ -25,6 +25,7 @@ INV_itemstocks =
 [40,-1,40,-1,40,-1,40,-1,40,-1],
 //es
 [20,20,20,5,5,30],
+[20,20,20,5,5,30],
 //cu
 [2,2,2,1,1,1],
 [2,2,2,1,1,1],
@@ -44,11 +45,11 @@ INV_itemstocks =
 //Sports Car Shop
 [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,-1,-1,-1,-1],
 //as
-[0,0,0],
+[1,1,1],
 //as
-[0,0,0],
+[1,1,1],
 //as
-[0,0,0],
+[1,1,1],
 //bs1
 [4,4,2,2,2],
 //bs2
@@ -136,6 +137,7 @@ INV_itemmaxstocks =
 [20,20],
 [20,20],
 //Item Shop is
+//"Apfel","Apfelkuchen","blowfish", "mackerel", "herring", "bass", "Bread", "barramundi", "boar", "trout", "milk"];
 [100,150,350,200,200,80,200,200,200,100,100],
 [100,150,350,200,200,80,200,200,200,100,100],
 [100,150,350,200,200,80,200,200,200,100,100],
@@ -147,6 +149,7 @@ INV_itemmaxstocks =
 //gs
 [40,-1,40,-1,40,-1,40,-1,40,-1],
 //es
+[35,35,35,35,35,100],
 [35,35,35,35,35,100],
 //cu
 [10,10,8,6,4],
@@ -485,6 +488,7 @@ INV_ItemShops = [
 [gunshop1,"Gun Shop",gunbox1,dummyobj,_gs,_gs,true],
 
 [equipshop,"Equipment Shop",equipbox,dummyobj,_es,_es,true],
+[equipshop1,"Equipment Shop",equipbox1,dummyobj,_es,_es,true],
 
 [tuning1,"Car Upgrades",dummyobj,dummyobj,_cu,_cu,true],
 [tuning2,"Car Upgrades",dummyobj,dummyobj,_cu,_cu,true],
@@ -502,7 +506,7 @@ INV_ItemShops = [
 [evoshop,"Mitsubishi Dealership",dummyobj,evospawn,_md,_md,true],
 [sportsshop,"Sports Car Shop",dummyobj,sportsspawn,_scs,_scs,true],
 
-[airshop,"Air Shop",dummyobj,asairspawn,_as,_as,true],
+[airshop,"Air Shop",dummyobj,asairspawn,_as,_as,false],
 [airshop2,"Air Shop",dummyobj,asairspawn2,_as,_as,true],
 [airshop3,"Air Shop",dummyobj,asairspawn3,_as,_as,true],
 

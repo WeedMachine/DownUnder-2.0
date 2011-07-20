@@ -19,7 +19,6 @@ _role addaction ["Escort VIP", "noscript.sqf", "[VIPtarget] join (group player);
 //================================== COP Hooker ACTIONS ================================================
 _role addaction ["Who is your pimp?","noscript.sqf",'player groupchat format["this escort works for %1.", leader (nearestobjects [getpos player, civescortarray,  3] select 0)]',1,true,true,"",'_escort = (nearestobjects [getpos player, civescortarray, 3] select 0); !(_escort in playerarray) and player distance _escort < 5 and (leader _escort) in playerarray and iscop'];
 _role addaction ["Set escort free","noscript.sqf",'_escort = (nearestobjects [getpos player, civescortarray,  3] select 0); _civ = leader _escort; deletevehicle _escort; (format ["[""escort"", %1] spawn Isse_AddCrimeLogEntry; if(!(""being a dirty pimp!!"" in %1_reason))then{%1_reason = %1_reason + [""being a dirty pimp!!""]}; %1_wanted = 1; kopfgeld_%1 = kopfgeld_%1 + 20000;", _civ]) call broadcast;player groupchat "the escort has been freed!";',1,true,true,"",'_escort = (nearestobjects [getpos player, civescortarray, 3] select 0); !(_escort in playerarray) and player distance _escort < 5 and (leader _escort) in playerarray and iscop'];
-
 //========================================= HUNTING ===================================================
 _role addaction ["Take boar meat","noscript.sqf",'_no = ceil(random 2);if (((call INV_GetOwnWeight) + ("boar" call INV_getitemTypeKg)*_no) > INV_Tragfaehigkeit)exitwith{player groupChat localize "STRS_inv_buyitems_maxgewicht"};(nearestobjects [getpos player, ["wildboar"],  3] select 0) setvariable ["inuse", 1, true]; player playmove "AinvPknlMstpSlayWrflDnon_medic";sleep 4;waituntil {animationstate player != "AinvPknlMstpSlayWrflDnon_medic"};deletevehicle (nearestobjects [getpos player, ["wildboar"],  3] select 0);["boar", _no] call INV_AddInventoryItem;player groupchat format["you got %1 boar meat", _no];',1,true,true,"",'_w = (nearestobjects [getpos player, ["wildboar"],  3] select 0) getvariable "inuse"; isnil "_w" and player distance (nearestobjects [getpos player, ["wildboar"],  3] select 0) < 5 and !alive (nearestobjects [getpos player, ["wildboar"],  3] select 0) and isciv'];
 _role addaction ["Take rabbit meat","noscript.sqf",'_no = ceil(random 2);if (((call INV_GetOwnWeight) + ("rabbit" call INV_getitemTypeKg)*_no) > INV_Tragfaehigkeit)exitwith{player groupChat localize "STRS_inv_buyitems_maxgewicht"};(nearestobjects [getpos player, ["rabbit"],  3] select 0) setvariable ["inuse", 1, true]; player playmove "AinvPknlMstpSlayWrflDnon_medic";sleep 4;waituntil {animationstate player != "AinvPknlMstpSlayWrflDnon_medic"};deletevehicle (nearestobjects [getpos player, ["rabbit"],  3] select 0);["rabbit", _no] call INV_AddInventoryItem;player groupchat format["you got %1 rabbit meat", _no];',1,true,true,"",'_w = (nearestobjects [getpos player, ["rabbit"],  3] select 0) getvariable "inuse"; isnil "_w" and player distance (nearestobjects [getpos player, ["rabbit"],  3] select 0) < 5'];
@@ -41,6 +40,11 @@ _role addaction [format["Restore PK NEST ($%1)", PKcost],"recruitai.sqf","PK4",1
 _role addaction ["Impound Lot","maindialogs.sqf",["impound"],1,false,true,"","player distance impoundbuy <= 5"];
 _role addaction ["Impound Lot","maindialogs.sqf",["impound"],1,false,true,"","player distance copcarimpound1 <= 5"];
 _role addaction ["Impound Lot","maindialogs.sqf",["impound"],1,false,true,"","player distance impoundbuyelec <= 5"];
+//==================================================COP PATROLS ACTIONS==================================================
+_role addaction ["Get patrol mission","coppatrol.sqf",["start"],1,false,true,"","iscop and player distance copbank <= 4 and !pmissionactive and !patrolwaittime"];
+_role addaction ["Cancel patrol mission","coppatrol.sqf",["end"],1,false,true,"","iscop and pmissionactive and player distance copbank <= 4"];
+_role addaction ["Get patrol mission","coppatrol.sqf",["start"],1,false,true,"","iscop and player distance copcar2 <= 4 and !pmissionactive and !patrolwaittime"];
+_role addaction ["Cancel patrol mission","coppatrol.sqf",["end"],1,false,true,"","iscop and pmissionactive and player distance copcar2 <= 4"];
 //================================== COP DELETE EVIDENCE ================================================
 _role addaction ["Take evidence","noscript.sqf",'player groupchat "evidence removed."; {deletevehicle _x} foreach (nearestobjects [getpos player, ["weaponholder"], 3])',1,true,true,"",'_weps = (nearestobjects [getpos player, ["weaponholder"], 3] select 0); player distance _weps < 15 and iscop'];
 //================================== COP SLAVE ACTIONS ================================================
@@ -210,7 +214,7 @@ _role addaction ["Process Heroin","itemprocess.sqf",["Unprocessed_Heroin", "hero
 _role addaction ["Process Heroin","itemprocess.sqf",["Unprocessed_Heroin", "heroin", 5, "heroin ga3"],1,false,true,"","_control = gangarea3 getvariable ""control"";!isnil ""_control"" and player distance gangarea3 <= 5 and (_control == (call INV_mygang))"];
 _role addaction ["Process Marijuana","itemprocess.sqf",["Unprocessed_Marijuana", "marijuana", 5, "marijuana ga3"],1,false,true,"","_control = gangarea3 getvariable ""control"";!isnil ""_control"" and player distance gangarea3 <= 5 and (_control == (call INV_mygang))"];
 //======================================== WORKERS =====================================================
-_role addaction [format ["Buy a worker ($%1)", huren_cost],"worker.sqf", ["holen"],1,false,true,"","(player distance workplace_getjobflag_1 <= 5 or player distance workplace_getjobflag_2 <= 5 or player distance workplace_getjobflag_3 <= 5) and isciv"];		
+//_role addaction [format ["Buy a worker ($%1)", huren_cost],"worker.sqf", ["holen"],1,false,true,"","(player distance workplace_getjobflag_1 <= 5 or player distance workplace_getjobflag_2 <= 5 or player distance workplace_getjobflag_3 <= 5) and isciv"];		
 //======================================= WORKPLACE ====================================================
 _role addaction ["Get courier job","delivery.sqf", ["getajob_delivery"],1,false,true,"","(player distance workplace_getjobflag_1 <= 5 or player distance workplace_getjobflag_2 <= 5 or player distance workplace_getjobflag_3 <= 5 or player distance workplace_getjobflag_4 <= 5) and isciv"];
 		
@@ -228,13 +232,13 @@ _role addaction [format [localize "STRS_addAction_buy_shop", (BuyAbleBuildingsAr
 
 _role addaction [format [localize "STRS_addAction_buy_shop", (BuyAbleBuildingsArray select 3) select 1, (BuyAbleBuildingsArray select 3) select 3],"buyshop.sqf", ["immobilie", 3],1,false,true,"","player distance ((BuyAbleBuildingsArray select 3) select 2) <= 5 and !(((BuyAbleBuildingsArray select 3) select 0) in BuildingsOwnerArray)"];		
 //====================================== VEHICLE ACTIONS ================================================
-_role addaction [localize "STRS_addaction_trunk_see","noscript.sqf",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);_str = format["%1_storage", _vcl];[_str] execVM "vehiclecheck.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 5 and !(_vcl in INV_VehicleArray) and _vcl in INV_ServerVclArray and iscop'];
+_role addaction [localize "STRS_addaction_trunk_see","noscript.sqf",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);_str = format["%1_storage", _vcl];[_str] execVM "vehiclecheck.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 10 and !(_vcl in INV_VehicleArray) and _vcl in INV_ServerVclArray and iscop'];
 
-_role addaction [localize "STRS_addaction_trunk_check","noscript.sqf",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);_str = format["%1_storage", _vcl];if([_vcl,_str] call INV_RemoveIllegalStorage)then{call compile format["publicvariable ""%1"";", _str]};',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 5 and !(_vcl in INV_VehicleArray) and _vcl in INV_ServerVclArray and iscop'];
+_role addaction [localize "STRS_addaction_trunk_check","noscript.sqf",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);_str = format["%1_storage", _vcl];if([_vcl,_str] call INV_RemoveIllegalStorage)then{call compile format["publicvariable ""%1"";", _str]};',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 10 and !(_vcl in INV_VehicleArray) and _vcl in INV_ServerVclArray and iscop'];
 
-_role addaction ["Impound vehicle","noscript.sqf",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);[_vcl, "impound"] execVM "impound.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 5 and _vcl in INV_ServerVclArray and iscop'];
+_role addaction ["Impound vehicle","noscript.sqf",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);[_vcl, "impound"] execVM "impound.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 20 and _vcl in INV_ServerVclArray and iscop'];
 
-_role addaction ["Pull out","noscript.sqf",'(nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0) execVM "pullout.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 5 and count (crew _vcl) > 0 and _vcl in INV_ServerVclArray and (call INV_isArmed)'];
+_role addaction ["Pull out","noscript.sqf",'(nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0) execVM "pullout.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 10 and count (crew _vcl) > 0 and _vcl in INV_ServerVclArray and (call INV_isArmed)'];
 
 _role addaction [localize "STRS_addAction_vehicleinfo","noscript.sqf",'(nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0) execVM "vehinfo.sqf";',1,true,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 5 and _vcl in INV_ServerVclArray'];
 //======================================== GANG FLAGS ===================================================
@@ -290,6 +294,9 @@ _role addaction ["Rob The Servo","robthestations.sqf",["station 6"],1,false,true
 
 //====================================== RED LIGHT ======================================================
 _role addaction [format ["Hire escort ($%1)", escort_cost],"escort.sqf", ["escort"],1,false,true,"","player distance redlight1 <= 5 and isciv"];
+
+//================================REFRESH SERVER SIDE SCRIPTS ===========================================
+_role addaction ["Refesh Server Side Scripts","resetserver.sqf",[reset],1,false,true,"","player distance refreshscripts <= 5"];
 
 
 

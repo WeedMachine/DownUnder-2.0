@@ -23,6 +23,41 @@ RadioTrigger_9 setTriggerArea       [0, 0, 0, false];
 RadioTrigger_9 setTriggerActivation ["INDIA", "NOT PRESENT", true];
 RadioTrigger_9 setTriggerStatements ["this", "[RadioTextMsg_4, RadioTextArt_4] call SayDirectSpeach;", ""];
 9 setRadioMsg "Say Text 4";
+_trg = createTrigger ["EmptyDetector", position player]; 
+_trg setTriggerText "Server Load"; 
+_trg setTriggerActivation ["CHARLIE", "PRESENT", true]; 
+_trg setTriggerStatements ["this", '
+	if (serverLoadHint) exitWith { player groupChat "You may only check the server load every 30 seconds to prevent network lag"; }; 
+	serverLoadHint = true; 
+	[nil,server,"loc",rSPAWN,player,{
+		[nil,_this,"loc",rSPAWN,diag_fps,{
+			hint format["nAiUnits: %1\nnGroups: %2\nServer FPS: %3\n Run Time: %4 mins", numberOfAI, count allGroups, round _this, round (time/60)];
+			sleep 30;
+			serverLoadHint = false;	
+		}] call RE;
+	}] call RE;	
+	', ""]; 
+_trg = createTrigger ["EmptyDetector", position player]; 
+_trg setTriggerText "Unflip Vehicle"; 
+_trg setTriggerActivation ["ECHO", "PRESENT", true]; 
+_trg setTriggerStatements ["this", '
+_vehicle = vehicle player;
+if (player != _vehicle) then {
+	_vehicle setPos [getPos _vehicle select 0, getPos _vehicle select 1, 0.5];
+	_vehicle setVelocity [0,0,-0.5];
+};
+if (player == _vehicle) then {
+	_objects = player nearEntities[["Car","Motorcycle","Air"],5];
+	{	
+		if (count _objects > 0) then {		
+			_x setPos [getPos _x select 0, getPos _x select 1, 0.5];
+			_x setVelocity [0,0,-0.5];
+		};
+	} forEach _objects;
+};
+', ""]; 	
+
+
 
 if(internDebug)then
 

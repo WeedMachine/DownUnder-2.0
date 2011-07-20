@@ -21,6 +21,7 @@ _lamps = getmarkerpos "powercoverage5" nearObjects [_types select _i, 4000];
 _lamps = getmarkerpos "powercoverage6" nearObjects [_types select _i, 4000];
 _lamps = getmarkerpos "powercoverage7" nearObjects [_types select _i, 4000];
 _lamps = getmarkerpos "powercoverage8" nearObjects [_types select _i, 4000];
+_lamps = getmarkerpos "powercoverage9" nearObjects [_types select _i, 4000];
 Sleep 1;
 {_x switchLight "OFF";} forEach _lamps;
 

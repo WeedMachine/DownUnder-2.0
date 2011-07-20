@@ -363,7 +363,7 @@ copmarker_on             = 1;
 despawnarray	 	 = [["EvMoney", 300], ["Suitcase", 300]];
 workplacearray           = [[workplace1, 80], [workplace2, 80], [workplace3, 60], [workplace4, 40]];
 escortarray              = [[redlightdistrict1, 80], [redlightdistrict2, 80], [redlightdistrict3, 80]];
-huntingarray             = [["boarhunting", 300]];
+huntingarray             = [["boarhunting", 300], ["boarhunting2", 300]];
 nonlethalweapons	 = ["Binocular", "NVGoggles", "ItemMap", "ItemCompass", "ItemRadio", "ItemWatch", "ItemGPS"];
 slavearray               = workplacearray;
 timeinworkplace          = 0;
@@ -401,6 +401,37 @@ BuyAbleBuildingsArray    =
 ];
 
 };
+
+//=========== Cop Patrol Array ==========
+coppatrolarray  =
+[
+getmarkerpos "patrolpoint1", 
+getmarkerpos "patrolpoint2", 
+getmarkerpos "patrolpoint3", 
+getmarkerpos "patrolpoint4", 
+getmarkerpos "patrolpoint5", 
+getmarkerpos "patrolpoint6", 
+getmarkerpos "patrolpoint7", 
+getmarkerpos "patrolpoint8", 
+getmarkerpos "patrolpoint9", 
+getmarkerpos "patrolpoint10", 
+getmarkerpos "patrolpoint11",
+getmarkerpos "patrolpoint12",
+getmarkerpos "patrolpoint13",
+getmarkerpos "patrolpoint14",
+getmarkerpos "patrolpoint15",
+getmarkerpos "patrolpoint16",
+getmarkerpos "patrolpoint17",
+getmarkerpos "patrolpoint18",
+getmarkerpos "patrolpoint19",
+getmarkerpos "patrolpoint20",
+getmarkerpos "patrolpoint21",
+getmarkerpos "patrolpoint22",
+getmarkerpos "patrolpoint23",
+getmarkerpos "patrolpoint24",
+getmarkerpos "patrolpoint25"
+
+];
 
 civclassarray		 = 
 

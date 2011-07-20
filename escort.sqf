@@ -46,8 +46,8 @@ while {true} do
 
 		{
 		//Eds Debug text:
-		_disbetween = (_escortname distance (getPos (_x select 0)));	//distance between red light district and escort
-		player groupchat format ["distance from x to player is = %1", _disbetween];
+		//_disbetween = (_escortname distance (getPos (_x select 0)));	//distance between red light district and escort
+		//player groupchat format ["distance from x to player is = %1", _disbetween];
 		
 		//Escort earns money while she is inside one of the red light districts
 		if (_escortname distance ( getPos (_x select 0) ) < (_x select 1) ) then
