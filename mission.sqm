@@ -26170,7 +26170,7 @@ class Mission
 			position[]={246.44916,0.43070307,10715.346};
 			name="Welcome to Down Under";
 			text="Welcome to Down Under";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorYellow";
 		};
 		class Item334
@@ -26178,7 +26178,7 @@ class Mission
 			position[]={752.7522,0.38290581,10421.261};
 			name="Welcome Rules";
 			text="Please read the rules and laws before playing";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorYellow";
 		};
 	};
