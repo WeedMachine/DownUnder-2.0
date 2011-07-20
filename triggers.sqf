@@ -55,9 +55,9 @@ if (player == _vehicle) then {
 		};
 	} forEach _objects;
 };
-', ""]; 	
 
 
+', ""]; 
 
 if(internDebug)then
 
