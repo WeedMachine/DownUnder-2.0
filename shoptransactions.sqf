@@ -1,4 +1,5 @@
 private ["_menge"];
+if (shopactivescript == 1) exitwith {player groupchat "script already active"};
 
 _geld  = 'geld' call INV_GetItemAmount;
 if ((_this select 1) == -1) exitWith {};
