@@ -50,7 +50,7 @@ if (harvestscript == 1) exitwith {player groupchat "you are already harvesting"}
        [_type, _plantyield] call INV_AddInventoryItem;
 	   
 	    	
-		player groupchat format["You Harvested %1 Plants", _type];
+		player groupchat format["You Harvested a Apple Tree"];
 sleep 2;
 harvestscript = 0;
 

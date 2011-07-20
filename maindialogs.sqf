@@ -283,7 +283,7 @@ if(iscop)then{
 	_stock = _stock + (["blowfish", (shop5 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["blowfish", (shop6 call INV_getshopnum)] call INV_getstock);
 
-	lbAdd [1, format["Blowfish: %1", 1000 - _stock]];
+	lbAdd [1, format["Blowfish: %1", 100 - (_stock/2100)*100]];
 
 	_stock = ["Mackerel", (shop1 call INV_getshopnum)] call INV_getstock;
 	_stock = _stock + (["Mackerel", (shop2 call INV_getshopnum)] call INV_getstock);
@@ -292,7 +292,7 @@ if(iscop)then{
 	_stock = _stock + (["Mackerel", (shop5 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Mackerel", (shop6 call INV_getshopnum)] call INV_getstock);
 
-	lbAdd [1, format["Mackerel: %1", 600 - _stock]];
+	 lbAdd [1, format["Mackerel: %1", 100 - (_stock/1200)*100]];
 
 	_stock = ["Herring", (shop1 call INV_getshopnum)] call INV_getstock;
 	_stock = _stock + (["Herring", (shop2 call INV_getshopnum)] call INV_getstock);
@@ -301,7 +301,7 @@ if(iscop)then{
 	_stock = _stock + (["Herring", (shop5 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Herring", (shop6 call INV_getshopnum)] call INV_getstock);
 
-	lbAdd [1, format["Herring: %1", 600 - _stock]];
+	lbAdd [1, format["Herring: %1", 100 - (_stock/1200)*100]];
 
 	_stock = ["Bass", (shop1 call INV_getshopnum)] call INV_getstock;
 	_stock = _stock + (["Bass", (shop2 call INV_getshopnum)] call INV_getstock);
@@ -310,7 +310,7 @@ if(iscop)then{
 	_stock = _stock + (["Bass", (shop5 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Bass", (shop6 call INV_getshopnum)] call INV_getstock);
 
-	lbAdd [1, format["Deep Sea Bass: %1", 300 - _stock]];
+	lbAdd [1, format["Deep Sea Bass: %1", 100 - (_stock/480)*100]];
 	
 	_stock = ["trout", (shop1 call INV_getshopnum)] call INV_getstock;
 	_stock = _stock + (["trout", (shop2 call INV_getshopnum)] call INV_getstock);
@@ -319,7 +319,7 @@ if(iscop)then{
 	_stock = _stock + (["trout", (shop5 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["trout", (shop6 call INV_getshopnum)] call INV_getstock);
 	
-	lbAdd [1, format["Trout: %1", 300 - _stock]];
+	lbAdd [1, format["Trout: %1", 100 - (_stock/600)*100]];
 	
 	_stock = ["barramundi", (shop1 call INV_getshopnum)] call INV_getstock;
 	_stock = _stock + (["barramundi", (shop2 call INV_getshopnum)] call INV_getstock);
@@ -328,7 +328,7 @@ if(iscop)then{
 	_stock = _stock + (["barramundi", (shop5 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["barramundi", (shop6 call INV_getshopnum)] call INV_getstock);
 	
-	lbAdd [1, format["Barramundi: %1", 300 - _stock]];
+	lbAdd [1, format["Barramundi: %1", 100 - (_stock/1200)*100]];
 	
 	lbAdd [1, _trennlinie];
 
@@ -341,7 +341,7 @@ if(iscop)then{
 	_stock = _stock + (["Bread", (shop5 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Bread", (shop6 call INV_getshopnum)] call INV_getstock);
 	
-	lbAdd [1, format["Wheat: %1", 150 - (_stock/400)*100]];
+	lbAdd [1, format["Wheat: %1", 100 - (_stock/600)*100]];
 	
 	_stock = ["Apfel", (shop1 call INV_getshopnum)] call INV_getstock;
 	_stock = _stock + (["Apfel", (shop2 call INV_getshopnum)] call INV_getstock);
@@ -350,7 +350,7 @@ if(iscop)then{
 	_stock = _stock + (["Apfel", (shop5 call INV_getshopnum)] call INV_getstock);
 	_stock = _stock + (["Apfel", (shop6 call INV_getshopnum)] call INV_getstock);
 	
-	lbAdd [1, format["Apples: %1", 150 - (_stock/400)*100]];
+	lbAdd [1, format["Apples: %1", 100 - (_stock/600)*100]];
 
 	lbAdd [1, _trennlinie];
 
