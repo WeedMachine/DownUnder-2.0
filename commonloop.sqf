@@ -143,7 +143,7 @@ while {true} do
 		
 	_veh = vehicle player;
 	
-	if ((player distance getmarkerpos "policebase" < 250 or player distance getmarkerpos "policebase2" < 12) and isciv and !(_veh isKindOf "Air") and !(_veh isKindOf "Ship")) then 
+	if ((player distance getmarkerpos "policebase" < 250 or player distance getmarkerpos "policebase2" < 30) and isciv and !(_veh isKindOf "Air") and !(_veh isKindOf "Ship")) then 
 
 		{
 
@@ -170,7 +170,7 @@ while {true} do
 
 		};
 		
-	if (player distance getmarkerpos "policebase3" < 220 and isciv and !(_veh isKindOf "Air") and !(_veh isKindOf "Ship")) then 
+	if (player distance getmarkerpos "policebase3" < 150 and isciv and !(_veh isKindOf "Air") and !(_veh isKindOf "Ship")) then 
 
 		{
 
@@ -222,7 +222,7 @@ while {true} do
 		playmusic "Track16_Valentine";
 		player setpos [(getpos militarybase select 0), (getpos militarybase select 1), (getpos militarybase select 2) + 5500];
 		setViewDistance 6000;
-		titletext ["The Military Headquaters has been destroyed! The Chernarus Revolution is complete!", "PLAIN", 60];
+		titletext ["The Military Headquaters has been destroyed! The Down Under Revolution is complete!", "PLAIN", 60];
 		format['[%1] exec "ca\air2\halo\data\Scripts\HALO.sqs";', player] call broadcast;
 		player removeaction 0;
 		player removeaction 1;
