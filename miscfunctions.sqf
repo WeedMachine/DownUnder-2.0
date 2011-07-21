@@ -179,6 +179,78 @@ private ["_Fart", "_Fid", "_Fname", "_Fingame", "_Findex", "_Flistlen", "_Feigen
 		};
 
 	};
+	
+[_Flistlen, _Feigenenum]};
+	
+DialogSpielerListcop = {
+private ["_Fart", "_Fid", "_Fname", "_Fingame", "_Findex", "_Flistlen", "_Feigenenum"];
+    _Fart = _this select 0;
+	_Fid = _this select 1;
+	_Fname = _this select 2;
+	_Fingame = _this select 3;
+	_Findex = 0;
+	_Flistlen = 0;
+	_Feigenenum = -1;
+	for [{_c=0}, {_c < (count copstringarray)}, {_c=_c+1}] do 
+	{
+   _Fspieler = copstringarray select _c;
+		if ( ((_Fart == 0) or ((_Fart == 1) and (_c > civscount)) or ((_Fart == 2) and (_c < civscount))) and ((_Fingame) or (_Fspieler call ISSE_UnitExists)) ) then 
+		{
+			if (_Fname) then 
+			{
+			_Findex = lbAdd [_Fid, format ["%1 - (%2)", _Fspieler, name (call compile _Fspieler)]];
+			} 
+			else 
+			{
+			_Findex = lbAdd [_Fid, _Fspieler];
+			};
+		
+			lbSetData [_Fid, _Findex, format["%1", _c]];
+			if (_Fspieler == rolestring) then 
+			{
+			_Feigenenum = _Flistlen;
+			};
+
+			_Flistlen = _Flistlen + 1;
+		};
+
+	};
+
+[_Flistlen, _Feigenenum]};
+
+DialogSpielerListciv = {
+private ["_Fart", "_Fid", "_Fname", "_Fingame", "_Findex", "_Flistlen", "_Feigenenum"];
+    _Fart = _this select 0;
+	_Fid = _this select 1;
+	_Fname = _this select 2;
+	_Fingame = _this select 3;
+	_Findex = 0;
+	_Flistlen = 0;
+	_Feigenenum = -1;
+	for [{_c=0}, {_c < (count civstringarray)}, {_c=_c+1}] do 
+	{
+   _Fspieler = civstringarray select _c;
+		if ( ((_Fart == 0) or ((_Fart == 1) and (_c > civscount)) or ((_Fart == 2) and (_c < civscount))) and ((_Fingame) or (_Fspieler call ISSE_UnitExists)) ) then 
+		{
+			if (_Fname) then 
+			{
+			_Findex = lbAdd [_Fid, format ["%1 - (%2)", _Fspieler, name (call compile _Fspieler)]];
+			} 
+			else 
+			{
+			_Findex = lbAdd [_Fid, _Fspieler];
+			};
+		
+			lbSetData [_Fid, _Findex, format["%1", _c]];
+			if (_Fspieler == rolestring) then 
+			{
+			_Feigenenum = _Flistlen;
+			};
+
+			_Flistlen = _Flistlen + 1;
+		};
+
+	};
 
 [_Flistlen, _Feigenenum]};
 

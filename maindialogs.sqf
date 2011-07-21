@@ -445,14 +445,14 @@ if (_art == "coplog") then
 if (_art == "wahlen") then 
 {
 	if (!(createDialog "wahldialog")) exitWith {hint "Dialog Error!";};
-	_array = [0, 1, true, false] call DialogSpielerListe;
+	_array = [0, 1, true, false] call DialogSpielerListciv;
 	lbSetCurSel [1, _array select 1];
 };
 
 if (_art == "chief") then 
 {
 	if (!(createDialog "chiefdialog")) exitWith {hint "Dialog Error!";};
-	_arrayc = [0, 1, true, false] call DialogSpielerListe;
+	_arrayc = [0, 1, true, false] call DialogSpielerListcop;
 	lbSetCurSel [1, _arrayc select 1];
 };
 
