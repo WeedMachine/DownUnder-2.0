@@ -26,9 +26,9 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [3, format["Airfield for $%1", _preis]];
+ctrlSetText [3, format["Air for $%1", _preis]];
 buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
-};
+
 
 //=====================Airfield 2====================================
 
@@ -40,9 +40,9 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [3, format["Airfield 2 for $%1", _preis]];
+ctrlSetText [3, format["Air for $%1", _preis]];
 buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
-};
+
 
 //=====================Airfield 3====================================
 
@@ -54,30 +54,10 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [3, format["Airfield 3 for $%1", _preis]];
+ctrlSetText [3, format["Air for $%1", _preis]];
 buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
+
 };
-
-if ([_item, _sportsinv] call INV_iteminshop) exitwith
-
-{
-
-if (!(createDialog "distribute1")) exitWith {hint "Dialog Error!"};
-
-//=====================Sports Car Factory====================================
-
-_shopnum      = sportsshop call INV_getshopnum;
-_stock        = [_item, _shopnum] call INV_getstock;
-_maxstock     = [_item, _shopnum] call INV_getmaxstock;
-_preisOhneTax = (_infos call INV_getitemBuyCost)*1;																						
-_preis        = (_infos call INV_getitemCostWithTax)*1;
-_demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
-_preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
-
-ctrlSetText [3, format["Sports for $%1", _preis]];
-buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
-};
-
 
 if ([_item, _carsinv] call INV_iteminshop) exitwith
 
@@ -137,6 +117,26 @@ _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 ctrlSetText [6, format["Larenga for $%1", _preis]];
 buttonSetAction [6, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
+};
+
+if ([_item, _sportsinv] call INV_iteminshop) exitwith
+
+{
+
+if (!(createDialog "distribute1")) exitWith {hint "Dialog Error!"};
+
+//=====================Sports Car Factory====================================
+
+_shopnum      = sportsshop call INV_getshopnum;
+_stock        = [_item, _shopnum] call INV_getstock;
+_maxstock     = [_item, _shopnum] call INV_getmaxstock;
+_preisOhneTax = (_infos call INV_getitemBuyCost)*1;																						
+_preis        = (_infos call INV_getitemCostWithTax)*1;
+_demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
+_preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
+
+ctrlSetText [3, format["Sports for $%1", _preis]];
+buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 };
 
 if ([_item, _holdeninv] call INV_iteminshop) exitwith
