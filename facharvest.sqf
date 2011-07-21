@@ -235,7 +235,11 @@ _airfactory =
 [
 
 "Mi17_Civilian",
-"MH6J_EP1"
+"MH6J_EP1",
+"GNT_C185F", 
+"GNT_C185", 
+"GNT_C185E", 
+"GNT_C185R"
 
 ];
 
