@@ -1,4 +1,4 @@
-_weaponfactory=
+_weaponfactory  =
 
 [
 
