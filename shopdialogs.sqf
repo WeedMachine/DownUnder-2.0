@@ -4,11 +4,11 @@ if (isNil "INV_ShopDialoge") then {INV_ShopDialoge = 0} else {INV_ShopDialoge = 
 
 private["_exitvar", "_item", "_preis", "_preisOhneTax", "_zerostockcount", "_name", "_index", "_infos","_stock","_maxstock","_sellnumber","_demand","_itemsellarray"];
 
-_caller = _this select 1;
 _this   = _this select 3;
 INV_ActiveShopNumber    = (_this select 0);                                   
 INV_ActiveSellShopArray = [];                                                 
 INV_ActiveBuyShopArray  = [];
+_shop		= ((INV_ItemShops select INV_ActiveShopNumber) select 0); 
 _itembuyarray   = ((INV_ItemShops select INV_ActiveShopNumber) select 4); 
 _itemsellarray  = ((INV_ItemShops select INV_ActiveShopNumber) select 5);
 
@@ -43,8 +43,10 @@ if(_infos call INV_getitemType == "item")then
 
 		{
 		
-		_preis        = _infos call INV_getitemSteuer;
-				
+		_preis        	= _infos call INV_getitemSteuer;
+		_control = _shop getvariable "control";
+		if(_control == (call INV_mygang) and _infos call INV_getitemKindOf == "drug")then{_preis = 0};
+						
 		};
 	
 	};
@@ -116,25 +118,13 @@ if(_stock != -1) then
 
 	};
 
-if(_infos call INV_getitemType == "item")then
-		
-	{
-
-	if (_item call INV_getitemIsIllegal) then
-
-		{
-		
-		_preis        = (_infos call INV_getitemSellCost);
-				
-		};
-	
-	};
+if(_infos call INV_getitemType == "item")then{if (_item call INV_getitemIsIllegal)then{_preis = (_infos call INV_getitemSellCost)};};
 
 if (((INV_ItemShops select INV_ActiveShopNumber) select 0) == OilSell1)then
 
 	{
 
-	_demand      = ((TankenCost - 100)/200);
+	_demand      = ((tankencost - 100)/200);
 	_preis        = round((_preisOhneTax*(_preis/_preisOhneTax))*_demand);
 	if(_preis < oilbaseprice)then{_preis = oilbaseprice};
 		
@@ -224,7 +214,7 @@ if ((_infos call INV_getitemType) == "Fahrzeug") then
 
 //---------------------------------SETDATA----------------------------------------
 
-if(typename _caller != "OBJECT")then{buttonSetAction [3,  "[""itemkauf"",    lbCurSel 1,   ctrlText 2,   lbData [101, (lbCurSel 1)  ], INV_ActiveBuyShopArray select (lbCurSel 1)]    execVM ""shoptransactions.sqf"";"]};
+buttonSetAction [3,  "[""itemkauf"",    lbCurSel 1,   ctrlText 2,   lbData [101, (lbCurSel 1)  ], INV_ActiveBuyShopArray select (lbCurSel 1)]    execVM ""shoptransactions.sqf"";"];
 
 buttonSetAction [103, "[""itemverkauf"", lbCurSel 101, ctrlText 102, lbData [101, (lbCurSel 101)], INV_ActiveSellShopArray select (lbCurSel 101)] execVM ""shoptransactions.sqf"";"];
 
@@ -232,92 +222,49 @@ ctrlSetText [101,format [localize "STRS_inv_shopdialog_itemshop", ('geld' call I
 
 //--------------------------------REFRESH-----------------------------------------
 
-while {ctrlVisible 1015} do 
-
-{
-																								
-_cursel = (lbCurSel 1);												
-
-if (_cursel >= 0 and typename _caller != "OBJECT") then 
-
-	{
-																																						
-	_item        = (INV_ActiveBuyShopArray select (lbCurSel 1)) select 0; 														
-	_preis       = (INV_ActiveBuyShopArray select (lbCurSel 1)) select 2; 								
-	_infos       = _item call INV_getitemArray;																										
-	_slider      = ctrlText 2;                     
-	if (!(_slider call ISSE_str_isInteger)) then {_slider = "0";};								
-	_slider      = _slider call ISSE_str_StrToInt;  
-	if (_slider < 0) then {_slider = 0;};																										
-	_geldanzeige = (_slider*_preis);																														
-	if (_geldanzeige > 999999) then {_geldanzeige = " > 999999";};																				
-	
-	if (_infos call INV_getitemType == "item") then 
-
-		{
-		
-		ctrlSetText [3, format ["Buy ($%1, %2kg)", _geldanzeige, (_slider*(_infos call INV_getitemTypeKg))]];	
-		
-		} 
-		else 
-		{									
-
-		ctrlSetText [3, format ["Buy ($%1)", _geldanzeige]];
-		
-		};															
-
-	} 	
-	else 
-	{
-																								
-	ctrlSetText [3,  "/"];	
-
+while {ctrlVisible 1015} do {
+	_cursel = (lbCurSel 1);
+	if (_cursel >= 0) then {
+		_item = (INV_ActiveBuyShopArray select (lbCurSel 1)) select 0;
+		_preis = (INV_ActiveBuyShopArray select (lbCurSel 1)) select 2;
+		_infos = _item call INV_getitemArray;
+		_slider = ctrlText 2;
+		if (!(_slider call ISSE_str_isInteger)) then {_slider = "0";};
+		_slider = _slider call ISSE_str_StrToInt;
+		if (_slider < 0) then {_slider = 0;};
+		_moneyanzeige = (_slider*_preis);
+		if (_moneyanzeige > 9999999) then {_moneyanzeige = " > 9999999";};
+		if (_infos call INV_getitemType == "item") then {
+			ctrlSetText [3, format ["Buy ($%1, %2kg)", _moneyanzeige, (_slider*(_infos call INV_getitemTypeKg))]];
+		} else {
+			ctrlSetText [3, format ["Buy ($%1)", _moneyanzeige]]; 
+		};
+	} else {
+		ctrlSetText [3,  "/"];
 	};
-																			
-_cursel = (lbCurSel 101);														
-
-if (_cursel >= 0) then 
-
-	{
-																																																						
-	_item        = (INV_ActiveSellShopArray select (lbCurSel 101)) select 0; 								
-	_preis       = (INV_ActiveSellShopArray select (lbCurSel 101)) select 2; 																		
-	_infos       = _item call INV_getitemArray;																								
-	_slider      = ctrlText 102;                   
-
-	if (!(_slider call ISSE_str_isInteger)) then {_slider = "0";};																						
-	_slider      = _slider call ISSE_str_StrToInt;  
-
-	if (_slider < 0) then {_slider = 0;};																										
-	_geldanzeige = ((_slider*_preis) call ISSE_str_IntToStr);																								
-
-	if (_infos call INV_getitemType == "item") then 
 	
-		{
-						
-		ctrlSetText [103, format ["Sell ($%1, %2kg)", _geldanzeige, (_slider*(_infos call INV_getitemTypeKg))]];																										
-		
-		} 
-		else 
-		{
-																																													
-		ctrlSetText [103, format ["Sell ($%1)", _geldanzeige]];
-		
-		};							
-
-	} 
-	else 
-	{
-
-	ctrlSetText [103,  "/"];
-
+	_cursel = (lbCurSel 101);
+	if (_cursel >= 0) then {
+		_item = (INV_ActiveSellShopArray select (lbCurSel 101)) select 0;
+		_preis = (INV_ActiveSellShopArray select (lbCurSel 101)) select 2;
+		_infos = _item call INV_getitemArray;
+		_slider = ctrlText 102;
+		if (!(_slider call ISSE_str_isInteger)) then {_slider = "0";};
+		_slider = _slider call ISSE_str_StrToInt; 
+		if (_slider < 0) then {_slider = 0;};
+		_moneyanzeige = ((_slider*_preis) call ISSE_str_IntToStr);
+		if (_infos call INV_getitemType == "item") then {
+			ctrlSetText [103, format ["Sell ($%1, %2kg)", _moneyanzeige, (_slider*(_infos call INV_getitemTypeKg))]];
+		} else {
+			ctrlSetText [103, format ["Sell ($%1)", _moneyanzeige]];
+		};
+	} else {
+		ctrlSetText [103,  "/"];
 	};
-
-_geld = ('geld' call INV_GetItemAmount);																								
-CtrlSettext [100,  format[localize "STRS_inv_shopdialog_geld", _geld]];			
-sleep 0.1;								
-if (INV_ShopDialoge > 1) exitWith {};
-
+	
+	CtrlSettext [100,  format[localize "STRS_inv_shopdialog_money", ('money' call INV_GetItemAmount)]];
+	sleep 0.1;
+	if (INV_ShopDialoge > 1) exitWith {};
 };
 
 INV_ShopDialoge = INV_ShopDialoge - 1;
