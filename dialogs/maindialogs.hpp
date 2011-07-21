@@ -986,6 +986,66 @@ class ja_nein
 	};
 };
 
+class crush_dialog
+{
+	idd = -1;		
+	movingEnable = true;
+	controlsBackground[] = {DLG_BACK1, background};
+	objects[] = { };	
+	controls[] = {infotext, button1, button2, dummybutton};	
+	class DLG_BACK1: Rscbackground			
+	{
+		x = 0.38; 
+		y = 0.17;	
+		w = 0.38;
+		h = 0.25;
+	};			
+	
+	class background : RscBgRahmen	
+	{						
+		x = 0.38; y = 0.17;		
+		w = 0.38; h = 0.25;		
+		text = $STRD_janein_header;		
+	};					
+	
+	class infotext : RscText
+	{						
+		idc = 1;			
+		x = 0.40; 
+		y = 0.21;		
+		w = 0.34;
+		h = 0.10;
+		
+		style = ST_MULTI;
+		lineSpacing = 1;	
+	};
+	
+	class button1 : RscButton	
+	{
+		x = 0.40;
+		y = 0.32;
+		w = 0.10; 
+		h = 0.04;	
+
+		text = $STRS_ja;	
+		action = "Awnser = 1; closeDialog 0;";	
+	};
+	
+	class button2 : RscButton	
+	{
+		x = 0.53; 
+		y = 0.32;
+		w = 0.10; 
+		h = 0.04;
+
+		text = $STRS_nein;	
+		action = "Awnser = 2; closeDialog 0;";	
+	};
+	
+	class dummybutton : RscDummy {idc = 1023;
+	};
+};
+
 class chiefdialog
 {			
 	idd = -1;								
