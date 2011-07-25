@@ -196,10 +196,24 @@ while {true} do
 if ((_exitart == "frei") or (_exitart == "freigelassen")) then 
 
 	{
+	
+		if (player in auspawn) then 
+		
+			{
 
-	player setPos getMarkerPos "jail_freemarker";	player setdamage 0;	
-	(format ["if (player == %1) then {local_arrest = 0; [""local_arrest"", local_arrest] spawn ClientSaveVar; player groupChat localize ""STRS_civmenucheck_free_self"";}; server GLOBALCHAT format [localize ""STRS_civmenucheck_free_global"", name %1]; [""PrisonOut"", %1] spawn Isse_AddCrimeLogEntry; %1_reason = []; kopfgeld_%1 = 0; %1_arrest = 0;", player]) call broadcast;													
+			player setPos getMarkerPos "aujail_freemarker";	player setdamage 0;	
+			(format ["if (player == %1) then {local_arrest = 0; [""local_arrest"", local_arrest] spawn ClientSaveVar; player groupChat localize ""STRS_civmenucheck_free_self"";}; server GLOBALCHAT format [localize ""STRS_civmenucheck_free_global"", name %1]; [""PrisonOut"", %1] spawn Isse_AddCrimeLogEntry; %1_reason = []; kopfgeld_%1 = 0; %1_arrest = 0;", player]) call broadcast;													
 
+			};
+		
+		if (player in nzspawn) then 
+		
+			{
+
+			player setPos getMarkerPos "nzjail_freemarker";	player setdamage 0;	
+			(format ["if (player == %1) then {local_arrest = 0; [""local_arrest"", local_arrest] spawn ClientSaveVar; player groupChat localize ""STRS_civmenucheck_free_self"";}; server GLOBALCHAT format [localize ""STRS_civmenucheck_free_global"", name %1]; [""PrisonOut"", %1] spawn Isse_AddCrimeLogEntry; %1_reason = []; kopfgeld_%1 = 0; %1_arrest = 0;", player]) call broadcast;													
+
+			};
 	};
 
 if (_exitart == "ausbruch") then 

@@ -40,8 +40,8 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [3, format["Air for $%1", _preis]];
-buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
+ctrlSetText [4, format["Air for $%1", _preis]];
+buttonSetAction [4, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
 
 //=====================Airfield 3====================================
@@ -54,8 +54,8 @@ _preis        = (_infos call INV_getitemCostWithTax)*1;
 _demand       = _preis*0.5*(_stock-(_maxstock*0.5))/(0.5*_maxstock);
 _preis        = round((_preisOhneTax*(_preis/_preisOhneTax)) - _demand);
 
-ctrlSetText [3, format["Air for $%1", _preis]];
-buttonSetAction [3, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
+ctrlSetText [5, format["Air for $%1", _preis]];
+buttonSetAction [5, format['[%1,"%2",%3,%4,%5] execVM "exportvehicle.sqf";', _preis, _item, _stock, _maxstock, _shopnum]];
 
 };
 

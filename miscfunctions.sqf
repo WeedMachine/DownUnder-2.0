@@ -194,7 +194,7 @@ private ["_Fart", "_Fid", "_Fname", "_Fingame", "_Findex", "_Flistlen", "_Feigen
 	for [{_c=0}, {_c < (count copstringarray)}, {_c=_c+1}] do 
 	{
    _Fspieler = copstringarray select _c;
-		if ( ((_Fart == 0) or ((_Fart == 1) and (_c > civscount)) or ((_Fart == 2) and (_c < civscount))) and ((_Fingame) or (_Fspieler call ISSE_UnitExists)) ) then 
+		if ( ((_Fart == 0) or ((_Fart == 1) and (_c > copscount)) or ((_Fart == 2) and (_c < copscount))) and ((_Fingame) or (_Fspieler call ISSE_UnitExists)) ) then 
 		{
 			if (_Fname) then 
 			{

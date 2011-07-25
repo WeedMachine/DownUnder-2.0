@@ -11,6 +11,7 @@ INV_Lizenzen =
 ["truck",university,localize "STRS_license_truck",15000],
 ["engineer",university,localize "STRS_license_engineer",25000],
 ["air",university,localize "STRS_license_air",150000],
+["sobr_training",copsobr,localize "STRS_license_copswat",150000],
 ["auspass",university,"Australian Passport",20000],
 ["bounty",university,"Bountyhunter License",50000],			//Kopfgeldjäger Lizens
 
@@ -52,7 +53,7 @@ INV_Lizenzen =
 ["nzpass",university1,"New Zealand Passport",20000],
 ["response_training",copcar2,localize "STRS_license_copresponse",50000],
 ["air_support_training",copcar2,localize "STRS_license_copairsupport",100000],
-["sobr_training",copsobr,localize "STRS_license_copswat",150000],
+
 ["probator",copcar2,localize "STRS_license_probator",10000],
 ["patrol_training",copcar2,localize "STRS_license_coppatrol",25000],
 ["engineer",university1,localize "STRS_license_engineer",25000],
