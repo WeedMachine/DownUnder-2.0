@@ -69,4 +69,13 @@ titlefadeout 0;
 "dynamicBlur" ppEffectAdjust [0];  
 "dynamicBlur" ppEffectCommit 5;
 
-player setpos getpos (respawnarray select (floor(random(count respawnarray))));
+
+if(player in nzspawn and isciv)then
+			{
+			player setpos getpos (nzrespawnarray select (floor(random(count nzrespawnarray))));
+			};
+			
+			if(player in auspawn and isciv)then
+			{
+			player setpos getpos (respawnarray select (floor(random(count respawnarray))));
+			};

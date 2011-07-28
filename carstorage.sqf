@@ -1,4 +1,4 @@
-_vcls = nearestobjects [getpos player, ["Car","Motorcycle","Truck","tractor"], 9];
+_vcls = nearestobjects [getpos player, ["Car","Motorcycle","Truck","tractor"], 6];
 _vcl = _vcls select 0;
 
 

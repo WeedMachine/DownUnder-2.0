@@ -17,6 +17,7 @@ publicVariable "auspawn";
 aucopspawn  = [cop1,cop2,cop3,cop4,cop5,cop6,cop7,cop8,cop9,cop10];
 publicVariable "aucopspawn";
 nzspawn  = [civ21,civ22,civ23,civ24,civ25,civ26,civ27,civ28,civ29,civ30,civ31,civ32,civ33,civ34,cop11,cop12,cop13,cop14,cop15,cop16,cop17];
+nzcivspawn  = [civ21,civ22,civ23,civ24,civ25,civ26,civ27,civ28,civ29,civ30,civ31,civ32,civ33,civ34];
 nzcopspawn = [cop11,cop12,cop13,cop14,cop15,cop16,cop17];
 publicVariable "nzcopspawn";
 publicVariable "nzspawn";

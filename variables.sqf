@@ -69,7 +69,7 @@ petroluse                = 1;
 maxpetroluse             = 300; 
 oildemand                = 0.25;
 oilsellpricedec          = 30;
-oilbaseprice		 = 10000;
+oilbaseprice		 = 30000;
 //==============================MINING=============================================
 shoveldur=20;
 shovelmax=2;
@@ -517,4 +517,8 @@ terroristarray   	 = ["GUE_Soldier_1", "GUE_Soldier_2", "GUE_Soldier_3", "Ins_So
 Coplavearray		 = ["DU_Characters"];
 
 IntroInit          = 0;
+
+respawnarray 		= [respawn1,respawn2,respawn3,respawn4,respawn5,respawn6];
+nzrespawnarray 		= [respawn7,respawn8,respawn9,respawn10,respawn11,respawn12];
+
 

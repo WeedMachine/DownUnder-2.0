@@ -38,7 +38,15 @@ _type   = typeof _car;
 
 		player groupchat format["Demerit points lost: %1. Demerit points remaining: %2", _penalty, demerits];
 
-		(format['if(%3 == 0) then {server globalchat "%1 has lost his %2 license!";if(player == %1)then{INV_LizenzOwner = INV_LizenzOwner - ["%2"]; ["INV_LizenzOwner", INV_LizenzOwner] spawn ClientSaveVar};}', player, _license, demerits]) call broadcast; 
+		(format['if(%3 == 0) then {server globalchat "%1 has lost his %2 license!";if(player == %1)then
+		
+		{
+		
+		INV_LizenzOwner = INV_LizenzOwner - ["%2"];
+		["INV_LizenzOwner", INV_LizenzOwner] spawn ClientSaveVar;
+		if (!(donator call INV_HasLicense) then{
+		if(_uid in SupporterFeatureList) then {
+		INV_LizenzOwner = INV_LizenzOwner + ["donator"] spawn ClientSaveVar;};};};}', player, _license, demerits]) call broadcast; 
 
 		}; 
 

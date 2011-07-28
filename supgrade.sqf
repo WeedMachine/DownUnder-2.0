@@ -9,6 +9,7 @@ if(_art == "use")then
 
 if(_vcl == player)exitwith{player groupchat "you must be in a vehicle"};
 if(_vcl iskindof "" or _type call INV_getitemTypeKg > 2)exitwith{player groupchat "you can't tune this vehicle"};
+if (!(_vcl iskindof "car") or _type call INV_getitemTypeKg > 2 and !isCop) exitWith {player groupChat localize "STRS_inv_items_speed_no";};
 
 if(_vcl iskindof "ship" and ( _item == "supgrade3" or _item == "supgrade4" or _item == "supgrade5"))exitwith{player groupchat "you can only tune boats with speed upgrades 1 or 2!"};
 

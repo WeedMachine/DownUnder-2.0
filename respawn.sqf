@@ -1,4 +1,6 @@
 waitUntil {JIP_Stats_Ready};
+NzRespawn = false;
+if (player in nzcivspawn) then {NzRespawn = true;};
 
 while {true} do 
 
@@ -38,6 +40,7 @@ if (iscop) then
 if("car" call INV_haslicense)then{demerits = 10};
 //if("sobr_training" call INV_haslicense and iscop)then{_h = ["MVD_soldier"] execVM "changeclass.sqf";waituntil{scriptdone _h}; player setpos getmarkerpos "respawn_west_SOBR";};
 //if("sobr_training" call INV_haslicense and iscop and ischief)then{_h = ["RUS_COMMANDER"] execVM "changeclass.sqf";waituntil{scriptdone _h}; player setpos getmarkerpos "respawn_west_SOBR";};
+if (player in nzcopspawn) then {player setpos getmarkerpos "respawn_west_nz";};
 
 sleep 5;
 waituntil {!(alive player)};
@@ -152,9 +155,10 @@ if (isciv) then
 	if (local_arrest == 0) then 
 
 		{
-
-		player setpos getpos (respawnarray select (floor(random(count respawnarray))));
-
+			if(NzRespawn)then {
+				player setpos getpos (nzrespawnarray select (floor(random(count nzrespawnarray))));}
+				else{player setpos getpos (respawnarray select (floor(random(count respawnarray))));};
+			
 		}
 		else
 		{
