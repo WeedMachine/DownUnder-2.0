@@ -21,6 +21,8 @@ INV_itemstocks =
 [1,1,1,1,1,1,1,1,1,1,1],
 //pub
 [3,1,1,3,1,3,3],
+//pub nz
+[3,1,1,3,1,3,3],
 //gs
 [40,-1,40,-1,40,-1,40,-1,40,-1],
 //es
@@ -35,8 +37,12 @@ INV_itemstocks =
 [-1,5,5,5,5,2,2,2,2,2,2,2,3,3,3,3,3,3,3],
 [-1,5,5,5,5,2,2,2,2,2,2,2,3,3,3,3,3,3,3],
 //ps
-[2,2,2,2,2,2,2],
+[2,2,2,2,1,2,2,2],
+//ps nz
+[2,2,2,2,1,2,2,2],
 //ts
+[3,3,3,3,3,1],
+//ts nz
 [3,3,3,3,3,1],
 //Holden Dealership
 [1,1,1,1,1,1,1],
@@ -113,11 +119,14 @@ INV_itemstocks =
 -1,
 //hs
 [5,10,0,1,1,0,0,0,0,0,0],
+//hs nz
+[5,10,0,1,1,0,0,0,0,0,0],
 //kv
 -1,
 //ig
 [5,5,5],
 //seedshop
+-1,
 -1
 
 ];
@@ -146,6 +155,8 @@ INV_itemmaxstocks =
 [100,150,350,200,200,80,200,200,200,100,100],
 //Beer Shop pub
 [15,5,5,15,5,15,15],
+//Beer Shop pub NZ
+[15,5,5,15,5,15,15],
 //gs
 [40,-1,40,-1,40,-1,40,-1,40,-1],
 //es
@@ -160,8 +171,12 @@ INV_itemmaxstocks =
 [-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30,30,30,30,30,30],
 [-1,50,50,50,50,20,20,20,20,20,20,20,30,30,30,30,30,30,30,30],
 //ps
-[5,5,5,5,5,5,5],
+[5,5,5,5,5,5],
+//ps nz
+[5,5,5,5,5,5],
 //ts
+[5,5,5,5,5,5],
+//ts nz
 [5,5,5,5,5,5],
 //Holden Dealership
 [20,20,20,20,20,20,20],
@@ -238,11 +253,14 @@ INV_itemmaxstocks =
 -1,
 //hs
 [5,10,2,2,2,2,2,2,2,2,2],
+//hs nz
+[5,10,2,2,2,2,2,2,2,2,2],
 //kv
 -1,
 //ig
 [30,30,30],
 //seedshop
+-1,
 -1
 
 ];
@@ -257,7 +275,7 @@ _gs = ["Makarov", "8Rnd_9x18_Makarov", "M9", "Rnd_9x19_M9", "Colt1911", "Rnd_45A
 _es = ["Binocular", "NVGoggles", "GPS", "fishingpole", "medikit", "lockpick"];
 _cu = ["nitro", "supgrade1", "supgrade2", "supgrade3", "supgrade4"];
 _cs = ["MMT_Civ","TT650_Civ","MP_MB","TT650_Ins","Tractor","Skoda","SkodaBlue","SkodaRed","SkodaGreen","Lada_base","Lada1","Lada2","Car_hatchback","Car_Sedan","VWGolf","fury","barcuda","cuda","hemicuda","challenger"]; 
-_ps = ["datsun1_civil_1_open", "datsun1_civil_2_covered", "hilux1_civil_1_open", "hilux1_civil_2_covered", "SUV_TK_CIV_EP1", "UAZ_RU","LandRover_CZ_EP1","LandRover_TK_CIV_EP1"];
+_ps = ["datsun1_civil_1_open", "datsun1_civil_2_covered", "hilux1_civil_1_open", "hilux1_civil_2_covered", "SUV_TK_CIV_EP1", "UAZ_RU"];
 _av = ["Pickup_PK_INS", "HMMWV"];
 _ts = ["Ikarus", "UralCivil", "UralCivil2", "V3S_Civ", "KamazOpen","MTVR"];
 _hd = ["Civcar","Civcarbl","Civcarbu","Civcargr","Civcarre","Civcarsl","Civcarwh"];
@@ -486,6 +504,7 @@ INV_ItemShops = [
 [shop6,"Item Shop",dummyobj,dummyobj,_is,_is,true],
 
 [pub1,"Pub",dummyobj,dummyobj,_pub,_pub,true],
+[pub2,"Pub",dummyobj,dummyobj,_pub,_pub,true],
 
 [gunshop1,"Gun Shop",gunbox1,dummyobj,_gs,_gs,true],
 
@@ -501,8 +520,10 @@ INV_ItemShops = [
 [carshop4,"Car Shop",dummyobj,carspawn4,_cs,_cs,true],
 
 [pickupshop1,"Pickup + Jeep Shop",dummyobj,pickupspawn1,_ps,_ps,true],
+[pickupshopnz,"Pickup + Jeep Shop",dummyobj,pickupspawnnz,_ps,_ps,true],
 					
 [truckshop,"Truck Shop",dummyobj,truckspawn,_ts,_ts,true],
+[truckshopnz,"Truck Shop",dummyobj,truckspawnnz,_ts,_ts,true],
 
 [holdenshop,"Holden Dealership",dummyobj,holdenspawn,_hd,_hd,true],
 [evoshop,"Mitsubishi Dealership",dummyobj,evospawn,_md,_md,true],
@@ -567,9 +588,10 @@ INV_ItemShops = [
 [steelseel,"Export Steel",dummobj,dummyobj,_ss,_ss,true],
 [electronicseel,"Export Electronic Components",dummobj,dummyobj,_emptyshop,_ec,true],
 [markler,"House Shop",dummobj,dummyobj,_hs,_hs,true],
+[markler2,"House Shop",dummobj,dummyobj,_hs,_hs,true],
 [kaviarverkauf,"Sell Caviar",dummyobj,dummyobj,_emptyshop,_kv,true],
 [Industriegueter,"Industrial Goods",dummyobj,dummyobj,_ig,_ig,true],
-
+[seedshopnz,"Seed Shop",dummyobj,dummyobj,_seedshop,_seedshop,true],
 [seedshop,"Seed Shop",dummyobj,dummyobj,_seedshop,_seedshop,true]
 
 ];

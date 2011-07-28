@@ -285,7 +285,7 @@ INV_ItemFabriken =
 [Steel_Fac,"factory11","Steel Factory",dummyobj,dummyobj,_Steelfactory,75000,"Fabrikablage11", "Steelfactoryqueue"],
 [Diamond_1,"factory12","Jeweler",dummyobj,dummyobj,_Juwelier,50000,"Fabrikablage12", "Juwelierqueue"],
 [sportsfactory,"factory14","Sports Car Factory",dummyobj,sfacspawn,_sportsfactory,600000,"Fabrikablage14", "sportsvehiclequeue"],
-[airfac,"factory15","Air Factory",dummyobj,airfacspawn,_airfactory,100000,"Fabrikablage15", "avehiclequeue"],
+[airfac,"factory15","Air Factory",dummyobj,airfacspawn,_airfactory,750000,"Fabrikablage15", "avehiclequeue"],
 [Bakery_2,"factory13","Industrial Bakery",dummyobj,dummyobj,_Baekerei,20000,"Fabrikablage13", "Baekereiqueue"]
 
 ];

@@ -51,8 +51,9 @@ INV_Lizenzen =
 ["boat",university1,localize "STRS_license_boat",5000],
 ["truck",university1,localize "STRS_license_truck",15000],
 ["nzpass",university1,"New Zealand Passport",20000],
+["sobr_training",copsobr,localize "STRS_license_copswat",150000],
 ["response_training",copcar2,localize "STRS_license_copresponse",50000],
-["air_support_training",copcar2,localize "STRS_license_copairsupport",100000],
+["air",university1,localize "STRS_license_air",150000],
 
 ["probator",copcar2,localize "STRS_license_probator",10000],
 ["patrol_training",copcar2,localize "STRS_license_coppatrol",25000],

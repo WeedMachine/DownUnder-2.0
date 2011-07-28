@@ -200,7 +200,7 @@ SelfKilled               = 0;
 killstrafe               = 25000;			
 copteamkillstrafe	 = 25000;		
 GesetzAnzahl             = 10;         				
-GesetzArray              = ["Always Drive on the RIGHT side of the road", "DONT place buildings or hideouts on streets", "Always Holster weapons in Towns 1k/1min jail.","Completing an assassination mission is murder", "", "","", "", "", ""];
+GesetzArray              = ["Always Drive on the LEFT side of the road", "DONT place buildings or hideouts on streets", "Always Holster weapons in Towns 1k/1min jail.","Completing an assassination mission is murder", "", "","", "", "", ""];
 									
 if(debug)then{suicidepenalty = 0;respawntimeinc = 0;killedplayerinc = 0};  
 
